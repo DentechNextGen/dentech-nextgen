@@ -1,6 +1,5 @@
 'use client'
 
-import { siteConfig } from '@/config'
 import Image from 'next/image'
 import Link from 'next/link'
 

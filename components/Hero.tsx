@@ -9,7 +9,6 @@ interface HeroProps {
   content?: string
   cta?: string
   ctaLink?: string
-  variant?: 'default' | 'centered'
   bgColor?: string
 }
 
@@ -17,7 +16,6 @@ export const Hero = ({
   content = 'Transform Your Dental Practice with Dentech',
   cta = 'Schedule Demo',
   ctaLink = siteConfig.links.calendly,
-  variant = 'default',
   bgColor = 'bg-white',
 }: HeroProps) => {
   return (
@@ -27,7 +25,7 @@ export const Hero = ({
           <div className="mt-24 sm:mt-32 lg:mt-16">
             <Link href={ctaLink} className="inline-flex space-x-6">
               <span className="rounded-full bg-primary-base/10 px-3 py-1 text-sm font-semibold leading-6 text-primary-base ring-1 ring-inset ring-primary-base/10">
-                What's new
+                What&apos;s new
               </span>
               <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
                 <span>Just shipped v2.0</span>

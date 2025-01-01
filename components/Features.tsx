@@ -78,7 +78,7 @@ export const Features = () => {
             Our Dental Practice Management Features
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Dentech's cutting-edge, efficient solutions are designed to speed up your practice. Our platform streamlines all aspects of practice management, from appointment scheduling to billing, into one seamless process. With Dentech, you'll spend less time on administrative tasks and more time providing exceptional care to your patients. We offer features that directly cater to your dental practices every need. Our goal is to help your practice run smoothly so you can provide the best patient care imaginable.
+            We&apos;re here to help you streamline your dental practice with our comprehensive suite of services. Let&apos;s transform your practice together.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">

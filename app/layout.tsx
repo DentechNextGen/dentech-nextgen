@@ -13,6 +13,7 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: {
     default: siteConfig.name,
     template: `%s | ${siteConfig.name}`,
@@ -62,8 +63,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${poppins.variable}`}>
-      <body className="min-h-screen flex flex-col font-sans antialiased">
+    <html lang="en" className={poppins.variable}>
+      <body className="min-h-screen flex flex-col font-sans antialiased bg-white">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

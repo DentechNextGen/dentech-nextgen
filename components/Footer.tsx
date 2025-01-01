@@ -84,7 +84,7 @@ export const Footer = () => {
               height={40}
             />
             <p className="text-sm leading-6 text-gray-600">
-              {siteConfig.footerDescription}
+              {siteConfig.description}
             </p>
             <div className="flex space-x-6">
               {social.map((item) => (

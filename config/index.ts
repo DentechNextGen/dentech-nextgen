@@ -1,7 +1,3 @@
-import { DateTime } from 'luxon'
-import { ISeedTenant } from '@/lib/types/tenant-script'
-import { EMediaType, ESocialPlatform } from '@/lib/types/enums'
-
 const domain = 'dentech.com'
 
 export const siteConfig = {

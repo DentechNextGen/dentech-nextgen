@@ -173,8 +173,8 @@ export function SupportContent() {
               <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
                 <div>
                   <h2 className="font-display text-3xl font-bold text-primary">Get in touch</h2>
-                  <p className="mt-4 leading-7 text-primary-600">
-                    If you have any questions prior to your consultation, feel free to reach out!
+                  <p className="mt-6 text-base text-gray-600">
+                    We&apos;re here to help you with any questions or concerns you may have.
                   </p>
                 </div>
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-1 lg:col-span-2 lg:gap-8">
@@ -264,7 +264,7 @@ export function SupportContent() {
                 Loved by our <span className="relative whitespace-nowrap text-accent">Community</span>
               </h2>
               <p className="mt-4 text-lg text-slate-700">
-                At Dentech we believe that you shouldn't have to change the way you practice to match your software. We offer premium dental practice management software that is loved across the United States!.
+                At Dentech we believe that you shouldn&apos;t have to change the way you practice to match your software. We offer premium dental practice management software that is loved across the United States!.
               </p>
             </div>
             <ul role="list" className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3">
