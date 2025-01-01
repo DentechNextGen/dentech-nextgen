@@ -3,19 +3,38 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Primary Colors */
+  --primary-base: 37, 53, 108;
+  --primary-100: 242, 245, 255;
+  --primary-200: 180, 197, 229;
+  --primary-800: 29, 41, 79;
+  --primary-900: 22, 31, 59;
+
+  /* Accent Colors */
+  --accent-base: 133, 196, 64;
+  --accent-100: 216, 232, 212;
+  --accent-500: 119, 176, 57;
+  --accent-600: 53, 88, 52;
+  --accent-800: 17, 39, 11;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
