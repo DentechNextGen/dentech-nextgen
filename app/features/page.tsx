@@ -65,47 +65,45 @@ export default function Features() {
     <main className="bg-white">
       {/* Features Grid */}
       <div className="bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Our Features
-            </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+        <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl lg:max-w-5xl">
+            <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Features</h2>
+            <p className="mt-2 text-lg/8 text-gray-600">
               Discover our comprehensive suite of solutions designed to transform your dental practice. 
               From practice management to hardware solutions, we provide everything you need to run a modern, 
               efficient practice.
             </p>
-          </div>
 
-          <div className="mx-auto mt-16 max-w-7xl">
-            <div className="space-y-8">
-              {features.map((feature, index) => (
-                <Link 
-                  key={index} 
-                  href={feature.href}
-                  className="group relative block overflow-hidden rounded-2xl bg-gray-50 transition-all duration-300 hover:bg-gray-100"
-                >
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
-                    <div className="flex flex-col justify-center">
-                      <h3 className="text-2xl font-semibold leading-8 tracking-tight text-gray-900 group-hover:text-primary-600">
-                        {feature.title}
-                        <span className="inline-block transition-transform duration-300 group-hover:translate-x-1"> →</span>
-                      </h3>
-                      <p className="mt-4 text-base leading-7 text-gray-600">
-                        {feature.description}
-                      </p>
+            <div className="mt-16 lg:mt-20">
+              <div className="space-y-8">
+                {features.map((feature, index) => (
+                  <Link 
+                    key={index} 
+                    href={feature.href}
+                    className="group relative block overflow-hidden rounded-2xl bg-gray-50 transition-all duration-300 hover:bg-gray-100"
+                  >
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
+                      <div className="flex flex-col justify-center">
+                        <h3 className="text-2xl font-semibold leading-8 tracking-tight text-gray-900 group-hover:text-primary-600">
+                          {feature.title}
+                          <span className="inline-block transition-transform duration-300 group-hover:translate-x-1"> →</span>
+                        </h3>
+                        <p className="mt-4 text-base leading-7 text-gray-600">
+                          {feature.description}
+                        </p>
+                      </div>
+                      <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
+                        <Image
+                          src={`/images/${feature.image}`}
+                          alt={feature.title}
+                          fill
+                          className="object-cover transition-transform duration-300 group-hover:scale-105"
+                        />
+                      </div>
                     </div>
-                    <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
-                      <Image
-                        src={`/images/${feature.image}`}
-                        alt={feature.title}
-                        fill
-                        className="object-cover transition-transform duration-300 group-hover:scale-105"
-                      />
-                    </div>
-                  </div>
-                </Link>
-              ))}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>
