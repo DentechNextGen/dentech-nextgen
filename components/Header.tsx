@@ -52,7 +52,7 @@ export default function Header() {
                 </Link>
               ))}
               <Link
-                href={siteConfig.links.calendly}
+                href="/schedule"
                 className="text-sm font-semibold leading-6 text-white bg-lime-600 px-3 py-2 rounded-md hover:bg-lime-500"
               >
                 Schedule Demo

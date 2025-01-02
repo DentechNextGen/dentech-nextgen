@@ -15,7 +15,7 @@ const navigation = {
     { name: 'Hardware Solutions', href: '/features/hardware-solutions' },
   ],
   support: [
-    { name: 'Schedule Demo', href: siteConfig.links.calendly },
+    { name: 'Schedule Demo', href: '/schedule' },
     { name: 'Support', href: '/support' },
     { name: 'Go To Assist', href: '/go-to-assist' },
   ],
