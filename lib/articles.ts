@@ -10,6 +10,10 @@ export interface Article {
   date: string
   description: string
   content: string
+  tags?: string[]
+  author?: string
+  authorImage?: string
+  image?: string
 }
 
 export async function getAllArticles(): Promise<Article[]> {
@@ -21,6 +25,7 @@ export async function getAllArticles(): Promise<Article[]> {
 title: Welcome to Dentech Blog
 date: '2024-03-21'
 description: Learn about the latest updates and features in Dentech.
+tags: ['News', 'Updates']
 ---
 
 Welcome to the Dentech blog! Here you'll find the latest updates, features, and insights about dental practice management.`
@@ -40,12 +45,28 @@ Welcome to the Dentech blog! Here you'll find the latest updates, features, and 
       return {
         slug,
         title: data.title,
-        date: data.date,
-        description: data.description,
+        date: data.date || data.createdAt || data.updatedAt,
+        description: data.description || data.desc,
+        tags: data.tags || [],
+        author: data.author,
+        authorImage: data.authorImage,
+        image: data.image,
         content,
       }
     })
-    .sort((a, b) => (a.date > b.date ? -1 : 1))
+    .sort((a, b) => (new Date(a.date) > new Date(b.date) ? -1 : 1))
 
   return articles
+}
+
+export async function getArticlesByTags(tags: string[]): Promise<Article[]> {
+  const articles = await getAllArticles()
+  return articles.filter((article) => 
+    article.tags?.some((tag) => tags.includes(tag))
+  )
+}
+
+export async function getLatestArticles(count: number): Promise<Article[]> {
+  const articles = await getAllArticles()
+  return articles.slice(0, count)
 } 

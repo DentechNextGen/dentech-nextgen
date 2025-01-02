@@ -5,8 +5,11 @@ import FAQ from '@/components/FAQ'
 import Testimonials from '@/components/Testimonials'
 import BlogSection from '@/components/BlogSection'
 import CTA from '@/components/CTA'
+import { getLatestArticles } from '@/lib/articles'
 
-export default function Home() {
+export default async function Home() {
+  const latestArticles = await getLatestArticles(3)
+  
   return (
     <main>
       <Hero />
@@ -14,7 +17,7 @@ export default function Home() {
       <VideoFeature />
       <FAQ />
       <Testimonials />
-      <BlogSection />
+      <BlogSection articles={latestArticles} />
       <CTA />
     </main>
   )
