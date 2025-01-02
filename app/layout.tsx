@@ -22,7 +22,7 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       </head>
-      <body className="min-h-screen flex flex-col font-sans antialiased bg-white">
+      <body className="min-h-screen flex flex-col font-sans antialiased bg-white overflow-x-hidden">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
