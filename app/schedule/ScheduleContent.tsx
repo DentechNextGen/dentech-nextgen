@@ -20,7 +20,7 @@ export function ScheduleContent() {
   }, []);
 
   return (
-    <div className="relative w-full">
+    <div className="w-full h-full">
       <Script 
         src="https://assets.calendly.com/assets/external/widget.js" 
         strategy="lazyOnload"
@@ -35,12 +35,7 @@ export function ScheduleContent() {
       />
       <div 
         id="calendly-inline-widget" 
-        className="w-full min-h-screen md:min-h-[800px] rounded-2xl bg-gray-50"
-        style={{ 
-          minWidth: '320px',
-          height: 'calc(100vh - 200px)',
-          maxHeight: '1000px'
-        }}
+        className="w-full h-[800px]"
       />
     </div>
   )
