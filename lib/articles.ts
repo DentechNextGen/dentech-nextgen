@@ -1,95 +1,51 @@
-import fs from 'fs/promises'
+import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 
-const articlesDirectory = path.join(process.cwd(), 'public/articles')
-
-export interface ArticleFrontmatter {
-  title: string
-  description: string
-  date: string
-  author: string
-  authorImage: string
-  image: string
-  alt: string
-  tags: string[]
-  draft?: boolean
-}
+const articlesDirectory = path.join(process.cwd(), 'content/articles')
 
 export interface Article {
   slug: string
-  frontmatter: ArticleFrontmatter
+  title: string
+  date: string
+  description: string
   content: string
 }
 
-const defaultFrontmatter: ArticleFrontmatter = {
-  title: 'Untitled',
-  description: '',
-  date: new Date().toISOString(),
-  author: 'Anonymous',
-  authorImage: '/images/default-author.jpg',
-  image: '/images/default-blog.jpg',
-  alt: '',
-  tags: [],
-}
+export async function getAllArticles(): Promise<Article[]> {
+  // Create the directory if it doesn't exist
+  if (!fs.existsSync(articlesDirectory)) {
+    fs.mkdirSync(articlesDirectory, { recursive: true })
+    // Create a sample article if the directory is empty
+    const sampleArticle = `---
+title: Welcome to Dentech Blog
+date: '2024-03-21'
+description: Learn about the latest updates and features in Dentech.
+---
 
-export async function getArticles(): Promise<Article[]> {
-  try {
-    // Check if directory exists
-    try {
-      await fs.access(articlesDirectory)
-    } catch {
-      console.warn('Articles directory not found:', articlesDirectory)
-      return []
-    }
+Welcome to the Dentech blog! Here you'll find the latest updates, features, and insights about dental practice management.`
 
-    // Get all MDX files
-    const fileNames = await fs.readdir(articlesDirectory)
-    const mdxFiles = fileNames.filter(fileName => 
-      fileName.endsWith('.mdx') || fileName.endsWith('.md')
-    )
+    fs.writeFileSync(path.join(articlesDirectory, 'welcome.md'), sampleArticle)
+  }
 
-    // Process each file
-    const articlesPromises = mdxFiles.map(async fileName => {
+  const fileNames = fs.readdirSync(articlesDirectory)
+  const articles = fileNames
+    .filter((fileName) => fileName.endsWith('.md'))
+    .map((fileName) => {
+      const slug = fileName.replace(/\.md$/, '')
       const fullPath = path.join(articlesDirectory, fileName)
-      const fileContents = await fs.readFile(fullPath, 'utf8')
-      
-      // Parse frontmatter and content
+      const fileContents = fs.readFileSync(fullPath, 'utf8')
       const { data, content } = matter(fileContents)
-      const frontmatter = { ...defaultFrontmatter, ...data } as ArticleFrontmatter
-
-      // Skip draft articles in production
-      if (process.env.NODE_ENV === 'production' && frontmatter.draft) {
-        return null
-      }
 
       return {
-        slug: fileName.replace(/\.(mdx?|md)$/, ''),
-        frontmatter,
+        slug,
+        title: data.title,
+        date: data.date,
+        description: data.description,
         content,
       }
     })
+    .sort((a, b) => (a.date > b.date ? -1 : 1))
 
-    // Wait for all articles to be processed
-    const articles = (await Promise.all(articlesPromises))
-      .filter((article): article is Article => article !== null)
-      .sort((a, b) => 
-        new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime()
-      )
-
-    return articles
-  } catch (error) {
-    console.error('Error loading articles:', error)
-    return []
-  }
-}
-
-export async function getArticle(slug: string): Promise<Article | null> {
-  try {
-    const articles = await getArticles()
-    return articles.find(article => article.slug === slug) ?? null
-  } catch (error) {
-    console.error(`Error loading article with slug "${slug}":`, error)
-    return null
-  }
+  return articles
 } 

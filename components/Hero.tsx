@@ -1,10 +1,7 @@
-'use client'
-
 import { siteConfig } from '@/config'
 import { classNames } from '@/lib/utils/utils'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Button } from './Button'
 import { ChevronRightIcon } from '@heroicons/react/24/outline'
 
 interface HeroProps {
@@ -47,21 +44,18 @@ export default function Hero({
             {siteConfig.description}
           </p>
           <div className="mt-10 flex items-center gap-x-6">
-            <Button
+            <Link
               href={ctaLink}
-              color="primary"
-              size="lg"
+              className="rounded-md bg-primary-600 px-4 py-2.5 text-base font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 transition-colors"
             >
               {cta}
-            </Button>
-            <Button
+            </Link>
+            <Link
               href="/support"
-              variant="outline"
-              color="primary"
-              size="lg"
+              className="rounded-md border border-primary-600 px-4 py-2.5 text-base font-semibold text-primary-600 hover:bg-primary-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 transition-colors"
             >
-              Contact Us <span aria-hidden="true">→</span>
-            </Button>
+              Learn more
+            </Link>
           </div>
         </div>
         <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">

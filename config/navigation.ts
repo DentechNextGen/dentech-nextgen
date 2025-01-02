@@ -19,6 +19,10 @@ export const navigationConfig = {
       href: '/resources',
     },
     {
+      title: 'Schedule',
+      href: '/schedule',
+    },
+    {
       title: 'Support',
       href: '/support',
     },
