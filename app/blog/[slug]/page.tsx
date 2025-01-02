@@ -33,7 +33,7 @@ export default async function BlogPost(props: any) {
               <span className="ml-3">{article.date}</span>
             </time>
           </header>
-          <div className="mt-8 prose prose-slate mx-auto prose-headings:font-display prose-headings:font-semibold prose-headings:tracking-tight prose-lead:text-slate-500 prose-a:font-semibold prose-a:text-blue-600 hover:prose-a:text-blue-500 prose-strong:font-semibold prose-strong:text-slate-900 prose-code:text-slate-900 prose-pre:bg-slate-900 prose-blockquote:border-l-blue-500 prose-blockquote:text-slate-700 prose-blockquote:font-normal prose-blockquote:not-italic prose-hr:border-slate-200">
+          <div className="mt-8 prose prose-slate mx-auto prose-headings:font-display prose-headings:font-semibold prose-headings:tracking-tight prose-lead:text-slate-500 prose-a:font-semibold prose-a:text-lime-600 hover:prose-a:text-lime-500 prose-strong:font-semibold prose-strong:text-slate-900 prose-code:text-slate-900 prose-pre:bg-slate-900 prose-blockquote:border-l-lime-600 prose-blockquote:text-slate-700 prose-blockquote:font-normal prose-blockquote:not-italic prose-hr:border-slate-200">
             <ReactMarkdown>{article.content}</ReactMarkdown>
           </div>
         </article>

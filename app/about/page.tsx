@@ -19,7 +19,7 @@ export default function About() {
               {features.map((feature) => (
                 <div key={feature.title} className="flex flex-col">
                   <dt className="text-base font-semibold leading-7 text-gray-900">
-                    <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600">
+                    <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-lime-600">
                       <Image
                         src={feature.icon}
                         alt=""

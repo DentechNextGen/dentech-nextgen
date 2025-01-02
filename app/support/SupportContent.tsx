@@ -75,7 +75,7 @@ const SupportContent = () => {
                     <div>
                       <dt className="sr-only">Email</dt>
                       <dd>
-                        <a href="mailto:support@dentech.com" className="text-blue-600 hover:text-blue-500">
+                        <a href="mailto:support@dentech.com" className="text-lime-600 hover:text-lime-500">
                           Email: support@dentech.com
                         </a>
                       </dd>

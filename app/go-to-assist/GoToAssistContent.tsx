@@ -6,7 +6,7 @@ export default function GoToAssistContent() {
           <div className="px-6 pt-16 pb-4 lg:px-8">
             <div className="mx-auto max-w-4xl text-center">
               <h2 className="font-display text-3xl font-bold sm:text-4xl">
-                <span className="text-blue-600">Go </span>
+                <span className="text-lime-600">Go </span>
                 <span className="text-indigo-600">To </span>
                 <span className="text-indigo-600">Assist</span>
               </h2>
