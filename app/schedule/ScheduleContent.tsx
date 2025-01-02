@@ -11,7 +11,6 @@ declare global {
 
 export function ScheduleContent() {
   useEffect(() => {
-    // Only initialize if Calendly is loaded
     if (window.Calendly) {
       window.Calendly.initInlineWidget({
         url: 'https://calendly.com/jane-kaminski/introductory-call?hide_gdpr_banner=1',
@@ -21,7 +20,7 @@ export function ScheduleContent() {
   }, []);
 
   return (
-    <>
+    <div className="relative w-full">
       <Script 
         src="https://assets.calendly.com/assets/external/widget.js" 
         strategy="lazyOnload"
@@ -36,13 +35,13 @@ export function ScheduleContent() {
       />
       <div 
         id="calendly-inline-widget" 
-        className="w-full min-h-[600px] sm:min-h-[700px] md:min-h-[800px] rounded-2xl bg-gray-50"
+        className="w-full min-h-screen md:min-h-[800px] rounded-2xl bg-gray-50"
         style={{ 
           minWidth: '320px',
-          height: 'calc(100vh - 400px)',
-          maxHeight: '900px'
+          height: 'calc(100vh - 200px)',
+          maxHeight: '1000px'
         }}
       />
-    </>
+    </div>
   )
 } 
