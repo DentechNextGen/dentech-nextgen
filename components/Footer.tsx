@@ -93,7 +93,7 @@ export default function Footer() {
               style={{ filter: 'brightness(0) invert(1)' }}
             />
             <p className="text-sm leading-6 text-gray-300">
-              Dentech's cutting-edge, efficient solutions are designed to speed up your practice. Our platform streamlines all aspects of practice management, from appointment scheduling to billing, into one seamless process. With Dentech, you'll spend less time on administrative tasks and more time providing exceptional care to your patients.
+              Dentech&apos;s cutting-edge, efficient solutions are designed to speed up your practice. Our platform streamlines all aspects of practice management, from appointment scheduling to billing, into one seamless process. With Dentech, you&apos;ll spend less time on administrative tasks and more time providing exceptional care to your patients.
             </p>
             <div className="flex gap-x-6">
               {navigation.social.map((item) => (
