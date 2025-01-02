@@ -19,7 +19,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50">
+    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
@@ -59,7 +59,7 @@ export default function Header() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
             href={siteConfig.links.calendly}
-            className="text-sm font-semibold leading-6 text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md transition-colors"
+            className="text-sm font-semibold leading-6 text-white bg-lime-600 hover:bg-lime-700 px-4 py-2 rounded-md transition-colors"
           >
             Schedule Demo
           </Link>
@@ -105,7 +105,7 @@ export default function Header() {
               <div className="py-6">
                 <Link
                   href={siteConfig.links.calendly}
-                  className="block rounded-md px-3 py-2 text-base font-medium text-white bg-blue-600 hover:bg-blue-700"
+                  className="block rounded-md px-3 py-2 text-base font-medium text-white bg-lime-600 hover:bg-lime-700"
                 >
                   Schedule Demo
                 </Link>

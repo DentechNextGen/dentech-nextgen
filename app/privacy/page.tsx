@@ -39,7 +39,7 @@ export default function Privacy() {
             If you have any questions about this Privacy Policy, please contact us at:
           </p>
           <p>
-            <a href="mailto:privacy@dentech.com" className="text-blue-600 hover:text-blue-500">
+            <a href="mailto:privacy@dentech.com" className="text-lime-600 hover:text-lime-500">
               privacy@dentech.com
             </a>
           </p>

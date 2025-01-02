@@ -146,7 +146,7 @@ export default function FeaturesPage() {
                       {feature.features.map((item) => (
                         <li key={item} className="flex gap-x-3">
                           <svg
-                            className="h-6 w-5 flex-none text-blue-600"
+                            className="h-6 w-5 flex-none text-lime-600"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                             aria-hidden="true"
