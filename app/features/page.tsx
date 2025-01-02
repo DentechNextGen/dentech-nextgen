@@ -1,173 +1,140 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
-import { siteConfig } from '@/src/config'
 
-const features = [
-  {
-    name: 'Practice Management',
-    description: 'Dental Practice Management Software Done Right. Our system offers advanced financial and patient reports, all conveniently housed in one place.',
-    href: '/features/practice-management',
-    image: '/images/services/practice-management.jpg',
-    features: [
-      'Quick Phone Inquiry',
-      'Appointment Scheduler',
-      'Treatment Planning',
-      'Insurance Processing',
-      'Advanced Reporting',
-    ],
-  },
-  {
-    name: 'Voice-Activated Charting',
-    description: 'DenChart is our patented voice-activated charting software, allowing you to chart patient exams swiftly—in as little as 5 minutes—all conveniently housed in one place.',
-    href: '/features/voice-activated-charting',
-    image: '/images/services/voice-activated-charting.jpg',
-    features: [
-      'Voice-Activated Input',
-      'One-click Tooth Review',
-      'Auto-Compare Chart History',
-      'Medical Alerts Integration',
-    ],
-  },
-  {
-    name: 'Patient Check-In Solutions',
-    description: 'Streamline your patient check-in process with our digital solutions. Reduce wait times and paperwork while improving accuracy and patient satisfaction.',
-    href: '/features/patient-check-in',
-    image: '/images/services/patient-check-in.jpg',
-    features: [
-      'Digital Forms',
-      'Patient History',
-      'Insurance Verification',
-      'Appointment Monitoring',
-    ],
-  },
-  {
-    name: 'Document Management',
-    description: 'Go paperless with our comprehensive document management system. Securely store, access, and manage all your practice documents digitally.',
-    href: '/features/document-management',
-    image: '/images/services/document-management.jpg',
-    features: [
-      'Digital Storage',
-      'Easy Access',
-      'Secure Sharing',
-      'Automated Backup',
-    ],
-  },
-  {
-    name: 'Digital Imaging',
-    description: 'State-of-the-art digital imaging solutions integrated seamlessly with your practice management software.',
-    href: '/features/digital-imaging',
-    image: '/images/services/digital-imaging.jpg',
-    features: [
-      'Integrated Imaging',
-      'Enhanced Visualization',
-      'Secure Storage',
-      'Multiple Formats',
-    ],
-  },
-  {
-    name: 'eServices',
-    description: 'Digital solutions for modern dental practices, from online payments to electronic claims processing.',
-    href: '/features/eservices',
-    image: '/images/services/eservices.jpg',
-    features: [
-      'Online Payments',
-      'Electronic Claims',
-      'Patient Portal',
-      'Automated Billing',
-    ],
-  },
-  {
-    name: 'Managed Services',
-    description: 'Comprehensive IT support and management for your dental practice.',
-    href: '/features/managed-services',
-    image: '/images/services/managed-services.jpg',
-    features: [
-      'IT Support',
-      'Security Management',
-      'Data Backup',
-      'System Updates',
-    ],
-  },
-  {
-    name: 'Hardware Solutions',
-    description: 'Complete hardware solutions optimized for dental practices.',
-    href: '/features/hardware-solutions',
-    image: '/images/services/hardware-solutions.jpg',
-    features: [
-      'Workstations',
-      'Servers',
-      'Networking',
-      'Peripherals',
-    ],
-  },
-  {
-    name: 'Patient Communication',
-    description: 'Keep in touch with your patients through automated reminders and communications.',
-    href: '/features/patient-communication',
-    image: '/images/services/patient-communication.jpg',
-    features: [
-      'Appointment Reminders',
-      'Patient Messaging',
-      'Recall System',
-      'Treatment Updates',
-    ],
-  },
-]
+export default function Features() {
+  const features = [
+    {
+      title: 'Practice Management',
+      description: 'Streamline your dental practice operations with our comprehensive management solution. Our system offers advanced financial and patient reports, insurance processing, and appointment scheduling, all conveniently housed in one place.',
+      image: 'practice-management-1.webp',
+      href: '/features/practice-management'
+    },
+    {
+      title: 'Digital Imaging',
+      description: 'Advanced imaging solutions for modern dentistry with unprecedented clarity and efficiency. Capture, store, and analyze dental images with state-of-the-art technology integrated seamlessly with your practice management software.',
+      image: 'sensors.jpg',
+      href: '/features/digital-imaging'
+    },
+    {
+      title: 'Patient Check-In',
+      description: 'Digital check-in system that streamlines patient registration and reduces wait times. Our solution includes digital forms, patient history tracking, and insurance verification to create a smooth, paperless check-in experience.',
+      image: 'kiosk.jpg',
+      href: '/features/patient-check-in'
+    },
+    {
+      title: 'Voice-Activated Charting',
+      description: 'Revolutionary voice-controlled charting system for hands-free operation. Chart patient exams swiftly with voice commands, saving time and improving efficiency while maintaining accurate patient records.',
+      image: 'voice-graphics-1.webp',
+      href: '/features/voice-activated-charting'
+    },
+    {
+      title: 'Document Management',
+      description: 'Secure digital document management for all your practice needs. Go paperless with our comprehensive system that allows you to store, access, and manage all your practice documents digitally with enhanced security.',
+      image: 'files.jpg',
+      href: '/features/document-management'
+    },
+    {
+      title: 'Patient Communication',
+      description: 'Enhance patient engagement with automated reminders and communication tools. Keep your patients informed and engaged with automated appointment reminders, treatment updates, and secure messaging.',
+      image: 'reminders.jpg',
+      href: '/features/patient-communication'
+    },
+    {
+      title: 'Eservices',
+      description: 'Digital solutions for modern dental practices, from online scheduling to digital forms. Our eservices platform brings together all the digital tools you need, including online payments and electronic claims processing.',
+      image: 'eservices-graphics-1.webp',
+      href: '/features/eservices'
+    },
+    {
+      title: 'Managed Services',
+      description: 'Complete IT support and maintenance for your dental practice. Our managed services team provides proactive monitoring, security management, and technical support to keep your practice running smoothly.',
+      image: 'itservices.jpg',
+      href: '/features/managed-services'
+    },
+    {
+      title: 'Hardware Solutions',
+      description: 'Complete hardware solutions designed specifically for dental practices. From workstations to servers, we provide and support all the hardware your practice needs, ensuring compatibility and optimal performance.',
+      image: 'monitor.jpg',
+      href: '/features/hardware-solutions'
+    }
+  ]
 
-export default function FeaturesPage() {
   return (
-    <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl lg:max-w-5xl">
-          <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Features</h2>
-          <p className="mt-2 text-lg/8 text-gray-600">
-            Experience the next generation of dental practice management software. Our comprehensive suite of features is designed to streamline your workflow and enhance patient care.
-          </p>
-          <div className="mt-16 lg:mt-20">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
-              {features.map((feature) => (
-                <div key={feature.name} className="flex flex-col">
-                  <Link href={feature.href} className="group relative">
-                    <div className="relative h-64 w-full overflow-hidden rounded-lg bg-white">
+    <main className="bg-white">
+      {/* Features Grid */}
+      <div className="bg-white py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Our Features
+            </h1>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              Discover our comprehensive suite of solutions designed to transform your dental practice. 
+              From practice management to hardware solutions, we provide everything you need to run a modern, 
+              efficient practice.
+            </p>
+          </div>
+
+          <div className="mx-auto mt-16 max-w-7xl">
+            <div className="space-y-8">
+              {features.map((feature, index) => (
+                <Link 
+                  key={index} 
+                  href={feature.href}
+                  className="group relative block overflow-hidden rounded-2xl bg-gray-50 transition-all duration-300 hover:bg-gray-100"
+                >
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
+                    <div className="flex flex-col justify-center">
+                      <h3 className="text-2xl font-semibold leading-8 tracking-tight text-gray-900 group-hover:text-primary-600">
+                        {feature.title}
+                        <span className="inline-block transition-transform duration-300 group-hover:translate-x-1"> →</span>
+                      </h3>
+                      <p className="mt-4 text-base leading-7 text-gray-600">
+                        {feature.description}
+                      </p>
+                    </div>
+                    <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
                       <Image
-                        src={feature.image}
-                        alt={feature.name}
-                        className="object-cover object-center group-hover:opacity-75 transition"
+                        src={`/images/${feature.image}`}
+                        alt={feature.title}
                         fill
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
                       />
                     </div>
-                    <dt className="mt-4 text-lg font-semibold leading-7 text-gray-900">
-                      {feature.name}
-                    </dt>
-                    <dd className="mt-2 text-base leading-7 text-gray-600">
-                      {feature.description}
-                    </dd>
-                    <ul role="list" className="mt-4 space-y-2">
-                      {feature.features.map((item) => (
-                        <li key={item} className="flex gap-x-3">
-                          <svg
-                            className="h-6 w-5 flex-none text-lime-600"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            aria-hidden="true"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
-                          <span className="text-sm leading-6 text-gray-600">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </Link>
-                </div>
+                  </div>
+                </Link>
               ))}
-            </dl>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+
+      {/* CTA Section */}
+      <div className="bg-white">
+        <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+          <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+            <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Ready to transform your practice?
+            </h2>
+            <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
+              Schedule a demo today and see how our complete suite of solutions can revolutionize your dental practice.
+            </p>
+            <div className="mt-10 flex items-center justify-center gap-x-6">
+              <a
+                href="/schedule"
+                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              >
+                Schedule Demo
+              </a>
+              <a href="/contact" className="text-sm font-semibold leading-6 text-white">
+                Contact Sales <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   )
 } 
