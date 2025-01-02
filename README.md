@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dentech 2025 - Next Generation Dental Practice Management
 
-## Getting Started
+A modern, feature-rich dental practice management system built with Next.js 14, React 18, and TailwindCSS.
 
-First, run the development server:
+## 🚀 Features
+
+- **Practice Management**: Streamline your dental practice operations
+- **Voice-Activated Charting**: Hassle-free perio and restorative charting
+- **Document Management**: Efficient digital document organization
+- **Patient Check-In**: Modern, contact-free check-in system
+- **Patient Communication**: Integrated SMS and email updates
+- **Digital Imaging**: High-res imaging and diagnostic tools
+- **eServices**: Digital claims, e-statements, and prescription management
+- **Managed Services**: Comprehensive IT security services
+- **Hardware Solutions**: Latest dental equipment integration
+
+## 🛠 Tech Stack
+
+- **Framework**: Next.js 14.1.0
+- **UI**: React 18.2.0
+- **Styling**: TailwindCSS 3.4
+- **Components**: HeadlessUI
+- **Icons**: Heroicons
+- **Content**: React Markdown with Gray Matter
+- **Type Safety**: TypeScript
+
+## 📦 Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Install dependencies
+pnpm install
+
+# Start development server
 pnpm dev
-# or
-bun dev
+
+# Build for production
+pnpm build
+
+# Start production server
+pnpm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
+- Node.js 18+ 
+- pnpm
+- Git
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Environment Setup
+1. Clone the repository
+2. Install dependencies with `pnpm install`
+3. Start the development server with `pnpm dev`
+4. Visit `http://localhost:3000`
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+dentech2025/
+├── app/                   # Next.js 14 app directory
+│   ├── blog/             # Blog pages and articles
+│   ├── features/         # Feature pages
+│   ├── support/          # Support pages
+│   └── about/            # About pages
+├── components/           # Reusable React components
+├── lib/                  # Utility functions and helpers
+├── public/              # Static assets
+│   ├── docs/            # Documentation files
+│   ├── icons/           # Icon assets
+│   └── images/          # Image assets
+└── styles/              # Global styles and Tailwind config
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌟 Key Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Practice Management
+- One-click patient information access
+- Advanced reporting
+- Treatment planning
+- Insurance processing
+- Data security and compliance
 
-## Deploy on Vercel
+### Voice-Activated Charting
+- Patented voice-activated charting software
+- Complete patient exams in 5 minutes
+- Intuitive interface
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Document Management
+- Paperless practice solution
+- Efficient document access
+- Regulatory compliance
+- Risk minimization
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🤝 Support
+
+For support inquiries:
+- Email: support@dentech.com
+- General: +1 (800)-233-4998
+- Support: +1 (866)-549-8702
+
+Support Hours: Monday - Friday, 8:30 - 5:00 EST
+
+## 🔒 Security
+
+- HIPAA compliant
+- Secure data management
+- Regular security updates
+- Managed IT services available
+
+## 📝 License
+
+Proprietary software - All rights reserved
+
+## 🏢 Company
+
+Dentech - Revolutionizing Dental Practice Management for Over 40 Years
