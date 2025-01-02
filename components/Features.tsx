@@ -1,5 +1,3 @@
-'use client'
-
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -45,27 +43,6 @@ const features = [
     description: 'From high-res imaging and dental diagnostic tools, to advanced digital imaging software. Dentech has everything you need to streamline diagnoses and educate patients.',
     image: 'services/digital-imaging.jpg',
     href: '/features/digital-imaging'
-  },
-  {
-    title: 'Eservices',
-    summary: 'Simplify And Scale Your Dental Practice',
-    description: 'Lighten your workload with our eServices: digital claims processing, e-statements, online patient prescription management, and more.',
-    image: 'services/eservices.jpg',
-    href: '/features/eservices'
-  },
-  {
-    title: 'Managed Services',
-    summary: 'Dental IT Security Services Managed For You',
-    description: "Your Practice's Data And Security Are More Important Than Ever. Businesses that hold patient health information (including dental practices) are often a major target for cybersecurity threats. Even small practices are often targets because many hackers see them as low-hanging fruit, less likely to have the time and resources to stay protected. Beyond this, you never know when your data and hardware will be vulnerable to a physical threat such as fire, inclement weather, or even theft.",
-    image: 'services/managed-services.jpg',
-    href: '/features/managed-services'
-  },
-  {
-    title: 'Hardware Solutions',
-    summary: 'The Latest In Dental Equipment',
-    description: "Whether you're opening a new practice or looking to update your existing hardware to the best available, our expert staff can guide you toward the right solutions for you and your business.",
-    image: 'services/hardware-solutions.jpg',
-    href: '/features/hardware-solutions'
   }
 ]
 

@@ -10,6 +10,20 @@ const nextConfig = {
       },
     ],
   },
+  experimental: {
+    optimizePackageImports: ['@heroicons/react'],
+    serverActions: {
+      bodySizeLimit: '2mb'
+    },
+    mdxRs: true
+  },
+  webpack: (config) => {
+    config.resolve.fallback = {
+      ...config.resolve.fallback,
+      fs: false,
+    };
+    return config;
+  },
 }
 
 export default nextConfig
