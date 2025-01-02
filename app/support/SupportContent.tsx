@@ -12,6 +12,7 @@ declare global {
           portalId: string
           formId: string
           target: string
+          region?: string
         }) => void
       }
     }
@@ -20,7 +21,6 @@ declare global {
 
 const SupportContent = () => {
   useEffect(() => {
-    // Initialize HubSpot form after the script loads
     const script = document.createElement('script')
     script.src = "//js.hsforms.net/forms/embed/v2.js"
     script.charset = "utf-8"
@@ -32,13 +32,13 @@ const SupportContent = () => {
         window.hbspt.forms.create({
           portalId: "5715587",
           formId: "11505929-7ac7-4a5f-8e07-8a7b81eb0d0c",
-          target: "#hubspot-form-container"
+          target: "#hubspot-form-container",
+          region: "na1"
         })
       }
     })
 
     return () => {
-      // Cleanup
       document.head.removeChild(script)
     }
   }, [])
@@ -107,7 +107,7 @@ const SupportContent = () => {
             <p className="mt-4 text-lg leading-8 text-gray-600">
               Need assistance with Dentech NextGen or have any questions? Fill out this form and our dedicated support team will get back to you promptly to ensure your practice runs smoothly.
             </p>
-            <div id="hubspot-form-container" className="mt-8 w-full min-h-[600px] rounded-2xl bg-gray-50" />
+            <div id="hubspot-form-container" className="mt-8 w-full min-h-[600px] rounded-2xl bg-gray-50 p-8" />
           </section>
 
           {/* FAQ section */}
