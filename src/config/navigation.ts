@@ -1,24 +1,24 @@
 export const navigationConfig = {
   mainNav: [
     {
+      title: 'About',
+      href: '/about',
+    },
+    {
       title: 'Features',
       href: '/features',
     },
     {
-      title: 'Resources',
-      href: '/resources',
+      title: 'Support',
+      href: '/support',
     },
     {
       title: 'Blog',
       href: '/blog',
     },
     {
-      title: 'About',
-      href: '/about',
-    },
-    {
-      title: 'Support',
-      href: '/support',
+      title: 'Resources',
+      href: '/resources',
     }
   ],
   footerNav: [
