@@ -19,7 +19,7 @@ export default function Footer() {
               width={150}
               height={50}
               className="h-12 w-auto"
-              style={{ width: 'auto', height: '48px' }}
+              style={{ width: "auto", height: "48px" }}
             />
             <p className="text-sm leading-6 text-gray-600">
               {siteConfig.description}
