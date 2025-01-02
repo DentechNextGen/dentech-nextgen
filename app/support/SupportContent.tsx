@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react'
 import Image from 'next/image'
-import { CTA } from '@/components/CTA'
+import CTA from '@/components/CTA'
 import Script from 'next/script'
 
 // Add type definition for HubSpot

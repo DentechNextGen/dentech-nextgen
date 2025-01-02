@@ -63,10 +63,11 @@ const socialIcons = {
       />
     </svg>
   ),
-}
+} as const
 
-export const Footer = () => {
+export default function Footer() {
   const { footerNav, social } = navigationConfig
+  const currentYear = new Date().getFullYear()
 
   return (
     <footer className="bg-white" aria-labelledby="footer-heading">
@@ -76,13 +77,16 @@ export const Footer = () => {
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
-            <Image
-              className="h-10 w-auto"
-              src="/icons/logo.svg"
-              alt={siteConfig.name}
-              width={40}
-              height={40}
-            />
+            <Link href="/" aria-label="Go to homepage">
+              <Image
+                className="h-10 w-auto"
+                src="/icons/logo.svg"
+                alt={siteConfig.name}
+                width={40}
+                height={40}
+                priority
+              />
+            </Link>
             <p className="text-sm leading-6 text-gray-600">
               {siteConfig.description}
             </p>
@@ -91,7 +95,10 @@ export const Footer = () => {
                 <Link
                   key={item.title}
                   href={item.href}
-                  className="text-gray-400 hover:text-gray-500"
+                  className="text-gray-400 hover:text-gray-500 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Visit our ${item.title} page`}
                 >
                   <span className="sr-only">{item.title}</span>
                   {socialIcons[item.title]}
@@ -110,7 +117,7 @@ export const Footer = () => {
                     <li key={item.title}>
                       <Link
                         href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                        className="text-sm leading-6 text-gray-600 hover:text-gray-900 transition-colors"
                       >
                         {item.title}
                       </Link>
@@ -127,7 +134,7 @@ export const Footer = () => {
                     <li key={item.title}>
                       <Link
                         href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                        className="text-sm leading-6 text-gray-600 hover:text-gray-900 transition-colors"
                       >
                         {item.title}
                       </Link>
@@ -146,7 +153,7 @@ export const Footer = () => {
                     <li key={item.title}>
                       <Link
                         href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                        className="text-sm leading-6 text-gray-600 hover:text-gray-900 transition-colors"
                       >
                         {item.title}
                       </Link>
@@ -163,7 +170,7 @@ export const Footer = () => {
                     <li key={item.title}>
                       <Link
                         href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                        className="text-sm leading-6 text-gray-600 hover:text-gray-900 transition-colors"
                       >
                         {item.title}
                       </Link>
@@ -176,8 +183,7 @@ export const Footer = () => {
         </div>
         <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
           <p className="text-xs leading-5 text-gray-500">
-            &copy; {new Date().getFullYear()} {siteConfig.legalName}. All rights
-            reserved.
+            &copy; {currentYear} {siteConfig.legalName}. All rights reserved.
           </p>
         </div>
       </div>

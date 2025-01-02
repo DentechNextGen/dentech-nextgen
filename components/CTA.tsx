@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-export const CTA = () => {
+export default function CTA() {
   return (
     <div className="relative isolate">
       <div className="absolute inset-0 -z-10">

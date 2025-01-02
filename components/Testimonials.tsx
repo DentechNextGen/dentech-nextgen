@@ -1,5 +1,3 @@
-'use client'
-
 import Image from 'next/image'
 
 const testimonials = [
@@ -20,7 +18,7 @@ const testimonials = [
   }
 ]
 
-export const Testimonials = () => {
+export default function Testimonials() {
   return (
     <section
       id="testimonials"
