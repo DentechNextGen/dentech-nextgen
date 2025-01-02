@@ -63,29 +63,11 @@ export function ScheduleContent() {
           }
         }}
       />
-      <div className="min-h-screen bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Schedule a Demo
-            </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Book an introductory call with Jane Kaminski to learn more about how Dentech can help your dental practice.
-            </p>
-          </div>
-          <div className="mt-16 h-[800px]">
-            <div 
-              id="calendly-inline-widget" 
-              className="w-full h-full"
-              style={{ 
-                minWidth: '320px',
-                height: '100%',
-                overflow: 'hidden'
-              }} 
-            />
-          </div>
-        </div>
-      </div>
+      <div 
+        id="calendly-inline-widget" 
+        className="w-full h-[800px] rounded-2xl bg-gray-50"
+        style={{ minWidth: '320px' }}
+      />
     </>
   )
 } 

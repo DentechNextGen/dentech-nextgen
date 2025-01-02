@@ -19,7 +19,7 @@ export default function BlogSection({ articles }: BlogSectionProps) {
             ))}
           </div>
           <div className="mt-10 text-center">
-            <Link href="/blog" className="text-sm font-semibold leading-6 text-primary-base hover:text-primary-800">
+            <Link href="/blog" className="text-sm font-semibold leading-6 text-blue-600 hover:text-blue-800">
               See All <span aria-hidden="true">→</span>
             </Link>
           </div>

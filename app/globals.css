@@ -2,22 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  /* Primary Colors */
-  --primary-base: 37, 53, 108;
-  --primary-100: 242, 245, 255;
-  --primary-200: 180, 197, 229;
-  --primary-800: 29, 41, 79;
-  --primary-900: 22, 31, 59;
-
-  /* Accent Colors */
-  --accent-base: 133, 196, 64;
-  --accent-100: 216, 232, 212;
-  --accent-500: 119, 176, 57;
-  --accent-600: 53, 88, 52;
-  --accent-800: 17, 39, 11;
-}
-
 @layer base {
   body {
     @apply bg-white text-gray-900 font-sans antialiased;
@@ -36,23 +20,5 @@
 @layer components {
   .text-balance {
     text-wrap: balance;
-  }
-}
-
-@layer utilities {
-  .bg-primary {
-    background-color: rgb(var(--primary-base));
-  }
-
-  .text-primary {
-    color: rgb(var(--primary-base));
-  }
-
-  .bg-accent {
-    background-color: rgb(var(--accent-base));
-  }
-
-  .text-accent {
-    color: rgb(var(--accent-base));
   }
 }

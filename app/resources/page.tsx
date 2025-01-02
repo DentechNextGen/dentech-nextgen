@@ -1,12 +1,6 @@
-import { siteConfig } from '@/config'
-import { Metadata } from 'next'
+import { siteConfig } from '@/src/config'
 import { getArticlesByTags } from '@/lib/articles'
 import ArticleCard from '@/components/ArticleCard'
-
-export const metadata: Metadata = {
-  title: `Resources | ${siteConfig.name}`,
-  description: 'Helpful resources and articles for dental practices.',
-}
 
 export default async function Resources() {
   const articles = await getArticlesByTags(['Resources', 'Training'])

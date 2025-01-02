@@ -51,39 +51,35 @@ export default function Features() {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-primary-base">
-            Our Dental Practice Management Features
+          <h2 className="text-base font-semibold leading-7 text-blue-600">
+            Everything you need
           </h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Dental Practice Management Software Done Right
+          </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            We&apos;re here to help you streamline your dental practice with our comprehensive suite of services. Let&apos;s transform your practice together.
+            Our comprehensive suite of features is designed to streamline your workflow and enhance patient care.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-          <dl className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3">
+          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
             {features.map((feature) => (
-              <Link 
-                key={feature.title} 
-                href={feature.href}
-                className="flex flex-col group hover:opacity-80 transition-opacity"
-              >
-                <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl bg-gray-100">
-                  <Image
-                    src={`/images/${feature.image}`}
-                    alt={feature.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <dt className="mt-4 text-lg font-semibold leading-7 text-gray-900">
+              <div key={feature.title} className="flex flex-col">
+                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
                   {feature.title}
                 </dt>
-                <dd className="mt-1 text-sm font-medium text-primary-base">
-                  {feature.summary}
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                  <p className="flex-auto">{feature.description}</p>
+                  <p className="mt-6">
+                    <Link
+                      href={feature.href}
+                      className="text-sm font-semibold leading-6 text-blue-600 hover:text-blue-500"
+                    >
+                      Learn more <span aria-hidden="true">→</span>
+                    </Link>
+                  </p>
                 </dd>
-                <dd className="mt-3 text-base leading-7 text-gray-600">
-                  {feature.description}
-                </dd>
-              </Link>
+              </div>
             ))}
           </dl>
         </div>
