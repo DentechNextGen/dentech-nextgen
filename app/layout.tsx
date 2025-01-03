@@ -1,35 +1,53 @@
-import { Poppins, Marcellus } from 'next/font/google'
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 import './globals.css'
+import { organizationSchema } from '@/lib/schema'
+import { siteConfig } from '@/src/config'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import GoogleTagManager from '@/components/GoogleTagManager'
 
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-poppins',
-  display: 'swap',
-})
+const inter = Inter({ subsets: ['latin'] })
 
-const marcellus = Marcellus({
-  subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-marcellus',
-})
+export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.name}`
+  },
+  description: siteConfig.description,
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: siteConfig.url,
+    title: siteConfig.name,
+    description: siteConfig.description,
+    siteName: siteConfig.name
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteConfig.name,
+    description: siteConfig.description,
+    creator: '@dentech'
+  },
+  alternates: {
+    canonical: '/'
+  },
+  other: {
+    'script:ld+json': {
+      type: 'application/ld+json',
+      text: JSON.stringify(organizationSchema)
+    }
+  }
+}
 
 export default function RootLayout({
-  children,
+  children
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${poppins.variable} ${marcellus.variable}`}>
-      <head>
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-      </head>
-      <body className="min-h-screen flex flex-col font-sans antialiased bg-white overflow-x-hidden">
-        <GoogleTagManager />
+    <html lang="en">
+      <body className={`${inter.className} min-h-screen flex flex-col bg-white antialiased`}>
         <Header />
         <main className="flex-1 pt-32">{children}</main>
         <Footer />
