@@ -77,7 +77,7 @@ export const navigationConfig = {
         },
         {
           title: 'Go To Assist',
-          href: 'https://www.goto.com/assist',
+          href: '/go-to-assist',
         }
       ],
     },
