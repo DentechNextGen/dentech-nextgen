@@ -73,4 +73,31 @@ export const generateArticleSchema = (article: {
     name: 'Dentech',
     url: 'https://dentech.com',
   },
-}) 
+})
+
+export const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Dentech',
+  url: 'https://dentech.com',
+  logo: 'https://dentech.com/images/DenScript.webp',
+  description: "Dentech's cutting-edge, efficient solutions are designed to speed up your practice. Our platform streamlines all aspects of practice management, from appointment scheduling to billing, into one seamless process. With Dentech, you'll spend less time on administrative tasks and more time providing exceptional care to your patients.",
+  sameAs: [
+    'https://twitter.com/dentech',
+    'https://github.com/dentech'
+  ],
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '123 Main St',
+    addressLocality: 'San Francisco',
+    addressRegion: 'CA',
+    postalCode: '94105',
+    addressCountry: 'US'
+  },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: '+1-555-555-5555',
+    contactType: 'customer service',
+    email: 'support@dentech.com'
+  }
+} 

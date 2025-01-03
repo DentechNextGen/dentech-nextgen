@@ -6,10 +6,8 @@ export interface BreadcrumbListSchema extends BaseSchema {
   itemListElement: {
     '@type': 'ListItem'
     position: number
-    item: {
-      '@id': string
-      name: string
-    }
+    name: string
+    item: string
   }[]
 }
 
@@ -20,10 +18,8 @@ export function generateBreadcrumbSchema(items: { name: string; path: string }[]
     itemListElement: items.map((item, index) => ({
       '@type': 'ListItem',
       position: index + 1,
-      item: {
-        '@id': `${siteConfig.url}${item.path}`,
-        name: item.name
-      }
+      name: item.name,
+      item: item.path.startsWith('http') ? item.path : `${siteConfig.url}${item.path}`
     }))
   }
 }

@@ -1,64 +1,88 @@
-import { Metadata } from 'next'
-import { generateArticleSchema, generateBreadcrumbSchema } from '@/lib/schema'
-import { getAllArticles } from '@/lib/articles'
-
-const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dentech.com'
+import { siteConfig } from '@/src/config'
+import type { Metadata } from 'next'
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const articles = await getAllArticles()
-  const article = articles.find(article => article.slug === params.slug)
+  const title = 'The Future of Dental Practice Management'
+  const description = 'Discover how modern dental practice management software is transforming the industry and improving patient care.'
+  const url = `${siteConfig.url}/blog/${params.slug}`
+  const datePublished = '2024-01-03T00:00:00.000Z'
+  const dateModified = '2024-01-03T00:00:00.000Z'
+  const author = 'Dentech Team'
+  const image = '/images/blog/future-of-dental-practice-management.jpg'
 
-  if (!article) {
-    return {}
-  }
-
-  const articleSchema = generateArticleSchema(
-    article.title,
-    article.description || article.excerpt || '',
-    article.image || '/images/blog-default.jpg',
-    article.imageCaption,
-    article.date,
-    article.lastModified,
-    article.author || 'Dentech Team'
-  )
-
-  const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: 'Home', item: baseUrl },
-    { name: 'Blog', item: `${baseUrl}/blog` },
-    { name: article.title, item: `${baseUrl}/blog/${article.slug}` },
-  ])
+  const schemas = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: title,
+      description,
+      datePublished,
+      dateModified,
+      author: {
+        '@type': 'Person',
+        name: author
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: siteConfig.name,
+        logo: {
+          '@type': 'ImageObject',
+          url: `${siteConfig.url}/images/logo.svg`
+        }
+      },
+      image: {
+        '@type': 'ImageObject',
+        url: `${siteConfig.url}${image}`
+      }
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: `${siteConfig.url}/`
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Blog',
+          item: `${siteConfig.url}/blog`
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: title,
+          item: url
+        }
+      ]
+    }
+  ]
 
   return {
-    title: article.title,
-    description: article.description || article.excerpt,
+    title: `${title} | Dentech Blog`,
+    description,
     openGraph: {
-      title: `${article.title} | Dentech Blog`,
-      description: article.description || article.excerpt,
+      title: `${title} | Dentech Blog`,
+      description,
+      url,
+      siteName: 'Dentech',
+      locale: 'en_US',
       type: 'article',
-      publishedTime: article.date,
-      modifiedTime: article.lastModified,
-      authors: article.author ? [article.author] : ['Dentech Team'],
-      url: `${baseUrl}/blog/${article.slug}`,
-      images: [
-        {
-          url: article.image || '/images/blog-default.jpg',
-          width: 1200,
-          height: 630,
-          alt: article.title,
-        },
-      ],
+      publishedTime: datePublished,
+      modifiedTime: dateModified,
+      authors: [author]
     },
     twitter: {
       card: 'summary_large_image',
-      title: article.title,
-      description: article.description || article.excerpt,
-      images: [article.image || '/images/blog-default.jpg'],
+      title: `${title} | Dentech Blog`,
+      description,
+      creator: '@dentech',
     },
     other: {
-      'script:ld+json': JSON.stringify([
-        articleSchema,
-        breadcrumbSchema
-      ])
+      'script:ld+json': JSON.stringify(schemas)
     }
   }
 }

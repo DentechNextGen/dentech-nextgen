@@ -5,11 +5,6 @@ export interface ArticleSchema extends BaseSchema {
   '@type': 'Article'
   headline: string
   description: string
-  image: {
-    '@type': 'ImageObject'
-    url: string
-    caption?: string
-  }
   datePublished: string
   dateModified?: string
   author: {
@@ -24,32 +19,35 @@ export interface ArticleSchema extends BaseSchema {
       url: string
     }
   }
+  image: {
+    '@type': 'ImageObject'
+    url: string
+    caption?: string
+  }
 }
 
-export function generateArticleSchema(
-  headline: string,
-  description: string,
-  imageUrl: string,
-  imageCaption: string | undefined,
-  datePublished: string,
-  dateModified: string | undefined,
-  authorName: string
-): ArticleSchema {
+export interface ArticleSchemaInput {
+  title: string
+  description: string
+  url: string
+  datePublished: string
+  dateModified?: string
+  author: string
+  image: string
+  imageCaption?: string
+}
+
+export function generateArticleSchema(input: ArticleSchemaInput): ArticleSchema {
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline,
-    description,
-    image: {
-      '@type': 'ImageObject',
-      url: `${siteConfig.url}${imageUrl}`,
-      caption: imageCaption
-    },
-    datePublished,
-    ...(dateModified && { dateModified }),
+    headline: input.title,
+    description: input.description,
+    datePublished: input.datePublished,
+    ...(input.dateModified && { dateModified: input.dateModified }),
     author: {
       '@type': 'Person',
-      name: authorName
+      name: input.author
     },
     publisher: {
       '@type': 'Organization',
@@ -58,6 +56,11 @@ export function generateArticleSchema(
         '@type': 'ImageObject',
         url: `${siteConfig.url}/images/logo.svg`
       }
+    },
+    image: {
+      '@type': 'ImageObject',
+      url: input.image.startsWith('http') ? input.image : `${siteConfig.url}${input.image}`,
+      ...(input.imageCaption && { caption: input.imageCaption })
     }
   }
 } 
