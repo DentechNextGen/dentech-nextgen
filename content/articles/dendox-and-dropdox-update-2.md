@@ -1,9 +1,9 @@
 ---
 title: DenDox and DropDox Update 2.0
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.jpg'
+authorImage: '/images/jane-kaminski-author.webp'
 desc: Dendox and DropDox brings you software enhancements and fixes!
-image: /images/dendox-and-dropdox-update-2.jpg
+image: /images/dendox-and-dropdox-update-2.webp
 alt: DenDox and DropDox Update 2.0
 createdAt: 03/13/2020
 updatedAt: 03/13/2020

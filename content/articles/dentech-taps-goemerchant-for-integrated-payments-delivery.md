@@ -1,9 +1,9 @@
 ---
 title: Dentech Taps GoEmerchant for Integrated Payments Delivery
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.jpg'
+authorImage: '/images/jane-kaminski-author.webp'
 desc: Dentech empowers dental practices with online payment acceptance.
-image: /images/dentech-taps-goemerchant-for-integrated-payments-delivery.jpg
+image: /images/dentech-taps-goemerchant-for-integrated-payments-delivery.webp
 alt: Dentech Taps GoEmerchant for Integrated Payments Delivery
 createdAt: 09/08/2020
 updatedAt: 09/08/2020

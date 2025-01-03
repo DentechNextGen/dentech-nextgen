@@ -13,7 +13,7 @@ export const defaultSEO = {
     description: 'Transform your dental practice with Dentech\'s comprehensive practice management software. Streamline operations, enhance patient care, and boost efficiency.',
     images: [
       {
-        url: `${siteConfig.url}/images/og-image.jpg`,
+        url: `${siteConfig.url}/images/og-image.webp`,
         width: 1200,
         height: 630,
         alt: 'Dentech Software Interface',

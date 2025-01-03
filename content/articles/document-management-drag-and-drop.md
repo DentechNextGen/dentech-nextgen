@@ -1,7 +1,7 @@
 ---
 title: Document Management Drag and Drop
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.jpg'
+authorImage: '/images/jane-kaminski-author.webp'
 desc: DenDox’s new drag and drop feature allows you to upload files by dragging them directly from your desktop or folder. Whether you are saving an image, filing a document or updating insurance, this feature provides a seamless file upload into DenDox.
 image: /images/document-management-drag-and-drop.webp
 alt: Document Management Drag and Drop

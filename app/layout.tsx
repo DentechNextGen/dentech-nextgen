@@ -1,5 +1,4 @@
-import { siteConfig } from '@/src/config'
-import { Poppins } from 'next/font/google'
+import { Poppins, Marcellus } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -12,13 +11,19 @@ const poppins = Poppins({
   display: 'swap',
 })
 
+const marcellus = Marcellus({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-marcellus',
+})
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={poppins.variable}>
+    <html lang="en" className={`${poppins.variable} ${marcellus.variable}`}>
       <head>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />

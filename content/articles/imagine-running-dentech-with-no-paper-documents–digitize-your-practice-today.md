@@ -1,7 +1,7 @@
 ---
 title: Imagine Running Dentech With No Paper Documents – Digitize Your Practice Today!
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.jpg'
+authorImage: '/images/jane-kaminski-author.webp'
 desc: Paper gets lost… files out of folders… patient records are put down and forgotten. It can be a mess! Plus, they take up so much space!
 image: /images/imagine-running-dentech-with-no-paper-documents–digitize-your-practice-today.webp
 alt: Imagine Running Dentech With No Paper Documents – Digitize Your Practice Today!

@@ -1,7 +1,7 @@
 ---
 title: Dentech Is Now Unlimited – Unlimited Employers and Insurance
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.jpg'
+authorImage: '/images/jane-kaminski-author.webp'
 desc: We want to keep things as simple as possible for our users with the up-and-coming new Dentech.
 image: /images/dentech-is-now-unlimited-unlimited-employers-and-insurance.webp
 alt: Dentech Is Now Unlimited – Unlimited Employers and Insurance

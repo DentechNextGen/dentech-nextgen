@@ -41,7 +41,7 @@ export default function CTA() {
           </div>
           <div className="relative mt-16 h-80 lg:mt-8">
             <Image
-              src="/images/background-hero.jpg"
+              src="/images/background-hero.webp"
               alt="Dentech Platform Interface"
               width={1824}
               height={1080}

@@ -89,7 +89,7 @@ export default function About() {
                 <div className="relative aspect-[4/3] lg:aspect-[3/4]">
                   <div className="relative h-full overflow-hidden rounded-2xl">
                     <Image 
-                      src="/images/jane-kaminski.jpg"
+                      src="/images/jane-kaminski.webp"
                       alt="Jane E. Kaminski"
                       fill
                       className="object-cover"

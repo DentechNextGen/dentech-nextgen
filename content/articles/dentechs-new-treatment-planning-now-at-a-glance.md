@@ -1,7 +1,7 @@
 ---
 title: Dentech’s NEW Treatment Planning — Now At A Glance!
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.jpg'
+authorImage: '/images/jane-kaminski-author.webp'
 desc: Here at Dentech, we understand that your principal focus is giving your patients the best treatment you can provide. Craft the perfect treatment plans for your patient with Dentech’s NEW Treatment Planning window!
 image: /images/dentechs-new-treatment-planning-now-at-a-glance.webp
 alt: Dentech’s NEW Treatment Planning — Now At A Glance!

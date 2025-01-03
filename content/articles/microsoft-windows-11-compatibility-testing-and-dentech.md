@@ -1,7 +1,7 @@
 ---
 title: Microsoft Windows 11 Compatibility Testing And Dentech
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.jpg'
+authorImage: '/images/jane-kaminski-author.webp'
 desc: We want to inform you that our team is currently testing our software’s compatibility with the new Microsoft Windows 11.
 image: /images/microsoft-windows-11-compatibility-testing-and-dentech.webp
 alt: Microsoft Windows 11 Compatibility Testing And Dentech

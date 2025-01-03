@@ -1,9 +1,9 @@
 ---
 title: Dentech Announces New Document Management Solution
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.jpg'
+authorImage: '/images/jane-kaminski-author.webp'
 desc: Dentech announced today the official release of their new document management solution, DenDox.
-image: /images/dentech-announces-new-document-management-solution.jpg
+image: /images/dentech-announces-new-document-management-solution.webp
 alt: Dentech Announces New Document Management Solution
 createdAt: 05/01/2019
 updatedAt: 05/01/2019

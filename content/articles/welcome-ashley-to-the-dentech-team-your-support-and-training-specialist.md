@@ -1,7 +1,7 @@
 ---
 title: Welcome Ashley To The Dentech Team! Your Support and Training Specialist
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.jpg'
+authorImage: '/images/jane-kaminski-author.webp'
 desc: I feel the excitement for the next generation of Dentech’s Practice Management Software from many of you in our demo sessions. So many questions asked, so many possibilities imagined with what you can do with the new Dentech. As we release more features, I realize that we need more help to properly re-educate all of our customers on the ins and outs of our brand new interface.
 image: /images/welcome-ashley-to-the-dentech-team-your-support-and-training-specialist.webp
 alt: Welcome Ashley To The Dentech Team! Your Support and Training Specialist

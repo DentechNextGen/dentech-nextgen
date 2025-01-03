@@ -1,9 +1,9 @@
 ---
 title: Check Patients In and Out of Appointments Smoothly with Dentech’s Appointment Monitor!
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.jpg'
+authorImage: '/images/jane-kaminski-author.webp'
 desc: Time is valuable for both you and your patients! Keeping track of the day-to-day appointments can get a little chaotic if you don’t have an efficient system in place. We have something that will help everyone in your practice manage your patient flow effortlessly.
-image: /images/check-patients-in-and-out-of-appointments-smoothly-with-dentechs-appointment-monitor.jpg
+image: /images/check-patients-in-and-out-of-appointments-smoothly-with-dentechs-appointment-monitor.webp
 alt: Check Patients In and Out of Appointments Smoothly with Dentech’s Appointment Monitor!
 createdAt: 11/10/2021
 updatedAt: 11/10/2021
