@@ -3,6 +3,7 @@ import { Poppins } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import GoogleTagManager from '@/components/GoogleTagManager'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -23,8 +24,9 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       </head>
       <body className="min-h-screen flex flex-col font-sans antialiased bg-white overflow-x-hidden">
+        <GoogleTagManager />
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 pt-32">{children}</main>
         <Footer />
       </body>
     </html>

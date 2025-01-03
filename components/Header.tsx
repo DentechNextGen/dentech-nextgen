@@ -10,7 +10,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header>
+    <header className="fixed top-0 left-0 right-0 z-50">
       {/* Top Bar */}
       <div className="bg-gray-950">
         <div className="mx-auto flex h-8 max-w-7xl items-center justify-end px-4">
@@ -34,16 +34,16 @@ export default function Header() {
       </div>
 
       {/* Main Navigation */}
-      <nav className="bg-white">
+      <nav className="bg-white shadow">
         <div className="mx-auto max-w-7xl px-4">
-          <div className="flex h-16 items-center justify-between">
+          <div className="flex h-24 items-center justify-between">
             <Link href="/" className="flex-shrink-0">
               <Image
                 src="/icons/logo.svg"
                 alt={siteConfig.name}
-                width={150}
-                height={50}
-                className="h-8 w-auto"
+                width={200}
+                height={67}
+                className="h-12 w-auto"
                 priority
               />
             </Link>
@@ -66,14 +66,14 @@ export default function Header() {
                 <Link
                   key={item.title}
                   href={item.href}
-                  className="text-sm font-semibold text-gray-900 hover:text-lime-600"
+                  className="text-base font-semibold text-gray-900 hover:text-lime-600"
                 >
                   {item.title}
                 </Link>
               ))}
               <Link
                 href="/schedule"
-                className="text-sm font-semibold text-white bg-lime-600 px-3 py-2 rounded hover:bg-lime-500"
+                className="text-base font-semibold text-white bg-lime-600 px-4 py-2.5 rounded hover:bg-lime-500"
               >
                 Schedule Demo
               </Link>
