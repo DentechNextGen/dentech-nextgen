@@ -10,16 +10,16 @@ export async function generateStaticParams() {
   }))
 }
 
-type BlogPostProps = {
-  params: {
+interface BlogPostProps {
+  params: Promise<{
     slug: string
-  }
-  searchParams?: { [key: string]: string | string[] | undefined }
+  }>
 }
 
 export default async function BlogPost({ params }: BlogPostProps) {
+  const { slug } = await params
   const articles = await getAllArticles()
-  const article = articles.find(article => article.slug === params.slug)
+  const article = articles.find(article => article.slug === slug)
 
   if (!article) {
     notFound()
