@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import { ClipboardDocumentCheckIcon, CurrencyDollarIcon, PhotoIcon, HeartIcon } from '@heroicons/react/24/outline'
+import FiveStars from '@/app/components/FiveStars'
 
 export default function VoiceActivatedCharting() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
@@ -102,6 +103,7 @@ export default function VoiceActivatedCharting() {
               {/* Content */}
               <div className="mt-16 lg:mt-0 lg:col-start-2">
                 <div className="text-left">
+                  <FiveStars />
                   <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
                     Voice-Activated Charting
                   </h1>
@@ -130,7 +132,7 @@ export default function VoiceActivatedCharting() {
                     Zooming and Panning - Exclusive Dentech feature for detailed zooming and panning within the exam focus window.
                   </p>
                   <p className="mt-4 text-lg leading-8 text-gray-300">
-                    <a href="/docs/Dentech-System-Requirements-2024.pdf" className="text-primary-400 hover:text-primary-300">
+                    <a href="/docs/Dentech-System-Requirements-2024.pdf" className="text-lime-400 hover:text-lime-300 underline">
                       View System Requirements →
                     </a>
                   </p>
@@ -140,6 +142,12 @@ export default function VoiceActivatedCharting() {
                       className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                     >
                       Schedule Demo
+                    </a>
+                    <a
+                      href="/support"
+                      className="rounded-md ring-1 ring-white px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                    >
+                      Contact Us
                     </a>
                   </div>
                 </div>
