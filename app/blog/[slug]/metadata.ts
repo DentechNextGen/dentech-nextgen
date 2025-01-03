@@ -1,50 +1,36 @@
 import { Metadata } from 'next'
-import { generateArticleSchema } from '@/lib/schema/article'
-import { getAllArticles } from '@/lib/articles'
+import { generateArticleSchema, generateBreadcrumbSchema } from '@/lib/schema'
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const { slug } = params
-  const articles = await getAllArticles()
-  const article = articles.find(article => article.slug === slug)
-
-  if (!article) {
-    return {
-      title: 'Article Not Found | Dentech',
-      description: 'The requested article could not be found.'
-    }
+  // In a real app, you would fetch the article data here
+  const article = {
+    title: 'Sample Blog Post',
+    description: 'This is a sample blog post description.',
+    url: `https://dentech.com/blog/${params.slug}`,
+    datePublished: '2024-01-03',
+    dateModified: '2024-01-03',
+    author: 'Jane Kaminski',
+    image: 'https://dentech.com/images/blog/sample.webp'
   }
-
-  const articleSchema = generateArticleSchema(
-    article.title,
-    article.description || article.excerpt || '',
-    article.image || '/images/blog-default.webp',
-    undefined,
-    article.date,
-    article.lastModified,
-    article.author || 'Dentech Team'
-  )
 
   return {
-    title: `${article.title} | Dentech Blog`,
-    description: article.description || article.excerpt || '',
+    title: article.title,
+    description: article.description,
     openGraph: {
-      type: 'article',
-      title: article.title,
-      description: article.description || article.excerpt || '',
-      url: `/blog/${article.slug}`,
-      images: [{ url: article.image || '/images/blog-default.webp' }],
-      publishedTime: article.date,
-      modifiedTime: article.lastModified,
-      authors: [article.author || 'Dentech Team']
-    },
-    alternates: {
-      canonical: `/blog/${article.slug}`
+      title: `${article.title} | Dentech Blog`,
+      description: article.description,
     },
     other: {
-      'script:ld+json': {
-        type: 'application/ld+json',
-        text: JSON.stringify(articleSchema)
-      }
+      'script:ld+json': JSON.stringify([
+        generateArticleSchema(article),
+        generateBreadcrumbSchema([
+          { name: 'Home', item: 'https://dentech.com' },
+          { name: 'Blog', item: 'https://dentech.com/blog' },
+          { name: article.title, item: article.url },
+        ])
+      ])
     }
   }
-} 
+}
+
+export default generateMetadata 

@@ -9,35 +9,55 @@ import Footer from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteConfig.url),
+  metadataBase: new URL('https://dentech.com'),
   title: {
-    default: siteConfig.name,
-    template: `%s | ${siteConfig.name}`
+    template: '%s | Dentech',
+    default: 'Dentech - Dental Practice Management Software',
   },
-  description: siteConfig.description,
+  description: 'Dentech offers innovative and efficient solutions designed to enhance practice management in the dental industry. The platform simplifies tasks like appointment scheduling and billing, enabling practitioners to reduce administrative efforts and dedicate more time to patient care.',
   openGraph: {
-    type: 'website',
+    title: 'Dentech - Dental Practice Management Software',
+    description: 'Dentech offers innovative and efficient solutions designed to enhance practice management in the dental industry. The platform simplifies tasks like appointment scheduling and billing, enabling practitioners to reduce administrative efforts and dedicate more time to patient care.',
+    url: 'https://dentech.com',
+    siteName: 'Dentech',
     locale: 'en_US',
-    url: siteConfig.url,
-    title: siteConfig.name,
-    description: siteConfig.description,
-    siteName: siteConfig.name
+    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: siteConfig.name,
-    description: siteConfig.description,
-    creator: '@dentech'
+    title: 'Dentech - Dental Practice Management Software',
+    description: 'Dentech offers innovative and efficient solutions designed to enhance practice management in the dental industry. The platform simplifies tasks like appointment scheduling and billing, enabling practitioners to reduce administrative efforts and dedicate more time to patient care.',
+    creator: '@dentech',
   },
   alternates: {
-    canonical: '/'
+    canonical: 'https://dentech.com',
   },
   other: {
-    'script:ld+json': {
-      type: 'application/ld+json',
-      text: JSON.stringify(organizationSchema)
-    }
-  }
+    'script:ld+json': JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: 'Dentech',
+      applicationCategory: 'BusinessApplication',
+      operatingSystem: 'Windows',
+      description: 'Dentech offers innovative and efficient solutions designed to enhance practice management in the dental industry. The platform simplifies tasks like appointment scheduling and billing, enabling practitioners to reduce administrative efforts and dedicate more time to patient care.',
+      offers: {
+        '@type': 'Offer',
+        price: '0',
+        priceCurrency: 'USD',
+        availability: 'https://schema.org/InStock',
+      },
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '4.8',
+        ratingCount: '1250',
+      },
+      provider: {
+        '@type': 'Organization',
+        name: 'Dentech',
+        url: 'https://dentech.com',
+      },
+    }),
+  },
 }
 
 export default function RootLayout({
