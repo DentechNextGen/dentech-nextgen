@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
-import { generateSoftwareSchema, generateBreadcrumbSchema } from '@/lib/schema'
+import { practiceManagementSchema, generateBreadcrumbSchema } from '@/lib/schema'
+import { siteConfig } from '@/src/config'
 
 const metadata: Metadata = {
   title: 'Practice Management Software',
@@ -7,14 +8,11 @@ const metadata: Metadata = {
   openGraph: {
     title: 'Practice Management Software | Dentech',
     description: 'Streamline your dental practice with Dentech\'s comprehensive practice management software. Features include appointment scheduling, billing, insurance processing, and advanced financial reporting.',
+    url: 'https://dentech.com/features/practice-management',
   },
   other: {
     'script:ld+json': JSON.stringify([
-      generateSoftwareSchema(
-        'Dentech Practice Management',
-        'Streamline your dental practice with Dentech\'s comprehensive practice management software. Features include appointment scheduling, billing, insurance processing, and advanced financial reporting.',
-        'https://dentech.com/features/practice-management'
-      ),
+      practiceManagementSchema,
       generateBreadcrumbSchema([
         { name: 'Home', item: 'https://dentech.com' },
         { name: 'Features', item: 'https://dentech.com/features' },

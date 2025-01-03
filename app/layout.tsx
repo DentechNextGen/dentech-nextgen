@@ -9,7 +9,7 @@ import Footer from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://dentech.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://dentech.com'),
   title: {
     template: '%s | Dentech',
     default: 'Dentech - Dental Practice Management Software',
@@ -30,33 +30,10 @@ export const metadata: Metadata = {
     creator: '@dentech',
   },
   alternates: {
-    canonical: 'https://dentech.com',
+    canonical: '/',
   },
   other: {
-    'script:ld+json': JSON.stringify({
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'Dentech',
-      applicationCategory: 'BusinessApplication',
-      operatingSystem: 'Windows',
-      description: 'Dentech offers innovative and efficient solutions designed to enhance practice management in the dental industry. The platform simplifies tasks like appointment scheduling and billing, enabling practitioners to reduce administrative efforts and dedicate more time to patient care.',
-      offers: {
-        '@type': 'Offer',
-        price: '0',
-        priceCurrency: 'USD',
-        availability: 'https://schema.org/InStock',
-      },
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '4.8',
-        ratingCount: '1250',
-      },
-      provider: {
-        '@type': 'Organization',
-        name: 'Dentech',
-        url: 'https://dentech.com',
-      },
-    }),
+    'script:ld+json': JSON.stringify(organizationSchema),
   },
 }
 

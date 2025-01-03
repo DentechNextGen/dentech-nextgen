@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import { generateBreadcrumbSchema } from '@/lib/schema'
+import { siteConfig } from '@/src/config'
 
 const metadata: Metadata = {
   title: 'Contact Dentech',
@@ -7,6 +8,7 @@ const metadata: Metadata = {
   openGraph: {
     title: 'Contact Us | Dentech',
     description: 'Get in touch with Dentech\'s team for sales inquiries, technical support, or general questions about our dental practice management software.',
+    url: 'https://dentech.com/contact'
   },
   other: {
     'script:ld+json': JSON.stringify([
@@ -17,22 +19,15 @@ const metadata: Metadata = {
         description: 'Get in touch with Dentech\'s team for sales inquiries, technical support, or general questions.',
         publisher: {
           '@type': 'Organization',
-          name: 'Dentech',
+          name: siteConfig.name,
           url: 'https://dentech.com'
         },
         mainEntity: {
           '@type': 'Organization',
-          name: 'Dentech',
-          telephone: '+1-800-DENTECH',
-          email: 'info@dentech.com',
-          address: {
-            '@type': 'PostalAddress',
-            streetAddress: '123 Dental Street',
-            addressLocality: 'San Francisco',
-            addressRegion: 'CA',
-            postalCode: '94105',
-            addressCountry: 'US'
-          }
+          name: siteConfig.name,
+          telephone: siteConfig.contact.phone,
+          email: siteConfig.contact.email,
+          address: siteConfig.contact.address
         }
       },
       generateBreadcrumbSchema([

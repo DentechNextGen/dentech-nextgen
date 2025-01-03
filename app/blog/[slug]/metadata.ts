@@ -1,33 +1,63 @@
 import { Metadata } from 'next'
 import { generateArticleSchema, generateBreadcrumbSchema } from '@/lib/schema'
+import { getAllArticles } from '@/lib/articles'
+
+const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dentech.com'
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  // In a real app, you would fetch the article data here
-  const article = {
-    title: 'Sample Blog Post',
-    description: 'This is a sample blog post description.',
-    url: `https://dentech.com/blog/${params.slug}`,
-    datePublished: '2024-01-03',
-    dateModified: '2024-01-03',
-    author: 'Jane Kaminski',
-    image: 'https://dentech.com/images/blog/sample.webp'
+  const articles = await getAllArticles()
+  const article = articles.find(article => article.slug === params.slug)
+
+  if (!article) {
+    return {}
   }
+
+  const articleSchema = generateArticleSchema(
+    article.title,
+    article.description || article.excerpt || '',
+    article.image || '/images/blog-default.jpg',
+    article.imageCaption,
+    article.date,
+    article.lastModified,
+    article.author || 'Dentech Team'
+  )
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', item: baseUrl },
+    { name: 'Blog', item: `${baseUrl}/blog` },
+    { name: article.title, item: `${baseUrl}/blog/${article.slug}` },
+  ])
 
   return {
     title: article.title,
-    description: article.description,
+    description: article.description || article.excerpt,
     openGraph: {
       title: `${article.title} | Dentech Blog`,
-      description: article.description,
+      description: article.description || article.excerpt,
+      type: 'article',
+      publishedTime: article.date,
+      modifiedTime: article.lastModified,
+      authors: article.author ? [article.author] : ['Dentech Team'],
+      url: `${baseUrl}/blog/${article.slug}`,
+      images: [
+        {
+          url: article.image || '/images/blog-default.jpg',
+          width: 1200,
+          height: 630,
+          alt: article.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: article.title,
+      description: article.description || article.excerpt,
+      images: [article.image || '/images/blog-default.jpg'],
     },
     other: {
       'script:ld+json': JSON.stringify([
-        generateArticleSchema(article),
-        generateBreadcrumbSchema([
-          { name: 'Home', item: 'https://dentech.com' },
-          { name: 'Blog', item: 'https://dentech.com/blog' },
-          { name: article.title, item: article.url },
-        ])
+        articleSchema,
+        breadcrumbSchema
       ])
     }
   }
