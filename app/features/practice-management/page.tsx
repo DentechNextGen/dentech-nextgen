@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { PhoneIcon, CalendarIcon, ClipboardDocumentCheckIcon, CurrencyDollarIcon, ChartBarSquareIcon, CogIcon } from '@heroicons/react/24/outline'
 import FiveStars from '@/app/components/FiveStars'
 
-export default function PracticeManagement() {
+export default function PracticeManagementPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   const galleryImages = [
@@ -50,7 +50,7 @@ export default function PracticeManagement() {
     },
     {
       title: "And More",
-      description: "Track activity on your system for each employee carrying out work with trackable HIPPA logs. Keep track of employees&apos; working hours and create reports of each employee&apos;s hours with Time Clock. Easily add notes to every patient file with Clinical Notes.",
+      description: "Track activity on your system for each employee carrying out work with trackable HIPPA logs. Keep track of employees' working hours and create reports of each employee's hours with Time Clock. Easily add notes to every patient file with Clinical Notes.",
       img: "/images/features/andmore.webp",
       icon: "CogIcon",
     },
@@ -111,13 +111,13 @@ export default function PracticeManagement() {
                     Dental Practice Management Software Done Right
                   </p>
                   <p className="mt-4 text-lg leading-8 text-gray-300">
-                    Our system offers advanced financial and patient reports, all conveniently housed in one place. With our easy insurance processing features, managing your patients&apos; insurance claims becomes a breeze.
+                    Our system offers advanced financial and patient reports, all conveniently housed in one place. With our easy insurance processing features, managing your patients' insurance claims becomes a breeze.
                   </p>
                   <p className="mt-4 text-lg leading-8 text-gray-300">
                     The appointment scheduler is designed to make planning your day completely effortless. Our integrated employee time clock also provides extensive reports, making payroll and accounting tasks smoother than ever.
                   </p>
                   <p className="mt-4 text-lg leading-8 text-gray-300">
-                    Prioritize your practice&apos;s security with features like user logs, write-off limits, and more. Experience the convenience with our one-click access to scheduling, insurance verification, and so much more!
+                    Prioritize your practice's security with features like user logs, write-off limits, and more. Experience the convenience with our one-click access to scheduling, insurance verification, and so much more!
                   </p>
                   <p className="mt-4 text-lg leading-8 text-gray-300">
                     <a href="/docs/Dentech-System-Requirements-2024.pdf" className="text-lime-400 hover:text-lime-300 underline">
