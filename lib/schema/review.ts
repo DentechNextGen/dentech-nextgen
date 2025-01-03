@@ -1,5 +1,5 @@
-import { BaseSchema } from '.'
-import { siteConfig } from '@/src/config'
+import { BaseSchema } from './index.js'
+import { siteConfig } from '../../src/config/index.js'
 
 export interface ReviewSchema extends BaseSchema {
   '@type': 'Review'

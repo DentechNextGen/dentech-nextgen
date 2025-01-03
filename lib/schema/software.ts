@@ -1,5 +1,6 @@
-import { BaseSchema } from '.'
-import { siteConfig } from '@/src/config'
+import { BaseSchema } from './index.js'
+import { siteConfig } from '../../src/config/index.js'
+import { dentechAggregateRating, generateSoftwareWithReviewSchema } from './review.js'
 
 export interface SoftwareApplicationSchema extends BaseSchema {
   '@type': 'SoftwareApplication'
@@ -48,7 +49,7 @@ export function generateSoftwareSchema(
 }
 
 // Pre-defined schemas for each feature
-export const practiceManagementSchema = generateSoftwareSchema(
+export const practiceManagementSchema = generateSoftwareWithReviewSchema(
   'Dentech Practice Management',
   'Comprehensive dental practice management software with advanced financial reporting, insurance processing, and appointment scheduling.',
   [
@@ -61,10 +62,11 @@ export const practiceManagementSchema = generateSoftwareSchema(
   ],
   [
     { url: '/images/features/practice-management.webp', caption: 'Practice Management Dashboard' }
-  ]
+  ],
+  dentechAggregateRating
 )
 
-export const voiceChartingSchema = generateSoftwareSchema(
+export const voiceChartingSchema = generateSoftwareWithReviewSchema(
   'Dentech Voice-Activated Charting',
   'Revolutionary voice-controlled charting system for hands-free dental practice operation.',
   [
@@ -76,10 +78,11 @@ export const voiceChartingSchema = generateSoftwareSchema(
   ],
   [
     { url: '/images/services/voice-activated-charting.webp', caption: 'Voice-Activated Charting Interface' }
-  ]
+  ],
+  dentechAggregateRating
 )
 
-export const documentManagementSchema = generateSoftwareSchema(
+export const documentManagementSchema = generateSoftwareWithReviewSchema(
   'Dentech Document Management',
   'Secure digital document management system for dental practices.',
   [
@@ -91,10 +94,11 @@ export const documentManagementSchema = generateSoftwareSchema(
   ],
   [
     { url: '/images/services/document-management.webp', caption: 'Document Management System' }
-  ]
+  ],
+  dentechAggregateRating
 )
 
-export const patientCommunicationSchema = generateSoftwareSchema(
+export const patientCommunicationSchema = generateSoftwareWithReviewSchema(
   'Dentech Patient Communication',
   'Integrated patient communication solution that reduces no-shows up to 50% with automated reminders and increases revenue with built-in SMS and email marketing.',
   [
@@ -107,10 +111,11 @@ export const patientCommunicationSchema = generateSoftwareSchema(
   ],
   [
     { url: '/images/services/patient-communication.webp', caption: 'Patient Communication Dashboard' }
-  ]
+  ],
+  dentechAggregateRating
 )
 
-export const digitalImagingSchema = generateSoftwareSchema(
+export const digitalImagingSchema = generateSoftwareWithReviewSchema(
   'XDR Digital Imaging',
   'Advanced dental imaging solution featuring digital sensors, cameras, and intuitive software for the ultimate dental imaging experience.',
   [
@@ -123,10 +128,11 @@ export const digitalImagingSchema = generateSoftwareSchema(
   ],
   [
     { url: '/images/services/digital-imaging.webp', caption: 'Digital Imaging Interface' }
-  ]
+  ],
+  dentechAggregateRating
 )
 
-export const patientCheckInSchema = generateSoftwareSchema(
+export const patientCheckInSchema = generateSoftwareWithReviewSchema(
   'Dentech Patient Check-In',
   'Contact-free patient check-in kiosk and monitor system that streamlines your dental practice check-ins and improves efficiency.',
   [
@@ -139,10 +145,11 @@ export const patientCheckInSchema = generateSoftwareSchema(
   ],
   [
     { url: '/images/services/patient-check-in.webp', caption: 'Patient Check-In System' }
-  ]
+  ],
+  dentechAggregateRating
 )
 
-export const eservicesSchema = generateSoftwareSchema(
+export const eservicesSchema = generateSoftwareWithReviewSchema(
   'Dentech Eservices',
   'Comprehensive suite of electronic services designed to simplify and scale your dental practice while reducing overhead costs.',
   [
@@ -155,5 +162,6 @@ export const eservicesSchema = generateSoftwareSchema(
   ],
   [
     { url: '/images/services/eservices.webp', caption: 'Eservices Dashboard' }
-  ]
+  ],
+  dentechAggregateRating
 ) 
