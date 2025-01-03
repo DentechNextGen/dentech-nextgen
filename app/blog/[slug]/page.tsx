@@ -10,10 +10,11 @@ export async function generateStaticParams() {
   }))
 }
 
-interface BlogPostProps {
+type BlogPostProps = {
   params: {
     slug: string
   }
+  searchParams?: { [key: string]: string | string[] | undefined }
 }
 
 export default async function BlogPost({ params }: BlogPostProps) {
