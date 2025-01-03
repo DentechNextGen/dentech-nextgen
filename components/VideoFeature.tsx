@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import { 
   ClockIcon,
   UserGroupIcon,
@@ -32,31 +31,56 @@ const features = [
 
 export default function VideoFeature() {
   return (
-    <div className="bg-white py-12">
-      <div className="mx-auto max-w-7xl px-4">
-        <a 
-          href="https://www.youtube.com/watch?v=2Xgow_I0Eh0" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="block relative aspect-video w-full group"
-        >
-          <Image
-            src="https://img.youtube.com/vi/2Xgow_I0Eh0/maxresdefault.jpg"
-            alt="Watch Dentech Video"
-            fill
-            sizes="100vw"
-            className="object-cover rounded-lg"
-          />
-          <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
-            <svg 
-              className="w-16 h-16 text-white opacity-90 group-hover:opacity-100 transition-opacity" 
-              fill="currentColor" 
-              viewBox="0 0 24 24"
-            >
-              <path d="M8 5v14l11-7z" />
-            </svg>
+    <div className="bg-gray-950 py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+          <div className="lg:pr-8 lg:pt-4">
+            <div className="lg:max-w-lg">
+              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                What Can Dentech Do For You
+              </h2>
+              <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none">
+                {features.map((feature) => (
+                  <div key={feature.title} className="relative pl-9">
+                    <dt className="inline font-semibold text-white">
+                      <feature.icon className="absolute left-0 top-1 h-5 w-5 text-lime-500" aria-hidden="true" />
+                      {feature.title}
+                    </dt>
+                    <dd className="inline ml-1">
+                      {feature.description}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
           </div>
-        </a>
+          <div className="flex flex-col gap-8">
+            <iframe
+              className="w-full aspect-video rounded-xl shadow-xl ring-1 ring-white/10"
+              src="https://www.youtube.com/embed/2Xgow_I0Eh0?si=mLlNKiHPi-2HQeHy"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+            <div className="grid grid-cols-2 gap-4">
+              <Image
+                src="/images/practice-management-1.webp"
+                alt="Practice Management Feature 1"
+                width={500}
+                height={300}
+                className="rounded-xl shadow-xl ring-1 ring-white/10"
+              />
+              <Image
+                src="/images/practice-management-2.webp"
+                alt="Practice Management Feature 2"
+                width={500}
+                height={300}
+                className="rounded-xl shadow-xl ring-1 ring-white/10"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
