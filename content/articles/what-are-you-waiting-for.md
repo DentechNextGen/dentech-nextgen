@@ -1,7 +1,7 @@
 ---
 title: “What are you waiting for?”
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.jpg'
+authorImage: '/images/jane-kaminski-author.webp'
 desc: Digital Sensors. Digital dental technology was first introduced in the late eighties and has made a slow and steady transition from traditional film
 image: /images/what-are-you-waiting-for.webp
 alt: “What are you waiting for?”

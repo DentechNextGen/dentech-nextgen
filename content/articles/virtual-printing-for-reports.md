@@ -1,7 +1,7 @@
 ---
 title: Virtual Printing for Reports
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.jpg'
+authorImage: '/images/jane-kaminski-author.webp'
 desc: Treat the DenDox virtual printer as you would any other installed printer on your workstation.
 image: /images/virtual-printing-for-reports.webp
 alt: Virtual Printing for Reports

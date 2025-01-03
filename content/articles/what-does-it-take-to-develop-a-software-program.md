@@ -1,7 +1,7 @@
 ---
 title: What Does It Take To Develop a Software Program?
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.jpg'
+authorImage: '/images/jane-kaminski-author.webp'
 desc: What Does It Take To Develop a Software Program? The answer lies in exactly what you want the end product to be. Let’s use Dentech as an example - With 4 decades of experience, we have the most features out of any dental software application on the market to date. Taking all of those features onto a new platform is a time consuming task.
 image: /images/what-does-it-take-to-develop-a-software-program.webp
 alt: What Does It Take To Develop a Software Program?

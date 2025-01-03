@@ -1,9 +1,9 @@
 ---
 title: Apteryx XrayVision V4 Sunsetted – Don’t Procrastinate on Upgrading!
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.jpg'
+authorImage: '/images/jane-kaminski-author.webp'
 desc: Apteryx has ceased ALL updates to Apteryx Xray Vision V4 on June 1st, 2023**, including critical security updates and system maintenance. This means that any bugs or critical security errors will **NOT** be rectified by Apteryx. Continued use of Apteryx Xray Vision V4 may inadvertently expose your practice to unforeseen technical difficulties.
-image: /images/apteryx-xrayvision-v4-sunsetted–dont-procrastinate-on-upgrading.jpg
+image: /images/apteryx-xrayvision-v4-sunsetted–dont-procrastinate-on-upgrading.webp
 alt: Apteryx XrayVision V4 Sunsetted – Don’t Procrastinate on Upgrading!
 createdAt: 09/01/2023
 updatedAt: 09/01/2023

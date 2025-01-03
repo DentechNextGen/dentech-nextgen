@@ -1,7 +1,7 @@
 ---
 title: “We are a Paperless Office”
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.jpg'
+authorImage: '/images/jane-kaminski-author.webp'
 desc: Document Management Solution. From speaking with several dental practices it is apparent that if a dental office is chartless then that defines them as a “paperless office.” In this case study we explore what defines a “paperless office” and the benefits of becoming a truly “paperless office.”
 image: /images/we-are-a-paperless-office.webp
 alt: “We are a Paperless Office”

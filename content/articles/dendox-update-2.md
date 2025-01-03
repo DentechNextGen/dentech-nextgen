@@ -1,7 +1,7 @@
 ---
 title: DenDox Update 2.1
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.jpg'
+authorImage: '/images/jane-kaminski-author.webp'
 desc: Here are the enhancements to the Dendox Software for our version 2.1.
 image: /images/dendox-update-21.webp
 alt: DenDox Update 2.1

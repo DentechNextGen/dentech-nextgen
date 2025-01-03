@@ -7,12 +7,12 @@ export default function HardwareSolutions() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   const galleryImages = [
-    'monitor.jpg',
-    'sensors.jpg',
-    'server.jpg',
-    'itservices.jpg',
-    'firewall.jpg',
-    'integration.jpg'
+    'services/hardware-solutions.webp',
+    'monitor.webp',
+    'sensors.webp',
+    'server.webp',
+    'itservices.webp',
+    'firewall.webp'
   ]
 
   return (
@@ -104,39 +104,39 @@ export default function HardwareSolutions() {
               {[
                 {
                   title: "Workstations",
-                  description: "High-performance computers optimized for dental practice management software.",
-                  image: "monitor.jpg"
+                  description: "High-performance computers specifically configured for dental practice management software.",
+                  image: "workstations.webp"
                 },
                 {
                   title: "Servers",
-                  description: "Reliable servers for secure data storage and practice management.",
-                  image: "server.jpg"
+                  description: "Secure, reliable servers for data storage and practice management with automated backups.",
+                  image: "servers.webp"
                 },
                 {
                   title: "Networking",
-                  description: "Complete networking solutions including routers, switches, and wireless access points.",
-                  image: "firewall.jpg"
+                  description: "Complete networking solutions including secure routers, switches, and wireless access points.",
+                  image: "networking.webp"
                 },
                 {
-                  title: "Imaging Equipment",
-                  description: "Digital sensors, cameras, and other imaging hardware for dental diagnostics.",
-                  image: "sensors.jpg"
+                  title: "Digital Imaging",
+                  description: "State-of-the-art digital sensors, cameras, and imaging equipment for precise diagnostics.",
+                  image: "digital-imaging.webp"
                 },
                 {
-                  title: "Security Hardware",
-                  description: "Physical security solutions including firewalls and backup devices.",
-                  image: "itservices.jpg"
+                  title: "Security Solutions",
+                  description: "Comprehensive security hardware including firewalls, encryption devices, and backup systems.",
+                  image: "security.webp"
                 },
                 {
-                  title: "Integration",
-                  description: "Seamless integration of all hardware components with our software solutions.",
-                  image: "integration.jpg"
+                  title: "Support Services",
+                  description: "24/7 hardware support and maintenance services to keep your practice running smoothly.",
+                  image: "support.webp"
                 }
               ].map((feature, index) => (
                 <div key={index} className="flex flex-col">
                   <div className="relative aspect-square overflow-hidden rounded-lg mb-6 border border-gray-200">
                     <Image
-                      src={`/images/${feature.image}`}
+                      src={`/images/features/${feature.image}`}
                       alt={feature.title}
                       fill
                       className="object-cover"

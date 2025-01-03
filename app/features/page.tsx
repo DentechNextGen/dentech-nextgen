@@ -8,55 +8,55 @@ export default function Features() {
     {
       title: 'Practice Management',
       description: 'Streamline your dental practice operations with our comprehensive management solution. Our system offers advanced financial and patient reports, insurance processing, and appointment scheduling, all conveniently housed in one place.',
-      image: 'practice-management-1.webp',
+      image: 'services/practice-management.webp',
       href: '/features/practice-management'
     },
     {
       title: 'Digital Imaging',
       description: 'Advanced imaging solutions for modern dentistry with unprecedented clarity and efficiency. Capture, store, and analyze dental images with state-of-the-art technology integrated seamlessly with your practice management software.',
-      image: 'sensors.jpg',
+      image: 'services/digital-imaging.webp',
       href: '/features/digital-imaging'
     },
     {
       title: 'Patient Check-In',
       description: 'Digital check-in system that streamlines patient registration and reduces wait times. Our solution includes digital forms, patient history tracking, and insurance verification to create a smooth, paperless check-in experience.',
-      image: 'kiosk.jpg',
+      image: 'services/patient-check-in.webp',
       href: '/features/patient-check-in'
     },
     {
       title: 'Voice-Activated Charting',
       description: 'Revolutionary voice-controlled charting system for hands-free operation. Chart patient exams swiftly with voice commands, saving time and improving efficiency while maintaining accurate patient records.',
-      image: 'voice-graphics-1.webp',
+      image: 'services/voice-activated-charting.webp',
       href: '/features/voice-activated-charting'
     },
     {
       title: 'Document Management',
       description: 'Secure digital document management for all your practice needs. Go paperless with our comprehensive system that allows you to store, access, and manage all your practice documents digitally with enhanced security.',
-      image: 'files.jpg',
+      image: 'services/document-management.webp',
       href: '/features/document-management'
     },
     {
       title: 'Patient Communication',
       description: 'Enhance patient engagement with automated reminders and communication tools. Keep your patients informed and engaged with automated appointment reminders, treatment updates, and secure messaging.',
-      image: 'reminders.jpg',
+      image: 'services/patient-communication.webp',
       href: '/features/patient-communication'
     },
     {
       title: 'Eservices',
       description: 'Digital solutions for modern dental practices, from online scheduling to digital forms. Our eservices platform brings together all the digital tools you need, including online payments and electronic claims processing.',
-      image: 'eservices-graphics-1.webp',
+      image: 'services/eservices.webp',
       href: '/features/eservices'
     },
     {
       title: 'Managed Services',
       description: 'Complete IT support and maintenance for your dental practice. Our managed services team provides proactive monitoring, security management, and technical support to keep your practice running smoothly.',
-      image: 'itservices.jpg',
+      image: 'services/managed-services.webp',
       href: '/features/managed-services'
     },
     {
       title: 'Hardware Solutions',
       description: 'Complete hardware solutions designed specifically for dental practices. From workstations to servers, we provide and support all the hardware your practice needs, ensuring compatibility and optimal performance.',
-      image: 'monitor.jpg',
+      image: 'services/hardware-solutions.webp',
       href: '/features/hardware-solutions'
     }
   ]

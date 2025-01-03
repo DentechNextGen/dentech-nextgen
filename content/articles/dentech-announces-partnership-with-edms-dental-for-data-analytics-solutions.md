@@ -1,9 +1,9 @@
 ---
 title: Dentech Announces Partnership With EDMS Dental For Data Analytics Solutions
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.jpg'
+authorImage: '/images/jane-kaminski-author.webp'
 desc: Dentech announces partnership with EDMS Dental’s Dentallytics™ software to provide customers with quality operational reporting. The analytics platform provides consistently accurate reports when integrated with Dentech’s solutions and is sure to be an asset when paired with Dentech’s brand new Practice Management Software.
-image: /images/dentech-announces-partnership-with-edms-dental-for-data-analytics-solutions.jpg
+image: /images/dentech-announces-partnership-with-edms-dental-for-data-analytics-solutions.webp
 alt: Dentech Announces Partnership With EDMS Dental For Data Analytics Solutions
 createdAt: 07/01/2022
 updatedAt: 07/01/2022

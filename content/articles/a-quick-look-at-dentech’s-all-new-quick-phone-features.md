@@ -1,9 +1,9 @@
 ---
 title: A Quick Look At Dentech’s ALL NEW Quick Phone Features
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.jpg'
+authorImage: '/images/jane-kaminski-author.webp'
 desc: Today, I’d like to showcase one of the most used areas in Dentech - Quick Phone and all the new enhancements and layout we have included in the new Dentech.
-image: /images/a-quick-look-at-dentechs-all-new-quick-phone-features.jpg
+image: /images/a-quick-look-at-dentechs-all-new-quick-phone-features.webp
 alt: A Quick Look At Dentech’s ALL NEW Quick Phone Features
 createdAt: 08/04/2021
 updatedAt: 08/04/2021

@@ -1,9 +1,9 @@
 ---
 title: As promised, a much more in depth look into Dentechs NEW Design
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.jpg'
+authorImage: '/images/jane-kaminski-author.webp'
 desc: In our last newsletter, I introduced the Patient Information Bar, a critical step in our effort to give you the information you need, always at your fingertips. This is part of a complete design overhaul we are making to Dentech.
-image: /images/as-promised-a-much-more-in-depth-look-into-dentechs-new-design.jpg
+image: /images/as-promised-a-much-more-in-depth-look-into-dentechs-new-design.webp
 alt: As promised, a much more in depth look into Dentechs NEW Design
 createdAt: 12/02/2020
 updatedAt: 12/02/2020

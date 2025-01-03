@@ -1,7 +1,7 @@
 ---
 title: Improving Your Patient Recall With 3 Easy Steps - Part 2
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.jpg'
+authorImage: '/images/jane-kaminski-author.webp'
 desc: Keeping chairs full in your practice can take a bit of a science…but Dentech is here to help! In the first post of our 3 part series on improving patient recall, we discussed how automating patient reminder communications can keep upcoming appointments top of mind for your patients. Today, let’s talk about how offering flexible appointment scheduling can really maximize your patient experience!
 image: /images/improving-your-patient-recall-with-3-easy-steps-part-2.webp
 alt: Improving Your Patient Recall With 3 Easy Steps - Part 2

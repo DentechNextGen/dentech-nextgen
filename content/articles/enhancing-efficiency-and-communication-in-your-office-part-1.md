@@ -1,7 +1,7 @@
 ---
 title: Enhancing Efficiency and Communication in Your Office – Part 1
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.jpg'
+authorImage: '/images/jane-kaminski-author.webp'
 desc: Ever wondered why some dental teams work more effectively than others? The secret ingredient is often clear, effective internal communication. This three-part series will explore how to increase communication efficiency, and how **Dentech NextGen** can directly help you to do so!
 image: /images/enhancing-efficiency-part-1.webp
 alt: Enhancing Efficiency and Communication in Your Office – Part 1

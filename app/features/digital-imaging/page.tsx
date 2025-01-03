@@ -2,17 +2,18 @@
 
 import Image from 'next/image'
 import { useState } from 'react'
+import { CameraIcon, ComputerDesktopIcon, DeviceTabletIcon } from '@heroicons/react/24/outline'
 
 export default function DigitalImaging() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   const galleryImages = [
-    'sensors.jpg',
-    'integrating-cameras-into-your-practice.webp',
-    'update-regarding-apteryx-xrayvision-4-software.webp',
-    'virtual-printing-for-reports.webp',
-    'exam-focus-window.jpg',
-    'monitor.jpg'
+    'services/digital-imaging.webp',
+    'digital-imaging-graphics-1.webp',
+    'digital-imaging-graphics-2.webp',
+    'digital-imaging-graphics-3.webp',
+    'digital-imaging-graphics-4.webp',
+    'digital-imaging-graphics-5.webp'
   ]
 
   return (
@@ -89,92 +90,100 @@ export default function DigitalImaging() {
       </div>
 
       {/* Features Section */}
-      <div className="bg-gray-50 py-24 sm:py-32">
+      <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
             <h2 className="text-base font-semibold leading-7 text-primary-600">Features</h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Comprehensive Imaging Tools
+              Advanced Digital Imaging Solutions
             </p>
           </div>
-
-          {/* Feature Cards */}
-          <div className="mx-auto mt-16 max-w-7xl">
-            <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3">
-              {[
-                {
-                  title: "Digital Sensors",
-                  description: "High-resolution digital sensors for instant, detailed X-ray images.",
-                  image: "sensors.jpg"
-                },
-                {
-                  title: "Image Enhancement",
-                  description: "Advanced tools for adjusting contrast, brightness, and sharpness.",
-                  image: "monitor.jpg"
-                },
-                {
-                  title: "Intraoral Cameras",
-                  description: "Easy-to-use cameras for detailed intraoral imaging and patient education.",
-                  image: "integrating-cameras-into-your-practice.webp"
-                },
-                {
-                  title: "Cloud Storage",
-                  description: "Secure cloud storage for all your patient images with instant access.",
-                  image: "virtual-printing-for-reports.webp"
-                },
-                {
-                  title: "Integration",
-                  description: "Seamless integration with practice management and charting software.",
-                  image: "update-regarding-apteryx-xrayvision-4-software.webp"
-                },
-                {
-                  title: "Analysis Tools",
-                  description: "Comprehensive tools for image analysis and treatment planning.",
-                  image: "exam-focus-window.jpg"
-                }
-              ].map((feature, index) => (
-                <div key={index} className="flex flex-col">
-                  <div className="relative aspect-square overflow-hidden rounded-lg mb-6 border border-gray-200">
-                    <Image
-                      src={`/images/${feature.image}`}
-                      alt={feature.title}
-                      fill
-                      className="object-cover"
-                    />
+          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+              <div className="flex flex-col">
+                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                  <div className="h-5 w-5 flex-none text-primary-600">
+                    <CameraIcon className="h-5 w-5" aria-hidden="true" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900">
-                    {feature.title}
-                  </h3>
-                  <p className="mt-2 text-base text-gray-600">
-                    {feature.description}
+                  Intraoral Cameras
+                </dt>
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                  <p className="flex-auto">Capture high-resolution intraoral images with our advanced camera systems. Perfect for patient education and documentation, these cameras provide crystal-clear images that help patients understand their dental conditions better.</p>
+                  <p className="mt-6">
+                    <Image
+                      src="/images/features/intraoral-cameras.webp"
+                      alt="Intraoral Cameras"
+                      width={400}
+                      height={300}
+                      className="rounded-xl shadow-lg"
+                    />
                   </p>
-                </div>
-              ))}
-            </div>
+                </dd>
+              </div>
+              <div className="flex flex-col">
+                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                  <div className="h-5 w-5 flex-none text-primary-600">
+                    <ComputerDesktopIcon className="h-5 w-5" aria-hidden="true" />
+                  </div>
+                  Digital X-Ray Systems
+                </dt>
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                  <p className="flex-auto">Our digital X-ray systems provide instant, high-quality radiographs with reduced radiation exposure. Features include enhanced image processing, easy storage and retrieval, and seamless integration with practice management software.</p>
+                  <p className="mt-6">
+                    <Image
+                      src="/images/features/digital-xray.webp"
+                      alt="Digital X-Ray Systems"
+                      width={400}
+                      height={300}
+                      className="rounded-xl shadow-lg"
+                    />
+                  </p>
+                </dd>
+              </div>
+              <div className="flex flex-col">
+                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                  <div className="h-5 w-5 flex-none text-primary-600">
+                    <DeviceTabletIcon className="h-5 w-5" aria-hidden="true" />
+                  </div>
+                  Image Management Software
+                </dt>
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                  <p className="flex-auto">Our comprehensive image management software makes it easy to capture, store, and access patient images. With features like image enhancement tools, measurement capabilities, and multi-device compatibility, you can manage your digital imaging workflow efficiently.</p>
+                  <p className="mt-6">
+                    <Image
+                      src="/images/features/image-management.webp"
+                      alt="Image Management Software"
+                      width={400}
+                      height={300}
+                      className="rounded-xl shadow-lg"
+                    />
+                  </p>
+                </dd>
+              </div>
+            </dl>
           </div>
         </div>
       </div>
 
       {/* CTA Section */}
-      <div className="bg-gray-50">
-        <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-          <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
-            <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Ready to upgrade your imaging capabilities?
-            </h2>
-            <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
-              Schedule a demo today and see how our digital imaging solutions can enhance your diagnostic capabilities.
-            </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="/schedule"
-                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-              >
-                Schedule Demo
-              </a>
-              <a href="/contact" className="text-sm font-semibold leading-6 text-white">
-                Contact Sales <span aria-hidden="true">→</span>
-              </a>
+      <div className="bg-white py-24 sm:py-32">
+        <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl lg:max-w-5xl">
+            <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+              <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Ready to upgrade your imaging capabilities?
+              </h2>
+              <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
+                Schedule a demo today and see how our digital imaging solutions can enhance your practice.
+              </p>
+              <div className="mt-10 flex items-center justify-center gap-x-6">
+                <a
+                  href="/schedule"
+                  className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                >
+                  Schedule Demo
+                </a>
+              </div>
             </div>
           </div>
         </div>

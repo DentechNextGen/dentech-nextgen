@@ -1,7 +1,7 @@
 ---
 title: Server Based or Cloud Based - The Choice Is Yours.
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.jpg'
+authorImage: '/images/jane-kaminski-author.webp'
 desc: I have always been a fan of cars, motorcycles, anything that goes fast and the more you understand the inner workings of the equipment, the better you can wield it. Just like any software application.
 image: /images/server-based-or-cloud-based-the-choice-is-yours.webp
 alt: Server Based or Cloud Based - The Choice Is Yours.

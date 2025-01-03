@@ -7,12 +7,12 @@ export default function ManagedServices() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   const galleryImages = [
+    'services/managed-services.webp',
     'managed-services-graphics-1.webp',
     'managed-services-graphics-2.webp',
     'managed-services-graphics-3.webp',
     'managed-services-graphics-4.webp',
-    'managed-services-graphics-5.webp',
-    'managed-services-graphics-6.webp'
+    'managed-services-graphics-5.webp'
   ]
 
   return (
@@ -105,17 +105,17 @@ export default function ManagedServices() {
                 {
                   title: "Network Security",
                   description: "Protect your practice with advanced security measures and continuous monitoring.",
-                  image: "firewall.jpg"
+                  image: "firewall.webp"
                 },
                 {
                   title: "Data Backup",
                   description: "Secure cloud backup solutions to protect your critical patient data.",
-                  image: "server.jpg"
+                  image: "server.webp"
                 },
                 {
                   title: "IT Support",
                   description: "24/7 technical support and rapid response to any IT issues.",
-                  image: "itservices.jpg"
+                  image: "itservices.webp"
                 },
                 {
                   title: "System Updates",

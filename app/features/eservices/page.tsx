@@ -2,17 +2,18 @@
 
 import Image from 'next/image'
 import { useState } from 'react'
+import { DocumentCheckIcon, DocumentTextIcon, ClipboardDocumentCheckIcon } from '@heroicons/react/24/outline'
 
 export default function Eservices() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   const galleryImages = [
+    'services/eservices.webp',
     'eservices-graphics-1.webp',
     'eservices-graphics-2.webp',
     'eservices-graphics-3.webp',
     'eservices-graphics-4.webp',
-    'eservices-graphics-5.webp',
-    'virtual-printing-for-reports.webp'
+    'eservices-graphics-5.webp'
   ]
 
   return (
@@ -25,10 +26,10 @@ export default function Eservices() {
               Eservices
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Digital Solutions for Modern Dental Practices
+              Simplify And Scale Your Dental Practice
             </p>
             <p className="mt-6 text-base leading-7 text-gray-300">
-              Streamline your practice with our comprehensive suite of electronic services. From online scheduling to digital forms, we make dental practice management effortless.
+              Doing more in your practice in less time doesn't have to mean spending all day racing the clock or spending as little time as possible with each patient. When you improve your efficiency, you improve production and your dental practice's profits.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
@@ -80,8 +81,7 @@ export default function Eservices() {
             {/* Additional Content */}
             <div className="mt-12 text-center">
               <p className="text-lg leading-8 text-gray-300">
-                Our eservices platform brings together all the digital tools you need to run a modern dental practice. 
-                From online patient forms to electronic claims processing, we&apos;ve got you covered.
+                Dentech helps you work faster and lighten your load by offering a suite of eServices to streamline key parts of your work.
               </p>
             </div>
           </div>
@@ -89,92 +89,100 @@ export default function Eservices() {
       </div>
 
       {/* Features Section */}
-      <div className="bg-gray-50 py-24 sm:py-32">
+      <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
             <h2 className="text-base font-semibold leading-7 text-primary-600">Features</h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Comprehensive Electronic Services
+              Streamlined Digital Services
             </p>
           </div>
-
-          {/* Feature Cards */}
-          <div className="mx-auto mt-16 max-w-7xl">
-            <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3">
-              {[
-                {
-                  title: "Online Scheduling",
-                  description: "Allow patients to book appointments online 24/7 through our user-friendly portal.",
-                  image: "eservices-graphics-1.webp"
-                },
-                {
-                  title: "Digital Forms",
-                  description: "Convert paper forms to digital formats for easy completion and storage.",
-                  image: "eservices-graphics-2.webp"
-                },
-                {
-                  title: "Electronic Claims",
-                  description: "Process insurance claims electronically for faster reimbursement.",
-                  image: "eservices-graphics-3.webp"
-                },
-                {
-                  title: "Patient Portal",
-                  description: "Give patients secure access to their records, appointments, and communications.",
-                  image: "eservices-graphics-4.webp"
-                },
-                {
-                  title: "Virtual Payments",
-                  description: "Accept payments online and process transactions securely.",
-                  image: "eservices-graphics-5.webp"
-                },
-                {
-                  title: "Digital Reports",
-                  description: "Generate and share reports electronically for better practice insights.",
-                  image: "virtual-printing-for-reports.webp"
-                }
-              ].map((feature, index) => (
-                <div key={index} className="flex flex-col">
-                  <div className="relative aspect-square overflow-hidden rounded-lg mb-6 border border-gray-200">
-                    <Image
-                      src={`/images/${feature.image}`}
-                      alt={feature.title}
-                      fill
-                      className="object-cover"
-                    />
+          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+              <div className="flex flex-col">
+                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                  <div className="h-5 w-5 flex-none text-primary-600">
+                    <DocumentCheckIcon className="h-5 w-5" aria-hidden="true" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900">
-                    {feature.title}
-                  </h3>
-                  <p className="mt-2 text-base text-gray-600">
-                    {feature.description}
+                  eClaims – Electronic Claims Processing for Dentists
+                </dt>
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                  <p className="flex-auto">Streamline claim processing by minimizing errors and the risk of rejections to speed up approvals. Verify essential information upfront, reduce the time spent on each claim, and ensure submissions are accurate and rejection-free.</p>
+                  <p className="mt-6">
+                    <Image
+                      src="/images/features/eClaims.webp"
+                      alt="eClaims"
+                      width={400}
+                      height={300}
+                      className="rounded-xl shadow-lg"
+                    />
                   </p>
-                </div>
-              ))}
-            </div>
+                </dd>
+              </div>
+              <div className="flex flex-col">
+                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                  <div className="h-5 w-5 flex-none text-primary-600">
+                    <DocumentTextIcon className="h-5 w-5" aria-hidden="true" />
+                  </div>
+                  eStatements - Go Paperless And Reduce Printing And Mailing Costs
+                </dt>
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                  <p className="flex-auto">eStatements ensures faster delivery of statements to patients at reduced costs, removes the need for mailing materials and inventory, and frees you from last-minute statement preparation and mailing.</p>
+                  <p className="mt-6">
+                    <Image
+                      src="/images/features/eStatements.webp"
+                      alt="eStatements"
+                      width={400}
+                      height={300}
+                      className="rounded-xl shadow-lg"
+                    />
+                  </p>
+                </dd>
+              </div>
+              <div className="flex flex-col">
+                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                  <div className="h-5 w-5 flex-none text-primary-600">
+                    <ClipboardDocumentCheckIcon className="h-5 w-5" aria-hidden="true" />
+                  </div>
+                  DenScript™ - Manage Patients' Prescriptions Online
+                </dt>
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                  <p className="flex-auto">Simplify prescription management for dentists through a single online platform accessible from any device. Secure one-click e-prescriptions, quick checks for medication conflicts, and easy storage and retrieval of prescription histories, all backed by secure cloud-based technology.</p>
+                  <p className="mt-6">
+                    <Image
+                      src="/images/features/DenScript.webp"
+                      alt="DenScript"
+                      width={400}
+                      height={300}
+                      className="rounded-xl shadow-lg"
+                    />
+                  </p>
+                </dd>
+              </div>
+            </dl>
           </div>
         </div>
       </div>
 
       {/* CTA Section */}
-      <div className="bg-gray-50">
-        <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-          <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
-            <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Ready to go digital?
-            </h2>
-            <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
-              Schedule a demo today and see how our eservices can modernize your practice operations.
-            </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="/schedule"
-                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-              >
-                Schedule Demo
-              </a>
-              <a href="/contact" className="text-sm font-semibold leading-6 text-white">
-                Contact Sales <span aria-hidden="true">→</span>
-              </a>
+      <div className="bg-white py-24 sm:py-32">
+        <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl lg:max-w-5xl">
+            <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+              <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Ready to streamline your practice?
+              </h2>
+              <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
+                Schedule a demo today and see how our eServices can transform your practice operations.
+              </p>
+              <div className="mt-10 flex items-center justify-center gap-x-6">
+                <a
+                  href="/schedule"
+                  className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                >
+                  Schedule Demo
+                </a>
+              </div>
             </div>
           </div>
         </div>

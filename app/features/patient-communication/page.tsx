@@ -2,17 +2,18 @@
 
 import Image from 'next/image'
 import { useState } from 'react'
+import { BellAlertIcon, CalendarDaysIcon, ChatBubbleLeftRightIcon } from '@heroicons/react/24/outline'
 
 export default function PatientCommunication() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   const galleryImages = [
-    'reminders.jpg',
-    'improving-your-patient-recall-with-3-easy-steps-part-1.webp',
-    'improving-your-patient-recall-with-3-easy-steps-part-2.webp',
-    'improving-your-patient-recall-with-3-easy-steps-part-3.webp',
-    'improvements-coming-your-way-to-your-patient-statements.webp',
-    'go-paperless-with-automatic-estatements.webp'
+    'services/patient-communication.webp',
+    'patient-communication-graphics-1.webp',
+    'patient-communication-graphics-2.webp',
+    'patient-communication-graphics-3.webp',
+    'patient-communication-graphics-4.webp',
+    'patient-communication-graphics-5.webp'
   ]
 
   return (
@@ -89,92 +90,100 @@ export default function PatientCommunication() {
       </div>
 
       {/* Features Section */}
-      <div className="bg-gray-50 py-24 sm:py-32">
+      <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
             <h2 className="text-base font-semibold leading-7 text-primary-600">Features</h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Comprehensive Communication Tools
+              Enhanced Patient Communication
             </p>
           </div>
-
-          {/* Feature Cards */}
-          <div className="mx-auto mt-16 max-w-7xl">
-            <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3">
-              {[
-                {
-                  title: "Automated Reminders",
-                  description: "Send automated appointment reminders via text, email, or phone to reduce no-shows.",
-                  image: "reminders.jpg"
-                },
-                {
-                  title: "Recall System",
-                  description: "Keep patients coming back with automated recall notifications and follow-ups.",
-                  image: "improving-your-patient-recall-with-3-easy-steps-part-1.webp"
-                },
-                {
-                  title: "Digital Statements",
-                  description: "Send electronic statements and payment reminders to streamline billing.",
-                  image: "go-paperless-with-automatic-estatements.webp"
-                },
-                {
-                  title: "Two-Way Messaging",
-                  description: "Enable secure two-way communication between staff and patients.",
-                  image: "improving-your-patient-recall-with-3-easy-steps-part-2.webp"
-                },
-                {
-                  title: "Mass Notifications",
-                  description: "Send important updates or announcements to all patients efficiently.",
-                  image: "improving-your-patient-recall-with-3-easy-steps-part-3.webp"
-                },
-                {
-                  title: "Patient Portal",
-                  description: "Provide 24/7 access to appointments, messages, and records through our secure portal.",
-                  image: "improvements-coming-your-way-to-your-patient-statements.webp"
-                }
-              ].map((feature, index) => (
-                <div key={index} className="flex flex-col">
-                  <div className="relative aspect-square overflow-hidden rounded-lg mb-6 border border-gray-200">
-                    <Image
-                      src={`/images/${feature.image}`}
-                      alt={feature.title}
-                      fill
-                      className="object-cover"
-                    />
+          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+              <div className="flex flex-col">
+                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                  <div className="h-5 w-5 flex-none text-primary-600">
+                    <BellAlertIcon className="h-5 w-5" aria-hidden="true" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900">
-                    {feature.title}
-                  </h3>
-                  <p className="mt-2 text-base text-gray-600">
-                    {feature.description}
+                  Automated Appointment Reminders
+                </dt>
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                  <p className="flex-auto">Reduce no-shows and keep your schedule full with automated appointment reminders via text, email, or phone. Customize reminder timing and frequency to match your practice's needs.</p>
+                  <p className="mt-6">
+                    <Image
+                      src="/images/features/appointment-reminders.webp"
+                      alt="Appointment Reminders"
+                      width={400}
+                      height={300}
+                      className="rounded-xl shadow-lg"
+                    />
                   </p>
-                </div>
-              ))}
-            </div>
+                </dd>
+              </div>
+              <div className="flex flex-col">
+                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                  <div className="h-5 w-5 flex-none text-primary-600">
+                    <CalendarDaysIcon className="h-5 w-5" aria-hidden="true" />
+                  </div>
+                  Recall System
+                </dt>
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                  <p className="flex-auto">Keep patients coming back with our automated recall system. Send timely reminders for routine check-ups, cleanings, and follow-up appointments to maintain consistent patient care.</p>
+                  <p className="mt-6">
+                    <Image
+                      src="/images/features/recall-system.webp"
+                      alt="Recall System"
+                      width={400}
+                      height={300}
+                      className="rounded-xl shadow-lg"
+                    />
+                  </p>
+                </dd>
+              </div>
+              <div className="flex flex-col">
+                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                  <div className="h-5 w-5 flex-none text-primary-600">
+                    <ChatBubbleLeftRightIcon className="h-5 w-5" aria-hidden="true" />
+                  </div>
+                  Two-Way Messaging
+                </dt>
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                  <p className="flex-auto">Enable direct communication between your practice and patients with secure two-way messaging. Patients can easily confirm appointments, ask questions, and receive important updates about their care.</p>
+                  <p className="mt-6">
+                    <Image
+                      src="/images/features/two-way-messaging.webp"
+                      alt="Two-Way Messaging"
+                      width={400}
+                      height={300}
+                      className="rounded-xl shadow-lg"
+                    />
+                  </p>
+                </dd>
+              </div>
+            </dl>
           </div>
         </div>
       </div>
 
       {/* CTA Section */}
-      <div className="bg-gray-50">
-        <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-          <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
-            <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Ready to improve patient engagement?
-            </h2>
-            <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
-              Schedule a demo today and see how our communication tools can strengthen your patient relationships.
-            </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="/schedule"
-                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-              >
-                Schedule Demo
-              </a>
-              <a href="/contact" className="text-sm font-semibold leading-6 text-white">
-                Contact Sales <span aria-hidden="true">→</span>
-              </a>
+      <div className="bg-white py-24 sm:py-32">
+        <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl lg:max-w-5xl">
+            <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+              <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Ready to improve patient communication?
+              </h2>
+              <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
+                Schedule a demo today and see how our communication tools can enhance patient engagement.
+              </p>
+              <div className="mt-10 flex items-center justify-center gap-x-6">
+                <a
+                  href="/schedule"
+                  className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                >
+                  Schedule Demo
+                </a>
+              </div>
             </div>
           </div>
         </div>

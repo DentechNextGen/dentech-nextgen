@@ -2,17 +2,18 @@
 
 import Image from 'next/image'
 import { useState } from 'react'
+import { DocumentDuplicateIcon, DocumentArrowDownIcon, DocumentCheckIcon } from '@heroicons/react/24/outline'
 
 export default function DocumentManagement() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   const galleryImages = [
-    'paperless.jpg',
-    'files.jpg',
-    'integrating-paperless-dentistry.webp',
-    'imagine-running-dentech-with-no-paper-documents–digitize-your-practice-today.webp',
-    'we-are-a-paperless-office.webp',
-    'go-paperless-with-automatic-estatements.webp'
+    'services/document-management.webp',
+    'document-management-graphics-1.webp',
+    'document-management-graphics-2.webp',
+    'document-management-graphics-3.webp',
+    'document-management-graphics-4.webp',
+    'document-management-graphics-5.webp'
   ]
 
   return (
@@ -25,10 +26,10 @@ export default function DocumentManagement() {
               Document Management
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Go Paperless with Smart Document Management
+              Streamline Your Practice's Paperwork
             </p>
             <p className="mt-6 text-base leading-7 text-gray-300">
-              Transform your practice with our comprehensive document management solution. Digitize your records, streamline workflows, and ensure secure, instant access to all your documents.
+              Transform your dental practice with our comprehensive document management system. Digitize your paperwork, streamline workflows, and ensure secure access to patient records.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
@@ -80,8 +81,7 @@ export default function DocumentManagement() {
             {/* Additional Content */}
             <div className="mt-12 text-center">
               <p className="text-lg leading-8 text-gray-300">
-                Eliminate paper clutter and enhance efficiency with our digital document management system. 
-                Access patient records instantly, securely store documents, and streamline your practice&apos;s workflow.
+                Our document management system helps you transition to a paperless practice, improving efficiency and reducing costs while ensuring compliance with regulatory requirements.
               </p>
             </div>
           </div>
@@ -89,92 +89,100 @@ export default function DocumentManagement() {
       </div>
 
       {/* Features Section */}
-      <div className="bg-gray-50 py-24 sm:py-32">
+      <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
             <h2 className="text-base font-semibold leading-7 text-primary-600">Features</h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Smart Document Management Tools
+              Comprehensive Document Management
             </p>
           </div>
-
-          {/* Feature Cards */}
-          <div className="mx-auto mt-16 max-w-7xl">
-            <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3">
-              {[
-                {
-                  title: "Digital Document Storage",
-                  description: "Securely store and organize all your practice documents digitally, from patient records to insurance forms.",
-                  image: "files.jpg"
-                },
-                {
-                  title: "Instant Access",
-                  description: "Find any document in seconds with our powerful search and filtering capabilities.",
-                  image: "fingertips.jpg"
-                },
-                {
-                  title: "Automated Workflows",
-                  description: "Streamline document processing with automated routing, notifications, and approvals.",
-                  image: "paperless.jpg"
-                },
-                {
-                  title: "Secure Backup",
-                  description: "Keep your documents safe with automatic backups and disaster recovery options.",
-                  image: "firewall.jpg"
-                },
-                {
-                  title: "Integration",
-                  description: "Seamlessly integrate with other Dentech modules for a complete practice management solution.",
-                  image: "integration.jpg"
-                },
-                {
-                  title: "Compliance",
-                  description: "Maintain HIPAA compliance with secure document handling and detailed audit trails.",
-                  image: "probate.jpg"
-                }
-              ].map((feature, index) => (
-                <div key={index} className="flex flex-col">
-                  <div className="relative aspect-square overflow-hidden rounded-lg mb-6 border border-gray-200">
-                    <Image
-                      src={`/images/${feature.image}`}
-                      alt={feature.title}
-                      fill
-                      className="object-cover"
-                    />
+          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+              <div className="flex flex-col">
+                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                  <div className="h-5 w-5 flex-none text-primary-600">
+                    <DocumentDuplicateIcon className="h-5 w-5" aria-hidden="true" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900">
-                    {feature.title}
-                  </h3>
-                  <p className="mt-2 text-base text-gray-600">
-                    {feature.description}
+                  Digital Document Storage
+                </dt>
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                  <p className="flex-auto">Securely store and organize all your practice documents digitally. Our system provides easy access to patient records, insurance forms, and practice documents while ensuring HIPAA compliance.</p>
+                  <p className="mt-6">
+                    <Image
+                      src="/images/features/digital-storage.webp"
+                      alt="Digital Document Storage"
+                      width={400}
+                      height={300}
+                      className="rounded-xl shadow-lg"
+                    />
                   </p>
-                </div>
-              ))}
-            </div>
+                </dd>
+              </div>
+              <div className="flex flex-col">
+                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                  <div className="h-5 w-5 flex-none text-primary-600">
+                    <DocumentArrowDownIcon className="h-5 w-5" aria-hidden="true" />
+                  </div>
+                  Document Scanning
+                </dt>
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                  <p className="flex-auto">Easily convert paper documents to digital format with our integrated scanning solution. Features include batch scanning, automatic file naming, and intelligent document classification.</p>
+                  <p className="mt-6">
+                    <Image
+                      src="/images/features/document-scanning.webp"
+                      alt="Document Scanning"
+                      width={400}
+                      height={300}
+                      className="rounded-xl shadow-lg"
+                    />
+                  </p>
+                </dd>
+              </div>
+              <div className="flex flex-col">
+                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                  <div className="h-5 w-5 flex-none text-primary-600">
+                    <DocumentCheckIcon className="h-5 w-5" aria-hidden="true" />
+                  </div>
+                  Electronic Forms
+                </dt>
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                  <p className="flex-auto">Replace paper forms with digital versions that can be completed online or in-office. Includes customizable templates, electronic signatures, and automatic form routing for streamlined workflows.</p>
+                  <p className="mt-6">
+                    <Image
+                      src="/images/features/electronic-forms.webp"
+                      alt="Electronic Forms"
+                      width={400}
+                      height={300}
+                      className="rounded-xl shadow-lg"
+                    />
+                  </p>
+                </dd>
+              </div>
+            </dl>
           </div>
         </div>
       </div>
 
       {/* CTA Section */}
-      <div className="bg-gray-50">
-        <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-          <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
-            <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Ready to go paperless?
-            </h2>
-            <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
-              Schedule a demo today and see how our document management solution can transform your practice.
-            </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="/schedule"
-                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-              >
-                Schedule Demo
-              </a>
-              <a href="/contact" className="text-sm font-semibold leading-6 text-white">
-                Contact Sales <span aria-hidden="true">→</span>
-              </a>
+      <div className="bg-white py-24 sm:py-32">
+        <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl lg:max-w-5xl">
+            <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+              <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Ready to go paperless?
+              </h2>
+              <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
+                Schedule a demo today and see how our document management system can transform your practice.
+              </p>
+              <div className="mt-10 flex items-center justify-center gap-x-6">
+                <a
+                  href="/schedule"
+                  className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                >
+                  Schedule Demo
+                </a>
+              </div>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 ---
 title: New Law - By October 1 Michigan Dentists Must Prescribe All Medications Electronically
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.jpg'
+authorImage: '/images/jane-kaminski-author.webp'
 desc: Michigan recently signed into law legislation that requires prescribers to electronically transmit all prescriptions, including those for controlled substances, to the patient’s chosen pharmacy beginning October 1st, 2021.
 image: /images/new-law-by-oct-1-michigan-dentists-must-prescribe-all-medications-electronically.webp
 alt: New Law - By Oct. 1 Michigan Dentists Must Prescribe All Medications Electronically

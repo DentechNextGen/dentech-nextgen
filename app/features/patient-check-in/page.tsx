@@ -7,12 +7,12 @@ export default function PatientCheckIn() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   const galleryImages = [
-    'kiosk.jpg',
+    'services/patient-check-in.webp',
+    'kiosk.webp',
     'patient-registration-now-with-everything-at-a-glance.webp',
     'improving-your-patient-recall-with-3-easy-steps-part-1.webp',
     'improving-your-patient-recall-with-3-easy-steps-part-2.webp',
-    'improving-your-patient-recall-with-3-easy-steps-part-3.webp',
-    'reminders.jpg'
+    'improving-your-patient-recall-with-3-easy-steps-part-3.webp'
   ]
 
   return (
@@ -103,40 +103,40 @@ export default function PatientCheckIn() {
             <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3">
               {[
                 {
-                  title: "Digital Forms",
-                  description: "Replace paper forms with digital ones that patients can complete before their visit or at check-in.",
-                  image: "files.jpg"
-                },
-                {
-                  title: "Insurance Verification",
-                  description: "Automatically verify insurance coverage and benefits in real-time.",
-                  image: "insuranceprocessing.jpg"
+                  title: "Digital Registration",
+                  description: "Allow patients to complete registration forms digitally before their visit, saving time and reducing errors.",
+                  image: "digital-registration.webp"
                 },
                 {
                   title: "Medical History Updates",
-                  description: "Allow patients to review and update their medical history digitally.",
-                  image: "exam-focus-window.jpg"
+                  description: "Enable patients to update their medical history electronically, ensuring accurate and up-to-date records.",
+                  image: "medical-history.webp"
                 },
                 {
-                  title: "Appointment Reminders",
-                  description: "Send automated appointment reminders via email, text, or phone.",
-                  image: "reminders.jpg"
+                  title: "Insurance Verification",
+                  description: "Verify insurance coverage and benefits in real-time during check-in.",
+                  image: "insurance-verification.webp"
+                },
+                {
+                  title: "Consent Forms",
+                  description: "Collect and store patient consent forms digitally with electronic signatures.",
+                  image: "consent-forms.webp"
                 },
                 {
                   title: "Patient Portal",
-                  description: "Give patients secure access to their information and forms through our patient portal.",
-                  image: "fingertips.jpg"
+                  description: "Provide secure access to forms and information through our patient portal.",
+                  image: "patient-portal.webp"
                 },
                 {
                   title: "Kiosk Mode",
                   description: "Enable self-service check-in with our user-friendly kiosk interface.",
-                  image: "kiosk.jpg"
+                  image: "kiosk.webp"
                 }
               ].map((feature, index) => (
                 <div key={index} className="flex flex-col">
                   <div className="relative aspect-square overflow-hidden rounded-lg mb-6 border border-gray-200">
                     <Image
-                      src={`/images/${feature.image}`}
+                      src={`/images/features/${feature.image}`}
                       alt={feature.title}
                       fill
                       className="object-cover"
