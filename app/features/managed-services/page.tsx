@@ -72,10 +72,13 @@ export default function ManagedServices() {
                     Dental IT Security Services Managed For You
                   </p>
                   <p className="mt-4 text-lg leading-8 text-gray-300">
-                    Your Practice's Data And Security Are More Important Than Ever. Businesses that hold patient health information (including dental practices) are often a major target for cybersecurity threats. Even small practices are often targets because many hackers see them as low-hanging fruit, less likely to have the time and resources to stay protected. Beyond this, you never know when your data and hardware will be vulnerable to a physical threat such as fire, inclement weather, or even theft.
+                    Your practice&apos;s data and security are more important than ever. Businesses that hold patient health information (including dental practices) are often a major target for cybersecurity threats.
                   </p>
                   <p className="mt-4 text-lg leading-8 text-gray-300">
-                    That's why our team at Dentech offers a wide variety of managed services mentioned below. While you focus on serving patients, we can do all the heavy lifting to keep your dental practice's network secure, safeguard your data, and help you remain HIPAA compliant.
+                    Even small practices are often targets because many hackers see them as low-hanging fruit, less likely to have the time and resources to stay protected. Beyond this, you never know when your data and hardware will be vulnerable to a physical threat such as fire, inclement weather, or even theft.
+                  </p>
+                  <p className="mt-4 text-lg leading-8 text-gray-300">
+                    That&apos;s why our team at Dentech offers a wide variety of managed services mentioned below. While you focus on serving patients, we can do all the heavy lifting to keep your dental practice&apos;s network secure, safeguard your data, and help you remain HIPAA compliant.
                   </p>
                   <p className="mt-4 text-lg leading-8 text-gray-300">
                     <a href="/docs/Dentech-System-Requirements-2024.pdf" className="text-lime-400 hover:text-lime-300 underline">
@@ -122,7 +125,7 @@ export default function ManagedServices() {
                   DenCloud™ - Never Lose Important Data Again
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto">DenCloud offers a secure and cost-effective solution for your dental practice's data storage and backup, protecting against device failure, malware, and natural disasters with offsite storage and cloud access from any device. Daily email backup status reports and robust tech safeguards ensure compliance and prevent costly HIPAA violations.</p>
+                  <p className="flex-auto">DenCloud offers a secure and cost-effective solution for your dental practice&apos;s data storage and backup, protecting against device failure, malware, and natural disasters with offsite storage and cloud access from any device. Daily email backup status reports and robust tech safeguards ensure compliance and prevent costly HIPAA violations.</p>
                   <p className="mt-6">
                     <Image
                       src="/images/dencloud.webp"
@@ -142,7 +145,7 @@ export default function ManagedServices() {
                   Firewall Management and Antivirus Monitoring
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto">Dentech's Firewall Management system provides real-time protection for dental practices, stopping threats and offering weekly network health reports, traffic monitoring, website filtering, and automatic antivirus updates, all under warranty. Additionally, Dentech's Antivirus Monitoring updates protections automatically, notifies you of new threats, and shields against ransomware and other cyber threats, ensuring peace of mind without needing technical expertise.</p>
+                  <p className="flex-auto">Dentech&apos;s Firewall Management system provides real-time protection for dental practices, stopping threats and offering weekly network health reports, traffic monitoring, website filtering, and automatic antivirus updates, all under warranty. Additionally, Dentech&apos;s Antivirus Monitoring updates protections automatically, notifies you of new threats, and shields against ransomware and other cyber threats, ensuring peace of mind without needing technical expertise.</p>
                   <p className="mt-6">
                     <Image
                       src="/images/firewall.webp"
@@ -162,7 +165,7 @@ export default function ManagedServices() {
                   Service & Network IT Services For Dental Practices
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto">With Dentech's proactive monitoring, anticipate and resolve tech issues before they impact your practice, covering servers, switches, and the internet, while providing weekly reports and monitoring critical events, backups, and connection health. Avoid costly downtime that can lead to significant sales and productivity losses annually.</p>
+                  <p className="flex-auto">With Dentech&apos;s proactive monitoring, anticipate and resolve tech issues before they impact your practice, covering servers, switches, and the internet, while providing weekly reports and monitoring critical events, backups, and connection health. Avoid costly downtime that can lead to significant sales and productivity losses annually.</p>
                   <p className="mt-6">
                     <Image
                       src="/images/itservices.webp"
@@ -182,7 +185,7 @@ export default function ManagedServices() {
                   Automatic Server and Computer Patch Management
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto">Dentech's Patch Management ensures your dental practice's servers and workstations are always updated with the latest security patches, protecting against vulnerabilities and giving you control over updates. Stay focused on your practice, not IT maintenance, and prevent common security issues that lead to breaches.</p>
+                  <p className="flex-auto">Dentech&apos;s Patch Management ensures your dental practice&apos;s servers and workstations are always updated with the latest security patches, protecting against vulnerabilities and giving you control over updates. Stay focused on your practice, not IT maintenance, and prevent common security issues that lead to breaches.</p>
                   <p className="mt-6">
                     <Image
                       src="/images/server.webp"

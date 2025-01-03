@@ -106,10 +106,13 @@ export default function PatientCheckIn() {
                     Patient Check-In Kiosk and Monitor System
                   </p>
                   <p className="mt-4 text-lg leading-8 text-gray-300">
-                    The fast and contact-free way to streamline your dental practice's patient check-ins.
+                    The fast and contact-free way to streamline your dental practice&apos;s patient check-ins.
                   </p>
                   <p className="mt-4 text-lg leading-8 text-gray-300">
-                    See check-in status and start treatments even if reception's busy. Replace a busy front desk with self check-ins.
+                    See check-in status and start treatments even if reception&apos;s busy. Replace a busy front desk with self check-ins.
+                  </p>
+                  <p className="mt-4 text-lg leading-8 text-gray-300">
+                    Our &apos;Check Me In&apos; Kiosk and Appointment Monitor make patient check-ins effortless.
                   </p>
                   <p className="mt-4 text-lg leading-8 text-gray-300">
                     Automatically keep patient info and appointment statuses updated.
@@ -156,7 +159,7 @@ export default function PatientCheckIn() {
                   <div className="h-5 w-5 flex-none text-primary-600">
                     <DeviceTabletIcon className="h-5 w-5" aria-hidden="true" />
                   </div>
-                  Our 'Check Me In' Kiosk
+                  Our &apos;Check Me In&apos; Kiosk
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
                   <p className="flex-auto">Enable patients to check in using their appointment list, the last four digits of their SSN, or phone number. Our system simplifies updates with customized intake forms and automatically generates care forms upon self check-in, streamlining the process.</p>
@@ -176,7 +179,7 @@ export default function PatientCheckIn() {
                   <div className="h-5 w-5 flex-none text-primary-600">
                     <ClipboardDocumentCheckIcon className="h-5 w-5" aria-hidden="true" />
                   </div>
-                  Our 'Check Me In' Appointment Monitor
+                  Our &apos;Check Me In&apos; Appointment Monitor
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
                   <p className="flex-auto">Effortlessly monitor patient check-ins and appointment progress, add important notes in seconds, and manage patient care with one-click form printing.</p>

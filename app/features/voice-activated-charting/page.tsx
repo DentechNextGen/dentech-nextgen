@@ -136,6 +136,9 @@ export default function VoiceActivatedCharting() {
                       View System Requirements →
                     </a>
                   </p>
+                  <p className="mt-4 text-lg leading-8 text-gray-300">
+                    We&apos;re here to help make your charting process more efficient.
+                  </p>
                   <div className="mt-10 flex items-start gap-x-6">
                     <a
                       href="/schedule"
@@ -176,7 +179,7 @@ export default function VoiceActivatedCharting() {
                   Chart Pre-Existing Conditionals and Treatment Plans (Patented)
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto">Keep track of treatment proposals and completed work. You can also select defaults for various treatments, either manually or by voice. For example, whenever a crown is charted you can have "gold" automatically selected and change if needed.</p>
+                  <p className="flex-auto">Keep track of treatment proposals and completed work. You can also select defaults for various treatments, either manually or by voice. For example, whenever a crown is charted you can have &quot;gold&quot; automatically selected and change if needed.</p>
                   <p className="mt-6">
                     <Image
                       src="/images/preexisting.webp"
@@ -196,7 +199,7 @@ export default function VoiceActivatedCharting() {
                   Treatment and Insurance Plans (Patented)
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto">See which teeth have proposed treatments or scheduled procedures. Treatment Plan View helps your patients understand out-of-pocket vs. insurance costs for each potential treatment. Plus, you can switch to "teeth view" to show patients tooth image graphics, allowing you to further illustrate treatment options.</p>
+                  <p className="flex-auto">See which teeth have proposed treatments or scheduled procedures. Treatment Plan View helps your patients understand out-of-pocket vs. insurance costs for each potential treatment. Plus, you can switch to &quot;teeth view&quot; to show patients tooth image graphics, allowing you to further illustrate treatment options.</p>
                   <p className="mt-6">
                     <Image
                       src="/images/plans.webp"
@@ -236,7 +239,7 @@ export default function VoiceActivatedCharting() {
                   Other Reasons To Love Our Charting
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto">Dentech's dental charting system offers a one-click tooth review, an Auto-Compare feature for instant health insights, and efficient Voice Triplets Commands™ for measurement. Its Exam Focus Window™, Auto Advance/Resume functionality, and patented Feedback Control ensure precise and user-friendly charting. Additionally, Flip Command and exclusive Zooming and Panning features enhance the examination process, streamlining dental charting significantly.</p>
+                  <p className="flex-auto">Dentech&apos;s dental charting system offers a one-click tooth review, an Auto-Compare feature for instant health insights, and efficient Voice Triplets Commands™ for measurement. Its Exam Focus Window™, Auto Advance/Resume functionality, and patented Feedback Control ensure precise and user-friendly charting. Additionally, Flip Command and exclusive Zooming and Panning features enhance the examination process, streamlining dental charting significantly.</p>
                   <p className="mt-6">
                     <Image
                       src="/images/other.webp"

@@ -72,7 +72,10 @@ export default function Eservices() {
                     Simplify And Scale Your Dental Practice
                   </p>
                   <p className="mt-4 text-lg leading-8 text-gray-300">
-                    Doing more in your practice in less time doesn't have to mean spending all day racing the clock or spending as little time as possible with each patient. It goes without saying that when you improve your efficiency, you improve production and your dental practice's profits. Plus, it can help you manage one of the biggest problems that plague dentists: high overhead costs.
+                    Doing more in your practice in less time doesn&apos;t have to mean spending all day racing the clock or spending as little time as possible with each patient.
+                  </p>
+                  <p className="mt-4 text-lg leading-8 text-gray-300">
+                    We&apos;re here to help you work faster and lighten your load.
                   </p>
                   <p className="mt-4 text-lg leading-8 text-gray-300">
                     Dentech helps you work faster and lighten your load by offering a suite of eServices (listed below) to streamline key parts of your work.
@@ -159,7 +162,7 @@ export default function Eservices() {
                   <div className="h-5 w-5 flex-none text-primary-600">
                     <ClipboardDocumentCheckIcon className="h-5 w-5" aria-hidden="true" />
                   </div>
-                  DenScript™ - Manage Patients' Prescriptions Online
+                  DenScript™ - Manage Patients&apos; Prescriptions Online
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
                   <p className="flex-auto">Simplify prescription management for dentists through a single online platform accessible from any device. Secure one-click e-prescriptions, quick checks for medication conflicts, and easy storage and retrieval of prescription histories, all backed by secure cloud-based technology.</p>

@@ -72,10 +72,13 @@ export default function DocumentManagement() {
                     Organize your patient documents
                   </p>
                   <p className="mt-4 text-lg leading-8 text-gray-300">
-                    Never lose a document again. Using DenDox as your document management tool propels your practice far beyond the realm of merely going paperless. Thousands of practices trust DenDox to efficiently produce and access patient records, all the while minimizing the risks and regulatory challenges associated with misplaced paper files.
+                    Don&apos;t lose another document again. Using DenDox as your document management tool propels your practice far beyond the realm of merely going paperless.
                   </p>
                   <p className="mt-4 text-lg leading-8 text-gray-300">
-                    Simplify your workflow with our Drag-and-Drop Upload feature—there's no need for window-switching or extra prompts.
+                    Thousands of practices trust DenDox to efficiently produce and access patient records, all the while minimizing the risks and regulatory challenges associated with misplaced paper files.
+                  </p>
+                  <p className="mt-4 text-lg leading-8 text-gray-300">
+                    Simplify your workflow with our Drag-and-Drop Upload feature—there&apos;s no need for window-switching or extra prompts.
                   </p>
                   <p className="mt-4 text-lg leading-8 text-gray-300">
                     Benefit from our Automatic Audits and keep a watchful eye on every document alteration. Furthermore, with our Secure Encryption, you can ensure utmost patient privacy and remain in full compliance with HIPAA regulations.
@@ -165,7 +168,7 @@ export default function DocumentManagement() {
                   Everything You Need, At Your Fingertips
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto">Medical histories, Explanation of Benefits (EOBs), questionnaires, past communications, patient's clinical charts, the list goes on. Files can be securely created and managed from anywhere (PC, Tablet, Mobile, and more).</p>
+                  <p className="flex-auto">Medical histories, Explanation of Benefits (EOBs), questionnaires, past communications, patient&apos;s clinical charts, the list goes on. Files can be securely created and managed from anywhere (PC, Tablet, Mobile, and more).</p>
                   <p className="mt-6">
                     <Image
                       src="/images/fingertips.webp"

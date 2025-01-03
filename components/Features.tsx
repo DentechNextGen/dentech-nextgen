@@ -7,7 +7,7 @@ const features = [
   {
     name: 'Practice Management',
     summary: 'Dental Practice Management Software Done Right',
-    description: "Our system offers advanced financial and patient reports, all conveniently housed in one place. With our easy insurance processing features, managing your patients' insurance claims becomes a breeze.",
+    description: "Our system offers advanced financial and patient reports, all conveniently housed in one place. With our easy insurance processing features, managing your patients&apos; insurance claims becomes a breeze.",
     imageSrc: '/images/services/practice-management.webp',
     imageAlt: 'Practice Management Feature',
     href: '/features/practice-management'
@@ -39,7 +39,7 @@ const features = [
   {
     name: 'Digital Imaging',
     summary: 'Digital sensors, cameras, and software',
-    description: "Discover the ultimate dental imaging experience for both your practice and your patients with XDR Radiology. At the core lies XDR's unparalleled imaging, marrying intuitive design with advanced features.",
+    description: "Discover the ultimate dental imaging experience for both your practice and your patients with XDR Radiology. At the core lies XDR&apos;s unparalleled imaging, marrying intuitive design with advanced features.",
     imageSrc: '/images/services/digital-imaging.webp',
     imageAlt: 'Digital Imaging Feature',
     href: '/features/digital-imaging'
@@ -47,7 +47,7 @@ const features = [
   {
     name: 'Patient Check-In',
     summary: 'Patient Check-In Kiosk and Monitor System',
-    description: "The fast and contact-free way to streamline your dental practice's patient check-ins. See check-in status and start treatments even if reception's busy. Replace a busy front desk with self check-ins.",
+    description: "The fast and contact-free way to streamline your dental practice&apos;s patient check-ins. See check-in status and start treatments even if reception&apos;s busy. Replace a busy front desk with self check-ins.",
     imageSrc: '/images/services/patient-check-in.webp',
     imageAlt: 'Patient Check-In Feature',
     href: '/features/patient-check-in'
@@ -55,7 +55,7 @@ const features = [
   {
     name: 'Eservices',
     summary: 'Simplify And Scale Your Dental Practice',
-    description: "Doing more in your practice in less time doesn't have to mean racing the clock. When you improve your efficiency, you improve production and profits. Plus, it helps manage one of the biggest problems that plague dentists: high overhead costs.",
+    description: "Doing more in your practice in less time doesn&apos;t have to mean racing the clock. When you improve your efficiency, you improve production and profits. Plus, it helps manage one of the biggest problems that plague dentists: high overhead costs.",
     imageSrc: '/images/services/eservices.webp',
     imageAlt: 'Eservices Feature',
     href: '/features/eservices'
@@ -63,7 +63,7 @@ const features = [
   {
     name: 'Managed Services',
     summary: 'Keep Your Practice Safe And Secure',
-    description: "Your Practice's Data And Security Are More Important Than Ever. Businesses that hold patient health information are often a major target for cybersecurity threats. We help protect your practice with comprehensive managed IT services.",
+    description: "Your Practice&apos;s Data And Security Are More Important Than Ever. Businesses that hold patient health information are often a major target for cybersecurity threats. We help protect your practice with comprehensive managed IT services.",
     imageSrc: '/images/services/managed-services.webp',
     imageAlt: 'Managed Services Feature',
     href: '/features/managed-services'
@@ -88,7 +88,10 @@ export default function Features() {
             Cutting-edge, efficient solutions designed to speed up your practice
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Our platform streamlines all aspects of practice management, from appointment scheduling to billing, into one seamless process. With Dentech, you'll spend less time on administrative tasks and more time providing exceptional care to your patients. We offer features that directly cater to your dental practices every need. Our goal is to help your practice run smoothly so you can provide the best patient care imaginable.
+            Our platform streamlines all aspects of practice management, from appointment scheduling to billing, into one seamless process. With Dentech, you&apos;ll spend less time on administrative tasks and more time providing exceptional care to your patients. We offer features that directly cater to your dental practices every need. Our goal is to help your practice run smoothly so you can provide the best patient care imaginable.
+          </p>
+          <p className="mt-4 text-lg leading-8 text-gray-300">
+            Dentech&apos;s cutting-edge, efficient solutions are designed to speed up your practice.
           </p>
         </div>
         

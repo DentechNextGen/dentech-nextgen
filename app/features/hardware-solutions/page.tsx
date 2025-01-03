@@ -66,10 +66,10 @@ export default function HardwareSolutions() {
                     Dental Hardware Solutions For Your Practice
                   </p>
                   <p className="mt-4 text-lg leading-8 text-gray-300">
-                    Dentech offers a complete line of dental hardware solutions to meet your practice's needs. From workstations and servers to printers and networking equipment, we provide everything you need to run your practice efficiently. Our hardware solutions are designed specifically for dental practices, ensuring compatibility with your dental software and optimal performance.
+                    Dentech offers a complete line of dental hardware solutions to meet your practice&apos;s needs. From workstations and servers to printers and networking equipment, we provide everything you need to run your practice efficiently. Our hardware solutions are designed specifically for dental practices, ensuring compatibility with your dental software and optimal performance.
                   </p>
                   <p className="mt-4 text-lg leading-8 text-gray-300">
-                    We understand that every practice is unique, which is why we offer customized hardware solutions tailored to your specific requirements. Our team will assess your needs and recommend the best hardware configuration for your practice.
+                    We&apos;ll help you select and implement the right hardware solutions for your practice&apos;s needs.
                   </p>
                   <p className="mt-4 text-lg leading-8 text-gray-300">
                     <a href="/docs/Dentech-System-Requirements-2024.pdf" className="text-lime-400 hover:text-lime-300 underline">

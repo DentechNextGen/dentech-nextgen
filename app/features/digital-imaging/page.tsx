@@ -72,12 +72,18 @@ export default function DigitalImaging() {
                     Digital sensors, cameras, and software
                   </p>
                   <p className="mt-4 text-lg leading-8 text-gray-300">
-                    Discover the ultimate dental imaging experience for both your practice and your patients with XDR Radiology. At the core lies XDR's unparalleled imaging, marrying intuitive design with advanced features, culminating in a profound enhancement of your entire workflow. By integrating XDR imaging software and digital sensors, you ensure expedited imaging and precise diagnoses.
+                    Discover the ultimate dental imaging experience for both your practice and your patients with XDR Radiology. At the core lies XDR&apos;s unparalleled imaging, marrying intuitive design with advanced features, culminating in a profound enhancement of your entire workflow. By integrating XDR imaging software and digital sensors, you ensure expedited imaging and precise diagnoses.
                   </p>
                   <p className="mt-4 text-lg leading-8 text-gray-300">
                     <a href="/docs/Dentech-System-Requirements-2024.pdf" className="text-lime-400 hover:text-lime-300 underline">
                       View System Requirements →
                     </a>
+                  </p>
+                  <p className="mt-4 text-lg leading-8 text-gray-300">
+                    Dentech&apos;s digital imaging software is designed to be user-friendly and efficient, making it easy to capture, store, and access your patients&apos; images.
+                  </p>
+                  <p className="mt-4 text-lg leading-8 text-gray-300">
+                    We&apos;re committed to providing you with the best possible digital imaging solution.
                   </p>
                   <div className="mt-10 flex items-start gap-x-6">
                     <a
@@ -159,7 +165,7 @@ export default function DigitalImaging() {
                   Seamless Integration
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto">Dentech's software seamlessly integrates with a wide range of digital imaging software, streamlining your workflow and allowing you to concentrate on patient care. Compatible with leading brands like Apteryx, Carestream, CLINIVIEW™, DentalEye, DEXIS, DICOM, Dolphin, Gendex, PatientGallery®, Schick, Sidexis, Sens-a-ray, SOPRO, TigerView, and many others.</p>
+                  <p className="flex-auto">Dentech&apos;s software seamlessly integrates with a wide range of digital imaging software, streamlining your workflow and allowing you to concentrate on patient care. Compatible with leading brands like Apteryx, Carestream, CLINIVIEW™, DentalEye, DEXIS, DICOM, Dolphin, Gendex, PatientGallery®, Schick, Sidexis, Sens-a-ray, SOPRO, TigerView, and many others.</p>
                   <p className="mt-6">
                     <Image
                       src="/images/integration.webp"
