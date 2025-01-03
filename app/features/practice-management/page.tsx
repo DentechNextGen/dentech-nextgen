@@ -18,24 +18,24 @@ export default function PracticeManagement() {
   return (
     <main className="bg-white">
       {/* Hero Section */}
-      <div className="relative bg-gray-900 py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center mb-16">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+      <div className="relative bg-gray-900 py-16 sm:py-24 lg:py-32">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center mb-12 sm:mb-16">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white">
               Practice Management
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
+            <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-gray-300">
               Dental Practice Management Software Done Right
             </p>
-            <p className="mt-6 text-base leading-7 text-gray-300">
+            <p className="mt-4 sm:mt-6 text-sm sm:text-base leading-6 sm:leading-7 text-gray-300">
               Our system offers advanced financial and patient reports, all conveniently housed in one place. 
               With our easy insurance processing features, managing your patients&apos; insurance claims becomes a breeze.
               The appointment scheduler is designed to make planning your day completely effortless.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-x-6">
               <a
                 href="/schedule"
-                className="rounded-md bg-primary-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+                className="w-full sm:w-auto rounded-md bg-primary-600 px-3.5 py-2.5 text-sm font-semibold text-white text-center shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
               >
                 Schedule Demo
               </a>
@@ -60,7 +60,7 @@ export default function PracticeManagement() {
             </div>
             
             {/* Thumbnails Grid */}
-            <div className="mt-8 grid grid-cols-3 sm:grid-cols-6 gap-4">
+            <div className="mt-6 sm:mt-8 grid grid-cols-3 sm:grid-cols-6 gap-2 sm:gap-4">
               {galleryImages.map((image, index) => (
                 <button
                   key={index}
@@ -74,14 +74,15 @@ export default function PracticeManagement() {
                     alt={`Practice Management Screenshot ${index + 1}`}
                     fill
                     className="object-cover"
+                    sizes="(max-width: 640px) 30vw, (max-width: 768px) 15vw, 12vw"
                   />
                 </button>
               ))}
             </div>
 
             {/* Additional Content */}
-            <div className="mt-12 text-center">
-              <p className="text-lg leading-8 text-gray-300">
+            <div className="mt-8 sm:mt-12 text-center">
+              <p className="text-base sm:text-lg leading-7 sm:leading-8 text-gray-300">
                 Our integrated employee time clock provides extensive reports, making payroll and accounting tasks smoother than ever.
                 Prioritize your practice&apos;s security with features like user logs, write-off limits, and more. 
                 Experience the convenience with our one-click access to scheduling, insurance verification, and so much more!
@@ -92,18 +93,18 @@ export default function PracticeManagement() {
       </div>
 
       {/* Features Section */}
-      <div className="bg-gray-50 py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="bg-gray-50 py-16 sm:py-24 lg:py-32">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
             <h2 className="text-base font-semibold leading-7 text-primary-600">Features</h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <p className="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 lg:text-4xl">
               Powerful Practice Management Tools
             </p>
           </div>
 
           {/* Feature Cards */}
-          <div className="mx-auto mt-16 max-w-7xl">
-            <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3">
+          <div className="mx-auto mt-12 sm:mt-16 max-w-7xl">
+            <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 sm:gap-x-8 lg:gap-x-12">
               {[
                 {
                   title: "Quick Phone Inquiry",

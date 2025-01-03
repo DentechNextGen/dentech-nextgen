@@ -1,8 +1,6 @@
 'use client'
 
-import { Fragment, useState } from 'react'
-import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { useState } from 'react'
 import { navigationConfig } from '@/src/config/navigation'
 import { siteConfig } from '@/src/config'
 import Link from 'next/link'
@@ -15,18 +13,20 @@ export default function Header() {
     <header>
       {/* Top Bar */}
       <div className="bg-gray-950">
-        <div className="mx-auto flex h-8 max-w-7xl items-center justify-end gap-x-3 px-4 sm:gap-x-6 sm:px-6 lg:px-8">
-          <a href="tel:8002334998" className="text-xs sm:text-sm font-semibold leading-6 text-white hover:text-gray-300">
+        <div className="mx-auto flex h-8 max-w-7xl items-center justify-end px-4">
+          <a href="tel:8002334998" className="text-sm text-white hover:text-gray-300">
             (800)-233-4998
           </a>
-          <Link href="/go-to-assist" className="text-xs sm:text-sm font-semibold leading-6 text-white hover:text-gray-300">
+          <span className="mx-3 text-white">|</span>
+          <Link href="/go-to-assist" className="text-sm text-white hover:text-gray-300">
             Go To Assist
           </Link>
+          <span className="mx-3 text-white">|</span>
           <a 
             href="https://customer.billergenie.com/ee929b7258f2" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="text-xs sm:text-sm font-semibold leading-6 text-white hover:text-gray-300"
+            className="text-sm text-white hover:text-gray-300"
           >
             e-Payments
           </a>
@@ -34,110 +34,77 @@ export default function Header() {
       </div>
 
       {/* Main Navigation */}
-      <nav className="bg-white sticky top-0 z-50 backdrop-blur">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <nav className="bg-white">
+        <div className="mx-auto max-w-7xl px-4">
           <div className="flex h-16 items-center justify-between">
-            <div className="flex lg:flex-1">
-              <Link href="/" className="-m-1.5 p-1.5">
-                <Image
-                  src="/icons/logo.svg"
-                  alt={siteConfig.name}
-                  width={150}
-                  height={50}
-                  className="h-8 w-auto sm:h-10 lg:h-12"
-                  priority
-                />
-              </Link>
-            </div>
+            <Link href="/" className="flex-shrink-0">
+              <Image
+                src="/icons/logo.svg"
+                alt={siteConfig.name}
+                width={150}
+                height={50}
+                className="h-8 w-auto"
+                priority
+              />
+            </Link>
 
             {/* Mobile menu button */}
-            <div className="flex lg:hidden">
-              <button
-                type="button"
-                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-                onClick={() => setMobileMenuOpen(true)}
-              >
-                <span className="sr-only">Open main menu</span>
-                <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-              </button>
-            </div>
+            <button
+              type="button"
+              className="md:hidden p-2 text-gray-700"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              <span className="sr-only">Menu</span>
+              <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
 
             {/* Desktop navigation */}
-            <div className="hidden lg:flex lg:gap-x-8">
+            <div className="hidden md:flex md:items-center md:space-x-8">
               {navigationConfig.mainNav.map((item) => (
                 <Link
                   key={item.title}
                   href={item.href}
-                  className="text-sm font-semibold leading-6 text-gray-900 hover:text-lime-600"
+                  className="text-sm font-semibold text-gray-900 hover:text-lime-600"
                 >
                   {item.title}
                 </Link>
               ))}
-            </div>
-
-            {/* Desktop CTA */}
-            <div className="hidden lg:flex lg:flex-1 lg:justify-end">
               <Link
                 href="/schedule"
-                className="text-sm font-semibold leading-6 text-white bg-lime-600 px-3 py-2 rounded-md hover:bg-lime-500"
+                className="text-sm font-semibold text-white bg-lime-600 px-3 py-2 rounded hover:bg-lime-500"
               >
                 Schedule Demo
               </Link>
             </div>
           </div>
-        </div>
 
-        {/* Mobile menu */}
-        <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-          <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-            <div className="flex items-center justify-between">
-              <Link href="/" className="-m-1.5 p-1.5" onClick={() => setMobileMenuOpen(false)}>
-                <Image
-                  src="/icons/logo.svg"
-                  alt={siteConfig.name}
-                  width={150}
-                  height={50}
-                  className="h-8 w-auto"
-                  priority
-                />
-              </Link>
-              <button
-                type="button"
-                className="-m-2.5 rounded-md p-2.5 text-gray-700"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <span className="sr-only">Close menu</span>
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-              </button>
-            </div>
-            <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
-                  {navigationConfig.mainNav.map((item) => (
-                    <Link
-                      key={item.title}
-                      href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      {item.title}
-                    </Link>
-                  ))}
-                </div>
-                <div className="py-6">
+          {/* Mobile menu */}
+          {mobileMenuOpen && (
+            <div className="md:hidden border-t border-gray-200">
+              <div className="px-2 py-3">
+                {navigationConfig.mainNav.map((item) => (
                   <Link
-                    href="/schedule"
-                    className="block text-center text-sm font-semibold leading-6 text-white bg-lime-600 px-3 py-2 rounded-md hover:bg-lime-500"
+                    key={item.title}
+                    href={item.href}
+                    className="block px-3 py-2 text-base text-gray-900 hover:text-lime-600"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    Schedule Demo
+                    {item.title}
                   </Link>
-                </div>
+                ))}
+                <Link
+                  href="/schedule"
+                  className="block mt-2 text-center text-white bg-lime-600 px-3 py-2 rounded hover:bg-lime-500"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Schedule Demo
+                </Link>
               </div>
             </div>
-          </Dialog.Panel>
-        </Dialog>
+          )}
+        </div>
       </nav>
     </header>
   )
