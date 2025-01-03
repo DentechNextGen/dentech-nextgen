@@ -7,11 +7,6 @@ export interface SoftwareApplicationSchema extends BaseSchema {
   description: string
   applicationCategory: string
   operatingSystem: string
-  offers: {
-    '@type': 'Offer'
-    price: string
-    priceCurrency: string
-  }
   featureList?: string[]
   screenshot?: {
     '@type': 'ImageObject'
@@ -20,30 +15,29 @@ export interface SoftwareApplicationSchema extends BaseSchema {
   }[]
 }
 
-export function generateSoftwareSchema(
-  name: string,
-  description: string,
-  features: string[],
-  screenshots: { url: string; caption?: string }[] = []
-): SoftwareApplicationSchema {
+export interface SoftwareSchemaInput {
+  name: string
+  description: string
+  features?: string[]
+  screenshots?: { url: string; caption?: string }[]
+}
+
+export function generateSoftwareSchema(input: SoftwareSchemaInput): SoftwareApplicationSchema {
   return {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
-    name,
-    description,
-    applicationCategory: 'Dental Practice Management Software',
+    name: input.name,
+    description: input.description,
+    applicationCategory: 'BusinessApplication',
     operatingSystem: 'Windows',
-    offers: {
-      '@type': 'Offer',
-      price: 'Contact for Pricing',
-      priceCurrency: 'USD'
-    },
-    featureList: features,
-    screenshot: screenshots.map(s => ({
-      '@type': 'ImageObject',
-      url: `${siteConfig.url}${s.url}`,
-      caption: s.caption
-    }))
+    ...(input.features && { featureList: input.features }),
+    ...(input.screenshots && {
+      screenshot: input.screenshots.map(s => ({
+        '@type': 'ImageObject',
+        url: s.url.startsWith('http') ? s.url : `${siteConfig.url}${s.url}`,
+        ...(s.caption && { caption: s.caption })
+      }))
+    })
   }
 }
 

@@ -8,6 +8,8 @@ import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
+const schemas = [organizationSchema]
+
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://dentech.com'),
   title: {
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   other: {
-    'script:ld+json': JSON.stringify(organizationSchema),
+    'script:ld+json': JSON.stringify(schemas)
   },
 }
 

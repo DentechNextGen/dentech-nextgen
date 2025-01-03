@@ -1,32 +1,43 @@
-import { Metadata } from 'next'
-import Link from 'next/link'
+import { generateBreadcrumbSchema } from '@/lib/schema'
+import { siteConfig } from '@/src/config'
+import type { Metadata } from 'next'
+
+const schemas = [
+  generateBreadcrumbSchema([
+    { name: 'Home', item: 'https://dentech.com' },
+    { name: 'Thank You', item: 'https://dentech.com/thank-you' }
+  ])
+]
 
 export const metadata: Metadata = {
-  title: 'Thank You - Dentech',
-  description: 'Thank you for requesting a demo of Dentech Next Gen!',
+  title: 'Thank You | Dentech',
+  description: 'Thank you for your interest in Dentech\'s dental practice management software. We\'ll be in touch shortly.',
+  openGraph: {
+    title: 'Thank You | Dentech',
+    description: 'Thank you for your interest in Dentech\'s dental practice management software. We\'ll be in touch shortly.',
+    url: 'https://dentech.com/thank-you',
+    siteName: 'Dentech',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Thank You | Dentech',
+    description: 'Thank you for your interest in Dentech\'s dental practice management software. We\'ll be in touch shortly.',
+    creator: '@dentech',
+  }
 }
 
-export default function ThankYou() {
+export default function ThankYouPage() {
   return (
-    <div className="bg-gray-50">
-      <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Thank You!
-          </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            We appreciate your interest in Dentech. Our team will be in touch with you shortly.
-          </p>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Link
-              href="/"
-              className="rounded-md bg-lime-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-lime-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-600"
-            >
-              Return Home
-            </Link>
-          </div>
-        </div>
-      </div>
-    </div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas) }}
+      />
+      <main>
+        {/* Thank you page content */}
+      </main>
+    </>
   )
 } 
