@@ -9,8 +9,8 @@ export async function generateMetadata(): Promise<Metadata> {
 
   const schemas = [
     generateBreadcrumbSchema([
-      { name: 'Home', path: '/' },
-      { name: 'About', path: '/about' }
+      { name: 'Home', item: 'https://dentech.com/' },
+      { name: 'About', item: 'https://dentech.com/about' }
     ])
   ]
 
