@@ -1,3 +1,5 @@
+'use server'
+
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
@@ -9,9 +11,9 @@ export interface Article {
   content: string
   excerpt: string
   image?: string
+  tags?: string[]
   author?: string
   authorImage?: string
-  tags?: string[]
 }
 
 const articlesDirectory = path.join(process.cwd(), 'content/articles')
@@ -19,25 +21,28 @@ const articlesDirectory = path.join(process.cwd(), 'content/articles')
 export async function getAllArticles(): Promise<Article[]> {
   const fileNames = fs.readdirSync(articlesDirectory)
   const articles = fileNames.map((fileName) => {
-    const slug = fileName.replace(/\.mdx?$/, '')
+    const slug = fileName.replace(/\.md$/, '')
     const fullPath = path.join(articlesDirectory, fileName)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
     const { data, content } = matter(fileContents)
 
     return {
+      title: data.title || slug,
       slug,
-      title: data.title,
-      date: data.createdAt || data.date,
+      date: data.createdAt || data.date || new Date().toISOString(),
       content,
       excerpt: data.excerpt || data.desc || content.slice(0, 200) + '...',
       image: data.image,
+      tags: data.tags || [],
       author: data.author,
-      authorImage: data.authorImage,
-      tags: data.tags,
+      authorImage: data.authorImage
     }
   })
 
-  return articles.sort((a, b) => (a.date > b.date ? -1 : 1))
+  // Sort articles by date in descending order
+  return articles.sort((a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime()
+  })
 }
 
 export async function getLatestArticles(count: number): Promise<Article[]> {

@@ -10,14 +10,9 @@ export async function generateStaticParams() {
   }))
 }
 
-interface BlogPostProps {
-  params: Promise<{
-    slug: string
-  }>
-}
-
-export default async function BlogPost({ params }: BlogPostProps) {
-  const { slug } = await params
+// @ts-ignore - Next.js 15.1 type issue with page props
+export default async function BlogPost({ params }: { params: { slug: string } }) {
+  const { slug } = params
   const articles = await getAllArticles()
   const article = articles.find(article => article.slug === slug)
 

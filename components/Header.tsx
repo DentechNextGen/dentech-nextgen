@@ -5,6 +5,7 @@ import { navigationConfig } from '@/src/config/navigation'
 import { siteConfig } from '@/src/config'
 import Link from 'next/link'
 import Image from 'next/image'
+import { MagnifyingGlassIcon } from '@heroicons/react/24/outline'
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -62,6 +63,13 @@ export default function Header() {
 
             {/* Desktop navigation */}
             <div className="hidden md:flex md:items-center md:space-x-8">
+              <Link
+                href="/search"
+                className="text-gray-900 hover:text-lime-600"
+                aria-label="Search"
+              >
+                <MagnifyingGlassIcon className="h-6 w-6" />
+              </Link>
               {navigationConfig.mainNav.map((item) => (
                 <Link
                   key={item.title}
@@ -84,6 +92,13 @@ export default function Header() {
           {mobileMenuOpen && (
             <div className="md:hidden border-t border-gray-200">
               <div className="px-2 py-3">
+                <Link
+                  href="/search"
+                  className="block px-3 py-2 text-base text-gray-900 hover:text-lime-600"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Search
+                </Link>
                 {navigationConfig.mainNav.map((item) => (
                   <Link
                     key={item.title}

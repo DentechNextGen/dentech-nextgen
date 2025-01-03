@@ -24,9 +24,9 @@ export default async function Blog() {
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl lg:max-w-5xl">
-            <div className="space-y-16">
+            <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
               {articles.map((article) => (
-                <ArticleCard key={article.slug} article={article} />
+                <ArticleCard key={article.slug} article={article} horizontal />
               ))}
             </div>
           </div>

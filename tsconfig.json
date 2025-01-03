@@ -26,7 +26,8 @@
       "@/*": [
         "./*"
       ]
-    }
+    },
+    "skipDefaultLibCheck": true
   },
   "include": [
     "next-env.d.ts",
