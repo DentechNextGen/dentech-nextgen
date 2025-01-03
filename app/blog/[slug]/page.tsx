@@ -10,9 +10,15 @@ export async function generateStaticParams() {
   }))
 }
 
-export default async function BlogPost(props: any) {
+interface BlogPostProps {
+  params: {
+    slug: string
+  }
+}
+
+export default async function BlogPost({ params }: BlogPostProps) {
   const articles = await getAllArticles()
-  const article = articles.find(article => article.slug === props.params.slug)
+  const article = articles.find(article => article.slug === params.slug)
 
   if (!article) {
     notFound()
@@ -25,54 +31,62 @@ export default async function BlogPost(props: any) {
   })
 
   return (
-    <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
-        <article className="mx-auto max-w-4xl">
-          {article.image && (
-            <div className="relative aspect-[2/1] mb-12 overflow-hidden rounded-xl">
-              <Image
-                src={article.image}
-                alt={article.title}
-                fill
-                className="object-cover"
-                priority
-              />
-            </div>
-          )}
-          <header className="flex flex-col">
-            <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+    <main className="bg-white">
+      {/* Hero Section */}
+      <div className="relative bg-gray-900 py-24 sm:py-32">
+        <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl lg:max-w-5xl">
+            {article.image && (
+              <div className="relative aspect-[2/1] rounded-xl overflow-hidden mb-12">
+                <Image
+                  src={article.image}
+                  alt={article.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1400px) 1400px"
+                  priority
+                />
+              </div>
+            )}
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
               {article.title}
             </h1>
-            <div className="mt-6 flex items-center gap-x-4 text-sm">
+            <div className="mt-6 flex flex-wrap gap-4 items-center">
               {article.author && article.authorImage && (
-                <div className="flex items-center gap-x-2">
+                <div className="flex items-center gap-3">
                   <Image
                     src={article.authorImage}
                     alt={article.author}
                     width={40}
                     height={40}
-                    className="h-10 w-10 rounded-full bg-gray-50"
+                    className="rounded-full bg-white/10"
                   />
-                  <div className="text-sm leading-6">
-                    <p className="font-semibold text-gray-900">{article.author}</p>
-                  </div>
+                  <span className="font-medium text-white">{article.author}</span>
                 </div>
               )}
-              <time dateTime={article.date} className="text-gray-500">
+              <time dateTime={article.date} className="text-gray-300">
                 {formattedDate}
               </time>
               {article.tags?.map((tag) => (
-                <span key={tag} className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+                <span key={tag} className="rounded-full bg-white/10 px-3 py-1 text-sm text-white">
                   {tag}
                 </span>
               ))}
             </div>
-          </header>
-          <div className="mt-12 prose prose-lg prose-slate mx-auto prose-headings:font-display prose-headings:font-semibold prose-headings:tracking-tight prose-lead:text-slate-500 prose-a:font-semibold prose-a:text-lime-600 hover:prose-a:text-lime-500 prose-strong:font-semibold prose-strong:text-slate-900 prose-code:text-slate-900 prose-pre:bg-slate-900 prose-blockquote:border-l-lime-600 prose-blockquote:text-slate-700 prose-blockquote:font-normal prose-blockquote:not-italic prose-hr:border-slate-200">
-            <ReactMarkdown>{article.content}</ReactMarkdown>
           </div>
-        </article>
+        </div>
       </div>
-    </div>
+
+      {/* Content Section */}
+      <div className="bg-white py-24 sm:py-32">
+        <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl lg:max-w-4xl">
+            <div className="prose prose-lg prose-slate mx-auto">
+              <ReactMarkdown>{article.content}</ReactMarkdown>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   )
 } 
