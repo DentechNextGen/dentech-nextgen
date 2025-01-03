@@ -90,9 +90,6 @@ export default function Features() {
           <p className="mt-6 text-lg leading-8 text-gray-600">
             Our platform streamlines all aspects of practice management, from appointment scheduling to billing, into one seamless process. With Dentech, you&apos;ll spend less time on administrative tasks and more time providing exceptional care to your patients. We offer features that directly cater to your dental practices every need. Our goal is to help your practice run smoothly so you can provide the best patient care imaginable.
           </p>
-          <p className="mt-4 text-lg leading-8 text-gray-300">
-            Dentech&apos;s cutting-edge, efficient solutions are designed to speed up your practice.
-          </p>
         </div>
         
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 lg:mx-0 lg:max-w-none lg:grid-cols-3">
