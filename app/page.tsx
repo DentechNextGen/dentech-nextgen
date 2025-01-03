@@ -11,14 +11,18 @@ export default async function Home() {
   const latestArticles = await getLatestArticles(3)
   
   return (
-    <main>
+    <main className="bg-white">
       <Hero />
-      <Features />
-      <VideoFeature />
-      <FAQ />
-      <Testimonials />
-      <BlogSection articles={latestArticles} />
-      <CTA />
+      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl lg:max-w-5xl">
+          <Features />
+          <VideoFeature />
+          <FAQ />
+          <Testimonials />
+          <BlogSection articles={latestArticles} />
+          <CTA />
+        </div>
+      </div>
     </main>
   )
 }

@@ -1,29 +1,33 @@
 export default function GoToAssistContent() {
   return (
-    <main>
-      <section className="bg-gray-950 relative overflow-hidden py-24 sm:py-32">
+    <main className="bg-white">
+      {/* Hero Section */}
+      <div className="relative bg-gray-900 py-24 sm:py-32">
         <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl lg:max-w-5xl">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
               Remote Support Access
-            </h2>
+            </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
               Welcome to the dedicated assistance portal for your Dentech software. Here, you can effortlessly initiate a remote session, allowing our expert support team to join you virtually in addressing any software concerns you may have.
             </p>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section className="bg-white py-24 sm:py-32">
+      {/* Form Section */}
+      <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl lg:max-w-5xl">
-            <h2 className="text-base font-semibold leading-7 text-lime-600">Start Your Remote Session</h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Connect with Our Support Team
-            </p>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Enter the 6-digit session number given to you by your support representative.
-            </p>
+            <div className="max-w-2xl">
+              <h2 className="text-base font-semibold leading-7 text-primary-600">Start Your Remote Session</h2>
+              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900">
+                Connect with Our Support Team
+              </p>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                Enter the 6-digit session number given to you by your support representative.
+              </p>
+            </div>
 
             <div className="mt-16">
               <div className="rounded-2xl bg-gray-50 p-8 shadow-sm ring-1 ring-gray-900/5">
@@ -43,7 +47,7 @@ export default function GoToAssistContent() {
                         type="text"
                         id="code"
                         autoComplete="given-code"
-                        className="block w-full rounded-md border-0 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-lime-600 sm:text-sm sm:leading-6"
+                        className="block w-full rounded-md border-0 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6"
                         required
                         name="Code"
                       />
@@ -55,7 +59,7 @@ export default function GoToAssistContent() {
                       <input
                         id="consent"
                         type="checkbox"
-                        className="h-4 w-4 rounded border-gray-300 text-lime-600 focus:ring-lime-600"
+                        className="h-4 w-4 rounded border-gray-300 text-primary-600 focus:ring-primary-600"
                         required
                         name="consent"
                       />
@@ -68,7 +72,7 @@ export default function GoToAssistContent() {
                   </div>
 
                   <button
-                    className="rounded-md bg-lime-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-lime-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-600"
+                    className="rounded-md bg-primary-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
                     type="submit"
                     value="Connect to technician"
                   >
@@ -83,7 +87,7 @@ export default function GoToAssistContent() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </main>
   )
 } 
