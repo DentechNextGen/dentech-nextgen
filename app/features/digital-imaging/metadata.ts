@@ -1,58 +1,32 @@
 import { Metadata } from 'next'
-import { generateBreadcrumbSchema, generateSoftwareSchema } from '@/lib/schema'
+import { siteConfig } from '@/src/config'
 
-const metadata: Metadata = {
-  title: 'Digital Imaging Software for Dental Practices',
-  description: 'Advanced dental imaging software with seamless integration, image enhancement tools, and secure storage for all your diagnostic imaging needs.',
+export const metadata: Metadata = {
+  title: 'Digital Imaging Software | Dentech',
+  description: 'Advanced dental imaging solution featuring digital sensors, cameras, and intuitive software for the ultimate dental imaging experience. Features DICOM compatibility and cloud storage.',
   openGraph: {
-    title: 'Digital Imaging | Dentech',
-    description: 'Advanced dental imaging software with seamless integration, image enhancement tools, and secure storage for all your diagnostic imaging needs.',
+    title: 'Digital Imaging Software | Dentech',
+    description: 'Advanced dental imaging solution featuring digital sensors, cameras, and intuitive software for the ultimate dental imaging experience. Features DICOM compatibility and cloud storage.',
+    url: `${siteConfig.url}/features/digital-imaging`,
+    siteName: siteConfig.name,
     images: [
       {
-        url: 'https://dentech.com/images/features/digital-imaging-hero.jpg',
+        url: `${siteConfig.url}/images/services/digital-imaging.webp`,
         width: 1200,
         height: 630,
-        alt: 'Dentech Digital Imaging Software Interface'
+        alt: 'Dentech Digital Imaging Software'
       }
-    ]
+    ],
+    locale: 'en_US',
+    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Digital Imaging | Dentech',
-    description: 'Advanced dental imaging software with seamless integration, image enhancement tools, and secure storage.',
-    images: ['https://dentech.com/images/features/digital-imaging-hero.jpg']
+    title: 'Digital Imaging Software | Dentech',
+    description: 'Advanced dental imaging solution featuring digital sensors, cameras, and intuitive software for the ultimate dental imaging experience. Features DICOM compatibility and cloud storage.',
+    images: [`${siteConfig.url}/images/services/digital-imaging.webp`],
   },
-  other: {
-    'script:ld+json': JSON.stringify([
-      generateSoftwareSchema(
-        'Dentech Digital Imaging',
-        'Advanced dental imaging solution for dental practices.',
-        'https://dentech.com/features/digital-imaging',
-        {
-          applicationCategory: 'Medical Imaging Software',
-          operatingSystem: 'Windows',
-          features: [
-            'Seamless imaging integration',
-            'Image enhancement tools',
-            'Secure HIPAA-compliant storage',
-            'Multi-device compatibility',
-            'Advanced annotation tools',
-            'Cloud backup and sync'
-          ],
-          screenshot: {
-            '@type': 'ImageObject',
-            url: 'https://dentech.com/images/features/digital-imaging-screenshot.jpg',
-            caption: 'Dentech Digital Imaging Software Interface'
-          }
-        }
-      ),
-      generateBreadcrumbSchema([
-        { name: 'Home', item: 'https://dentech.com' },
-        { name: 'Features', item: 'https://dentech.com/features' },
-        { name: 'Digital Imaging', item: 'https://dentech.com/features/digital-imaging' },
-      ])
-    ])
+  alternates: {
+    canonical: `${siteConfig.url}/features/digital-imaging`
   }
-}
-
-export default metadata 
+} 

@@ -1,27 +1,32 @@
 import { Metadata } from 'next'
-import { generateSoftwareSchema, generateBreadcrumbSchema } from '@/lib/schema'
+import { siteConfig } from '@/src/config'
 
-const metadata: Metadata = {
-  title: 'Document Management Software',
-  description: 'Transform your dental practice with Dentech\'s DenDox document management system. Go beyond paperless with efficient document production, storage, and access capabilities.',
+export const metadata: Metadata = {
+  title: 'Document Management Software | Dentech',
+  description: 'Secure digital document management system for dental practices. Features digital document storage, secure encryption, automatic audits, drag-and-drop upload, and HIPAA compliance.',
   openGraph: {
     title: 'Document Management Software | Dentech',
-    description: 'Transform your dental practice with Dentech\'s DenDox document management system. Go beyond paperless with efficient document production, storage, and access capabilities.',
+    description: 'Secure digital document management system for dental practices. Features digital document storage, secure encryption, automatic audits, drag-and-drop upload, and HIPAA compliance.',
+    url: `${siteConfig.url}/features/document-management`,
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: `${siteConfig.url}/images/services/document-management.webp`,
+        width: 1200,
+        height: 630,
+        alt: 'Dentech Document Management Software'
+      }
+    ],
+    locale: 'en_US',
+    type: 'website',
   },
-  other: {
-    'script:ld+json': JSON.stringify([
-      generateSoftwareSchema(
-        'Dentech Document Management',
-        'Transform your dental practice with Dentech\'s DenDox document management system. Go beyond paperless with efficient document production, storage, and access capabilities.',
-        'https://dentech.com/features/document-management'
-      ),
-      generateBreadcrumbSchema([
-        { name: 'Home', item: 'https://dentech.com' },
-        { name: 'Features', item: 'https://dentech.com/features' },
-        { name: 'Document Management', item: 'https://dentech.com/features/document-management' },
-      ])
-    ])
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Document Management Software | Dentech',
+    description: 'Secure digital document management system for dental practices. Features digital document storage, secure encryption, automatic audits, drag-and-drop upload, and HIPAA compliance.',
+    images: [`${siteConfig.url}/images/services/document-management.webp`],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/features/document-management`
   }
-}
-
-export default metadata 
+} 

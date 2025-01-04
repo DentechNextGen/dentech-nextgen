@@ -1,6 +1,6 @@
-import { BaseSchema } from './index.js'
-import { siteConfig } from '../../src/config/index.js'
-import { dentechAggregateRating, generateSoftwareWithReviewSchema } from './review.js'
+import { BaseSchema } from '.'
+import { siteConfig } from '../../src/config'
+import { dentechAggregateRating, generateSoftwareWithReviewSchema } from './review'
 
 export interface SoftwareApplicationSchema extends BaseSchema {
   '@type': 'SoftwareApplication'

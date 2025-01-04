@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { organizationSchema } from '@/lib/schema'
+import { organizationSchema } from '@/lib/schema/organization'
 import { siteConfig } from '@/src/config'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'

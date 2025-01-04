@@ -1,25 +1,33 @@
 import { Metadata } from 'next'
-import { practiceManagementSchema, generateBreadcrumbSchema } from '@/lib/schema'
 import { siteConfig } from '@/src/config'
+import { practiceManagementSchema } from '@/lib/schema/software'
 
-const metadata: Metadata = {
-  title: 'Practice Management Software',
-  description: 'Streamline your dental practice with Dentech\'s comprehensive practice management software. Features include appointment scheduling, billing, insurance processing, and advanced financial reporting.',
+export const metadata: Metadata = {
+  title: 'Practice Management Software | Dentech',
+  description: 'Comprehensive dental practice management software with advanced financial reporting, insurance processing, and appointment scheduling.',
   openGraph: {
     title: 'Practice Management Software | Dentech',
-    description: 'Streamline your dental practice with Dentech\'s comprehensive practice management software. Features include appointment scheduling, billing, insurance processing, and advanced financial reporting.',
-    url: 'https://dentech.com/features/practice-management',
+    description: 'Comprehensive dental practice management software with advanced financial reporting, insurance processing, and appointment scheduling.',
+    url: `${siteConfig.url}/features/practice-management`,
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: `${siteConfig.url}/images/services/practice-management.webp`,
+        width: 1200,
+        height: 630,
+        alt: 'Dentech Practice Management Software'
+      }
+    ],
+    locale: 'en_US',
+    type: 'website',
   },
-  other: {
-    'script:ld+json': JSON.stringify([
-      practiceManagementSchema,
-      generateBreadcrumbSchema([
-        { name: 'Home', item: 'https://dentech.com' },
-        { name: 'Features', item: 'https://dentech.com/features' },
-        { name: 'Practice Management', item: 'https://dentech.com/features/practice-management' },
-      ])
-    ])
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Practice Management Software | Dentech',
+    description: 'Comprehensive dental practice management software with advanced financial reporting, insurance processing, and appointment scheduling.',
+    images: [`${siteConfig.url}/images/services/practice-management.webp`],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/features/practice-management`
   }
-}
-
-export default metadata 
+} 

@@ -2,22 +2,29 @@
   "name": "nextjs",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test:schema": "NODE_OPTIONS='--experimental-specifier-resolution=node' node --loader ts-node/esm scripts/test-schema.ts",
+    "test:schema-cases": "node --loader ts-node/esm scripts/test-schema-cases.ts"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
     "@tailwindcss/typography": "^0.5.15",
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1",
+    "chalk": "^4.1.2",
     "clsx": "^2.1.1",
     "gray-matter": "^4.0.3",
     "next": "15.1.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "react-markdown": "^9.0.1"
+    "react-markdown": "^9.0.1",
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@types/node": "^20.11.30",

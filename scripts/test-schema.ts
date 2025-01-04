@@ -7,9 +7,11 @@ import {
   digitalImagingSchema,
   patientCheckInSchema,
   eservicesSchema
-} from '../lib/schema/software.js'
-import { supportFAQSchema } from '../lib/schema/faq.js'
-import { testimonialReviews, dentechAggregateRating } from '../lib/schema/review.js'
+} from '../lib/schema/software'
+import { supportFAQSchema } from '../lib/schema/faq'
+import { testimonialReviews, dentechAggregateRating } from '../lib/schema/review'
+import { generateBreadcrumbSchema } from '../lib/schema/breadcrumb'
+import { siteConfig } from '../src/config'
 
 interface SchemaValidationResult {
   isValid: boolean
@@ -162,6 +164,12 @@ function printValidationResult(result: SchemaValidationResult) {
 function validateSchemas() {
   console.log(chalk.blue('🔍 Validating Schema.org markup...'))
 
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', item: siteConfig.url },
+    { name: 'Features', item: `${siteConfig.url}/features` },
+    { name: 'Practice Management', item: `${siteConfig.url}/features/practice-management` }
+  ])
+
   const schemas = [
     { schema: practiceManagementSchema, name: 'Practice Management' },
     { schema: voiceChartingSchema, name: 'Voice Charting' },
@@ -171,6 +179,7 @@ function validateSchemas() {
     { schema: patientCheckInSchema, name: 'Patient Check-In' },
     { schema: eservicesSchema, name: 'E-Services' },
     { schema: supportFAQSchema, name: 'FAQ' },
+    { schema: breadcrumbSchema, name: 'Breadcrumb Navigation' },
     ...testimonialReviews.map((review, index) => ({ 
       schema: review, 
       name: `Testimonial Review ${index + 1}` 
