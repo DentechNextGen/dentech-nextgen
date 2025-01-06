@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
-        display: ["Marcellus", "serif"],
+        display: ["Poppins", "sans-serif"],
       },
       colors: {
         primary: {
@@ -29,7 +29,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };
 
 export default config;
