@@ -70,6 +70,12 @@ export default function Header() {
               >
                 <MagnifyingGlassIcon className="h-6 w-6" />
               </Link>
+              <Link
+                href="/"
+                className="text-base font-semibold text-gray-900 hover:text-lime-600"
+              >
+                Home
+              </Link>
               {navigationConfig.mainNav.map((item) => (
                 <Link
                   key={item.title}
@@ -98,6 +104,13 @@ export default function Header() {
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Search
+                </Link>
+                <Link
+                  href="/"
+                  className="block px-3 py-2 text-base text-gray-900 hover:text-lime-600"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Home
                 </Link>
                 {navigationConfig.mainNav.map((item) => (
                   <Link
