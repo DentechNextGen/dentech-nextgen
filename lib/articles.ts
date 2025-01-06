@@ -21,7 +21,14 @@ const articlesDirectory = path.join(process.cwd(), 'content/articles')
 export async function getAllArticles(): Promise<Article[]> {
   const fileNames = fs.readdirSync(articlesDirectory)
   const articles = fileNames.map((fileName) => {
-    const slug = fileName.replace(/\.md$/, '')
+    const slug = fileName
+      .replace(/\.md$/, '')
+      .replace(/–/g, '-')
+      .replace(/'/g, '')
+      .replace(/[^a-zA-Z0-9-]/g, '-')
+      .replace(/-+/g, '-')
+      .toLowerCase()
+
     const fullPath = path.join(articlesDirectory, fileName)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
     const { data, content } = matter(fileContents)
