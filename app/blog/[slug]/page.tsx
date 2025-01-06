@@ -12,7 +12,8 @@ export async function generateStaticParams() {
 
 // @ts-expect-error - Next.js 15 type issue with page props
 export default async function BlogPost({ params }: { params: { slug: string } }) {
-  const { slug } = params
+  const resolvedParams = await params
+  const { slug } = resolvedParams
   const articles = await getAllArticles()
   const article = articles.find(article => article.slug === slug)
 
