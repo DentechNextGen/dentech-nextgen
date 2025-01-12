@@ -1,14 +1,14 @@
 ---
 title: How to Thrive In A Failing Economy
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
-desc: Have your patients become M.l.A.? You may have to get into the trenches to seek them out. Many factors may play a part into the disappearance from your practice such as the holidays, a slowing economy or they may have an aversion to going to the dentist. Whatever the reason, you need your patients busi­ness to continue to keep your practice thriving. It will take some effort but start by establishing a game plan with some practice building tools from your DENTECH system.
+authorImage: '/images/jane-kaminksi-author.webp'
+desc: Have your patients become M.I.A.? You may have to get into the trenches to seek them out. Many factors may play a part into the disappearance from your practice such as the holidays, a slowing economy or they may have an aversion to going to the dentist. Whatever the reason, you need your patients busi­ness to continue to keep your practice thriving. It will take some effort but start by establishing a game plan with some practice building tools from your DENTECH system.
 image: /images/how-to-thrive-in-a-failing-economy.webp
 alt: How to Thrive In A Failing Economy
 createdAt: 01/18/2022
 updatedAt: 01/18/2022
 tags:
-  - Practice Management
+  - Tips and Tricks
 keywords:
   - Appointment Scheduler
   - Patients

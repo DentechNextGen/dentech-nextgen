@@ -1,14 +1,14 @@
 ---
 title: The Dentech Community Grows! – Facebook Group & Website Forum Announced
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminksi-author.webp'
 desc: Over the past few weeks, I have been collecting feedback from our customers via our new email list. The feedback has been immeasurably helpful, and I am eager to keep the conversation going.
 image: /images/the-dentech-community-grows–facebook-group-and-website-forum-announced.webp
 alt: The Dentech Community Grows! – Facebook Group & Website Forum Announced
 createdAt: 09/04/2020
 updatedAt: 09/04/2020
 tags:
-  - Blog
+  - News
 keywords:
   - Dentech Community Growth
   - Dental Software Feedback Forum

@@ -1,7 +1,7 @@
 ---
 title: Better Reports Help You Run Your Dental Practice Smoothly – Part 1
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminksi-author.webp'
 desc: Welcome to part two of our blog series on Dentech’s practice management software reports. After exploring financial reports in part one, we’re now diving into patient reports. These reports offer valuable insights into patient demographics, dental histories, and more, helping you enhance patient care and retention. Let’s explore the key patient reports in Dentech’s software.
 
 image: /images/better-reports-help-you-run-your-dental-practice-smoothly-part-1.webp
@@ -10,7 +10,6 @@ createdAt: 03/29/2023
 updatedAt: 03/29/2023
 tags:
   - Practice Management
-  - Training
 keywords:
   - Financial Reports
   - Revenue

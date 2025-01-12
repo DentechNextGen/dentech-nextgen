@@ -1,14 +1,14 @@
 ---
 title: Come See The New Dentech At The 2022 MDA Annual Session
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminksi-author.webp'
 desc: The Michigan Dental Association Annual Session is THIS WEEK from April 27 to April 30. We are so excited to have many things planned for the event!
 image: /images/come-see-the-new-dentech-at-the-2022-mda-annual-session.webp
 alt: Come See The New Dentech At The 2022 MDA Annual Session
 createdAt: 04/26/2022
 updatedAt: 04/26/2022
 tags:
-  - Blog
+  - News
 keywords:
   - Dentech
   - Practice Management Software

@@ -1,14 +1,14 @@
 ---
 title: Your FIRST Look Into The All New Dentech!
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminksi-author.webp'
 desc: I have been hemming and hawing this for awhile now. Reason being is that I am your textbook Type A perfectionist. I always want the projects I am working on to be perfect before showing it to others.
 image: /images/your-first-look-into-the-all-new-dentech.webp
 alt: Your FIRST Look Into The All New Dentech!
 createdAt: 11/16/2020
 updatedAt: 11/16/2020
 tags:
-  - Practice Management
+  - News
 keywords:
   - Dentech Software Development
   - Continuous Improvement in Dental Software

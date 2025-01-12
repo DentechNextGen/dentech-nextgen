@@ -1,7 +1,7 @@
 ---
 title: Dentech - A Quick Review Of 2021 And What’s To Come In 2022
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminksi-author.webp'
 desc: Software has changed drastically in the last 40 years and will continue to in the next 40 years. For Dentech, 2021 has been a year of preparing for the future.
 image: /images/dentech-a-quick-review-of-2021-and-whats-to-come-in-2022.webp
 alt: Dentech - A Quick Review Of 2021 And What’s To Come In 2022

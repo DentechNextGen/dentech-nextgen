@@ -1,7 +1,7 @@
 ---
 title: Is Voice Charting for A Multi-Office Practice Feasible?
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminksi-author.webp'
 desc: In this case study we take a look at a large multi-location dental practice and their implementation of DenChart periodontal voice charting software. Over the span of a year, we explore what is involved in the installation, training and use of voice charting software in a multi-office, geographically dispersed dental practice. Is successfully implementing and utilizing voice-activated charting in a multi-office practice really possible? Let’s find out!
 image: /images/is-voice-charting-for-a-multi-office-practice-feasible.webp
 alt: Is Voice Charting for A Multi-Office Practice Feasible?

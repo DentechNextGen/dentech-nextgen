@@ -1,7 +1,7 @@
 ---
 title: Charting Tooth History – Auto Population
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminksi-author.webp'
 desc: The tooth hover feature in DenChart displays all the treatment performed on a tooth from the beginning of time. The information pulls from the patient’s treatment history in Dentech and auto populates into DenChart for quick, easy access. No need for any additional mouse clicks or flipping through patient charts.
 image: /images/charting-tooth-history–auto-population.webp
 alt: Charting Tooth History – Auto Population

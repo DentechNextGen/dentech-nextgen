@@ -1,7 +1,7 @@
 ---
 title: Integrating Paperless Dentistry
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminksi-author.webp'
 desc: Three Steps to Success. Evolving into a Paperless Office may seem grueling, expensive and not worth the time or effort to put into the transition, but there are many benefits to upgrading your practice.that may have been overlooked
 image: /images/integrating-paperless-dentistry.webp
 alt: Integrating Paperless Dentistry

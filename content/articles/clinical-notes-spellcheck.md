@@ -1,7 +1,7 @@
 ---
 title: Clinical Notes Spellcheck
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminksi-author.webp'
 desc: In DenChart you can run the spell check to see if you have made any spelling mistakes. When you ask the program to help you correct your work, it reads through every word you have written and checks to see if the word is in its dictionary. If it isn’t, it shows you a dialogue box like the one you can see in the picture below.
 image: /images/clinical-notes-spellcheck.webp
 alt: Clinical Notes Spellcheck

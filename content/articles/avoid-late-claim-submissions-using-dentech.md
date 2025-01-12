@@ -1,7 +1,7 @@
 ---
 title: Avoid Late Claim Submissions Using Dentech
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminksi-author.webp'
 desc: Submit claims as soon as possible after treatment is completed, UNBILLED WORK will help to ensure that all work charged out is being claimed in a timely fashion.
 image: /images/avoid-late-claim-submissions-using-dentech.webp
 alt: Avoid Late Claim Submissions Using Dentech

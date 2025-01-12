@@ -1,14 +1,14 @@
 ---
 title: Let’s Build A Better Tomorrow - Happy New Year From Dentech
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminksi-author.webp'
 desc: I know by now you are probably familiar with all of the end of year thank you’s; But this year seems different. I think this year has been a fight. Some people fighting for rights, others fighting for their businesses, and others for life itself. 
 image: /images/let-us-build-a-better-tomorrow-happy-new-year-from-dentech.webp
 alt: Let’s Build A Better Tomorrow. Happy New Year From Dentech
 createdAt: 12/31/2020
 updatedAt: 12/31/2020
 tags:
-  - Other
+  - News
 keywords:
   - New Year
 

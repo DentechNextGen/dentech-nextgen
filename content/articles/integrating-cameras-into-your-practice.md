@@ -1,7 +1,7 @@
 ---
 title: Integrating Cameras into your Practice
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminksi-author.webp'
 desc: “Simply purchasing an intraoral camera and integrating its use into daily patient treatment is one of the easiest changes a dentist can make for one of the highest returns on investment.”
 image: /images/integrating-cameras-into-your-practice.webp
 alt: Integrating Cameras into your Practice

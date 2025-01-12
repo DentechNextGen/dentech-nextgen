@@ -1,14 +1,14 @@
 ---
 title: Have you heard the news? Dentech partners with goEmerchant. Sign up and receive a FREE payment terminal!
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminksi-author.webp'
 desc: I have always been a fan of cars, motorcycles, anything that goes fast and the more you understand the inner workings of the equipment, the better you can wield it. Just like any software application.
 image: /images/have-you-heard-the-news-dentech-partners-with-gomerchant-sign-up-and-receive-a-free-payment-terminal.webp
 alt: Have you heard the news? Dentech partners with goEmerchant. Sign up and receive a FREE payment terminal!
 createdAt: 09/11/2020
 updatedAt: 09/11/2020
 tags:
-  - Blog
+  - News
 keywords:
   - Dentech goEmerchant Partnership
   - Integrated Dental Payment Solutions
