@@ -21,7 +21,7 @@ const metadata: Metadata = {
           url: 'https://dentech.com',
           logo: {
             '@type': 'ImageObject',
-            url: 'https://dentech.com/images/logo.png'
+            url: 'https://dentech.com/images/logos/logo.png'
           }
         }
       },
