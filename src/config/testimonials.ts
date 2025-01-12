@@ -4,7 +4,7 @@ export const testimonials = [
     author: {
       name: 'Richard Williams',
       role: 'Dentist at Williams Dental',
-      image: '/images/richard-williams.png'
+      image: '/images/richard-williams.jpg'
     }
   },
   {
@@ -12,7 +12,7 @@ export const testimonials = [
     author: {
       name: 'Gabriel Kurti',
       role: 'Dentist at Happy Smiles Dentistry',
-      image: '/images/gabriel-kurti.png'
+      image: '/images/gabriel-kurti.jpg'
     }
   },
   {
@@ -20,7 +20,7 @@ export const testimonials = [
     author: {
       name: 'Rennee Jackson',
       role: 'Dentist of Cole Dental Group',
-      image: '/images/rennee-jackson.png'
+      image: '/images/rennee-jackson.jpg'
     }
   }
 ] 
