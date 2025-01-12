@@ -1,10 +1,10 @@
 ---
 title: VIDEO - Voice Perio Charting
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: A brief demonstration of DenChart Perio Charting
 image: /images/video-voice-perio-charting.webp
-videoUrl: https://www.youtube.com/embed/ZdRFhIsQaxU
+# videoUrl: https://www.youtube.com/embed/ZdRFhIsQaxU
 alt: VIDEO - Voice Perio Charting
 createdAt: 09/10/2018
 updatedAt: 09/10/2018
@@ -15,3 +15,4 @@ keywords:
   - Dental Charting
   - Voice-Activated Charting
 ---
+Watch the video here: https://www.youtube.com/embed/ZdRFhIsQaxU

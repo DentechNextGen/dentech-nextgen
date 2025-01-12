@@ -35,7 +35,7 @@ const metadata: Metadata = {
           url: 'https://dentech.com',
           logo: {
             '@type': 'ImageObject',
-            url: 'https://dentech.com/images/logo.png',
+            url: 'https://dentech.com/images/logo.jpg',
             width: 190,
             height: 60
           }

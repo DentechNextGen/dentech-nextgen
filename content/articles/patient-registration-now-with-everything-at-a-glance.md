@@ -1,7 +1,7 @@
 ---
 title: Patient Registration — now with everything at a glance!
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: From my conversations with you, I know many of our customers have their own way of using our patient registration features. Some offices do not use every field we offer in our patient registration flow. Others never use quick registration and only go through the regular registration processes.
 image: /images/patient-registration-now-with-everything-at-a-glance.webp
 alt: Patient Registration — now with everything at a glance!

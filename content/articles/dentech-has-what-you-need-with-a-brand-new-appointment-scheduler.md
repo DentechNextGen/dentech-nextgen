@@ -1,7 +1,7 @@
 ---
 title: Dentech Has What You Need With A Brand New Appointment Scheduler
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: Our new appointment scheduler for the new Dentech is COMPLETELY revamped! Designed so you never miss a thing, we have made everything you need easily accessible from one screen. We improved many of the current scheduling features known in Dentech while introducing a new modern-day interface with plenty of new enhancements and features to help streamline your day.
 image: /images/dentech-has-what-you-need-with-a-brand-new-appointment-scheduler.webp
 alt: Dentech Has What You Need With A Brand New Appointment Scheduler

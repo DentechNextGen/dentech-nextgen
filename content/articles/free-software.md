@@ -1,14 +1,14 @@
 ---
 title: “FREE” Software
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: Several vendors offer “Free Software” these days. This case study is based on real‐life experiences and explores what is involved with the installation, training and deployment of “Free Software” and what risks are associated with the proposition of “Free Software”.
 image: /images/free-software.webp
 alt: “FREE” Software
 createdAt: 03/25/2019
 updatedAt: 03/25/2019
 tags:
-  - Blog
+  - Tips and Tricks
 keywords:
   - Dental Practice Software Evaluation
   - Risks of Free Dental Software

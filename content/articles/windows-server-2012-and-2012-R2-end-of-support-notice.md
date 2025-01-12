@@ -1,7 +1,7 @@
 ---
 title: Windows Server 2012 & 2012 R2 End Of Support Notice
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: We’re writing to share critical information about your practice’s ongoing compliance with HIPAA requirements for practices still using Windows 2012 and 2012 R2.
 image: /images/windows-server-2012-and-2012-R2-end-of-support-notice.webp
 alt: Windows Server 2012 & 2012 R2 End Of Support Notice

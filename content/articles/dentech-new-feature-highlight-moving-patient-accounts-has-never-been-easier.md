@@ -1,7 +1,7 @@
 ---
 title: Dentech New Feature Highlight… Moving Patient Accounts Has Never Been Easier
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: Today, I would like to introduce two new features that many of our voice of customer participants have been very excited about. Relationships are ever-evolving, and sometimes that means patient accounts need to move around. Transferring patient accounts between families has been a somewhat complex process in the past.
 image: /images/dentech-new-feature-highlight-moving-patient-accounts-has-never-been-easier.webp
 alt: Dentech New Feature Highlight… Moving Patient Accounts Has Never Been Easier

@@ -1,7 +1,7 @@
 ---
 title: Improvements Coming Your Way To Your Patient Statements
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: “But it is the way we have always done it! Is going paperless really worth it? What does it do for me? It’s too costly! We don’t have the time to train and implement!” - Jane Kaminski
 image: /images/improvements-coming-your-way-to-your-patient-statements.webp
 alt: Improvements Coming Your Way To Your Patient Statements

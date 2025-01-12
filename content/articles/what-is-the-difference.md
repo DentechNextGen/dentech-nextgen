@@ -1,14 +1,14 @@
 ---
 title: “What’s the Difference?”
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: Comparing Digital Tools and Clinical Applications. When evaluating products make sure you’re not comparing apples to oranges. How does one begin to make educated decisions regarding digital solutions and clinical applications?
 image: /images/what-is-the-difference.webp
 alt: “What’s the Difference?”
 createdAt: 11/13/2019
 updatedAt: 11/13/2019
 tags:
-  - Blog
+  - Tips and Tricks
 keywords:
   - Dental Digital Solutions Comparison
   - Clinical Application Evaluation in Dentistry

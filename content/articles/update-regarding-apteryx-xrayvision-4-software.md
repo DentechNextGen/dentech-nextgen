@@ -1,7 +1,7 @@
 ---
 title: Update Regarding APTERYX XRAYVISION 4 SOFTWARE
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: Apteryx XrayVision V4 has served its users well in the seven years since it has been released. However, Apteryx has recently announced the following End-of-Life (EOL) plan for XV4
 image: /images/update-regarding-apteryx-xrayvision-4-software.webp
 alt: Update Regarding APTERYX XRAYVISION 4 SOFTWARE

@@ -1,14 +1,13 @@
 ---
 title: How Much Can A Paperless Dental Practice REALLY Save? – Part 2
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: There are many benefits of a dental practice going paperless, but how much can you really save with your practice going paper free?  In the next part of this three-part series, we’re breaking down your expenses when it comes to salaries and cutting down wasted employee time!
 image: /images/how-much-can-a-paperless-dental-practice-really-save-part-2.webp
 alt: How Much Can A Paperless Dental Practice REALLY Save? – Part 2
 createdAt: 02/10/2023
 updatedAt: 02/10/2023
 tags:
-  - Practice Management
   - Document Management
 keywords:
   - Financial Reports

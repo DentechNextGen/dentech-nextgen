@@ -1,14 +1,14 @@
 ---
 title: Go Paperless with Automatic eStatements
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: Dentech’s new Electronic Statement Management portal makes processing patient statements a breeze!
 image: /images/go-paperless-with-automatic-estatements.webp
 alt: Go Paperless with Automatic eStatements 
 createdAt: 03/18/2023
 updatedAt: 03/18/2023
 tags:
-  - Eservices
+  - eServices
 keywords:
   - User-Friendly Interface
   - Statement Management

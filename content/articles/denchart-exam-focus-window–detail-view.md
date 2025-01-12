@@ -1,7 +1,7 @@
 ---
 title: DenChart Exam Focus Window – Detail View
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: The Exam Focus window is the focus of activity for the doctor or hygienist, and allows the user to complete all phases of the Restorative tab efficiently and concisely.
 image: /images/denchart-exam-focus-window–detail-view.webp
 alt: DenChart Exam Focus Window – Detail View

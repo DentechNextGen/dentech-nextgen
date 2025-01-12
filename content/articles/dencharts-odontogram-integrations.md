@@ -1,7 +1,7 @@
 ---
 title: DenChart’s Odontogram Integrations
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: One of the most powerful outcomes of integrated technology is the potential to organize the pertinent data in a format that is readily available to educate the patient in real time.
 image: /images/dencharts-odontogram-integrations.webp
 alt: DenChart’s Odontogram Integrations

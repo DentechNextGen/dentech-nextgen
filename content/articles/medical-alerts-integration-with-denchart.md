@@ -1,7 +1,7 @@
 ---
 title: Medical Alerts Integration with DenChart
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: All medical alerts in Dentech will pop up immediately in DenChart so that you are notified of all medical conditions prior to treating a patient.
 image: /images/medical-alerts-integration-with-denchart.webp
 alt: Medical Alerts Integration with DenChart

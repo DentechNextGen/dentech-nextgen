@@ -1,7 +1,7 @@
 ---
 title: Is Putting Your Patient Data At Risk Worth It? Why Upgrading To Microsoft Windows 10 Is So Important
 author: Jane Kaminski
-authorImage: '/images/jane-kaminski-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: Even Microsoft is making a valiant effort to squash all Windows 7 users by releasing an update that will display a notification reminding users to upgrade to Windows 10 by January 14, 2020.
 image: /images/is-putting-your-patient-data-at-risk-worth-it-why-upgrading-to-microsoft-windows-10-is-so-important.webp
 alt: Is Putting Your Patient Data At Risk Worth It? Why Upgrading To Microsoft Windows 10 Is So Important
@@ -9,7 +9,7 @@ alt: Is Putting Your Patient Data At Risk Worth It? Why Upgrading To Microsoft W
 createdAt: 01/25/2020
 updatedAt: 01/25/2020
 tags:
-  - Blog
+  - Tips and Tricks
 keywords:
   - Dentech
   - Virtual Priting
