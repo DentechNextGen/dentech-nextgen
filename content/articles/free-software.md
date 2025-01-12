@@ -1,7 +1,7 @@
 ---
 title: “FREE” Software
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: Several vendors offer “Free Software” these days. This case study is based on real‐life experiences and explores what is involved with the installation, training and deployment of “Free Software” and what risks are associated with the proposition of “Free Software”.
 image: /images/free-software.webp
 alt: “FREE” Software

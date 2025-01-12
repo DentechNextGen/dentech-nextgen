@@ -1,7 +1,7 @@
 ---
 title: 5 Tips to Increase Efficiency in Your Dental Practice with Dentech
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: Today, we’re diving into how we can make dental practices work better and smoother, not just for the team but for your patients too. We’ve got five great tips that can help any dental office become more efficient. These aren’t just quick fixes; they’re about making real, lasting changes that make everyone’s life easier and improve the way we care for our patients. Let’s get started and see how these changes can make a big difference in your practice.
 image: /images/5-tips-to-increase-efficiency-in-your-dental-practice-with-dentech.webp
 alt: 5 Tips to Increase Efficiency in Your Dental Practice with Dentech

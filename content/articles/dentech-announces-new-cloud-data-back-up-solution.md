@@ -1,7 +1,7 @@
 ---
 title: Dentech Announces New Cloud Data Back-Up Solution
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: Dentech has announced its new data protection solution, DenCloud, that will manage your dental practices back-ups so that you can concentrate on your patients.
 image: /images/dentech-announces-new-cloud-data-back-up-solution.webp
 alt: Dentech Announces New Cloud Data Back-Up Solution

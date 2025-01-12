@@ -1,7 +1,7 @@
 ---
 title: VIDEO - Voice Perio Charting
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: A brief demonstration of DenChart Perio Charting
 image: /images/video-voice-perio-charting.webp
 # videoUrl: https://www.youtube.com/embed/ZdRFhIsQaxU

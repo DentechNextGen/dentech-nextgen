@@ -1,7 +1,7 @@
 ---
 title: Improving Your Patient Recall With 3 Easy Steps - Part 1
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: Welcoming first-time patients to your practice and widening your referral network is a great way to fill up a schedule, but one of the hallmarks of a great practice is the retention of the patients you already have! It’s unavoidable to have a few missed appointments here and there, however, these can quickly add up to a significant chunk of lost revenue each year. So what can we do to keep our chairs full and current patients on track? In this three-part series, we’re going to take a look at how improving patient engagement and communication can address the three most common causes of patient no-shows – and how Dentech can help!
 image: /images/improving-your-patient-recall-with-3-easy-steps-part-1.webp
 alt: Improving Your Patient Recall With 3 Easy Steps - Part 1

@@ -1,7 +1,7 @@
 ---
 title: From Past to Present - The Evolving Role of Women in the Dental Field
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: As we commemorate Women's History Month, we want to use this opportunity to cast a spotlight on the remarkable strides alongside the enduring challenges that women face in the dental industry. This annual observance acts as a powerful catalyst, reminding us not only of the significant progress achieved by women but also of the persistent hurdles that lie in the path ahead. The dental realm, in particular, mirrors this complex narrative of evolution and ongoing struggle.
 image: /images/from-past-to-present-the-evolving-role-of-women-in-the-dental-field.webp
 alt: From Past to Present - The Evolving Role of Women in the Dental Field

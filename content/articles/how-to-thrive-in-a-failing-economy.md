@@ -1,7 +1,7 @@
 ---
 title: How to Thrive In A Failing Economy
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: Have your patients become M.I.A.? You may have to get into the trenches to seek them out. Many factors may play a part into the disappearance from your practice such as the holidays, a slowing economy or they may have an aversion to going to the dentist. Whatever the reason, you need your patients busi­ness to continue to keep your practice thriving. It will take some effort but start by establishing a game plan with some practice building tools from your DENTECH system.
 image: /images/how-to-thrive-in-a-failing-economy.webp
 alt: How to Thrive In A Failing Economy

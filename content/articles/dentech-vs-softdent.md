@@ -1,7 +1,7 @@
 ---
 title: Dentech vs. SoftDent
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: If you're frustrated with SoftDent due to frequent bugs, lack of support, outdated features, insufficient updates, and constant crashes, it's time for a change. Dentech offers a robust, reliable solution designed to meet your practice's needs.
 image: /images/simple-schedule.webp
 alt: Dentech vs. SoftDent

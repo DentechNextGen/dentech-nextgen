@@ -1,7 +1,7 @@
 ---
 title: Use Treatment Plans Effectively - A Practical Guide
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: A simple monitoring effort can help you tap into your greatest source of lost production. Treatment plans are more than road maps for solving a patient's oral health problems. They are the very lifeblood of your practice.
 image: /images/use-treatment-plans-effectively.webp
 alt: Use Treatment Plans Effectively - A Practical Guide

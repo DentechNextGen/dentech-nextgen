@@ -1,7 +1,7 @@
 ---
 title: Better Digital Imaging Starts With A FREE TRIAL!
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: Getting the right imaging equipment is essential for maintaining a stress-free patient experience. With deep expertise in dental imaging and the team’s care into crafting quality sensors, XDR Radiology is a clear standout when it comes to the vast array of sensors and imaging software available on the market.
 image: /images/better-digital-imaging-starts-with-a-free-trial.webp
 alt: Better Digital Imaging Starts With A FREE TRIAL!

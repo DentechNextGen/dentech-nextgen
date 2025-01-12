@@ -1,7 +1,7 @@
 ---
 title: Dentech Announces Partnership with XDR Radiology for Digital Imaging Solutions
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: Dentech Practice Management Software is proud to announce a partnership with XDR Radiology to expand its line of digital imaging software and intraoral sensors.
 image: /images/dentech-announces-partnership-with-xdr-radiology-for-digital-imaging-solutions.webp
 alt: Dentech Announces Partnership with XDR Radiology for Digital Imaging Solutions

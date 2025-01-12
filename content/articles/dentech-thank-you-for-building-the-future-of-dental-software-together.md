@@ -1,7 +1,7 @@
 ---
 title: Dentech - Thank You For Building The Future Of Dental Software Together
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: In April 2021, we started the Voice of Customer series, where I had the privilege to demo the brand new Dentech NextGen Practice Management Software with customers and gather your feedback and input. Your responses were overwhelming positive.
 image: /images/dentech-thank-you-for-building-the-future-of-dental-software-together.webp
 alt: Dentech - Thank You For Building The Future Of Dental Software Together

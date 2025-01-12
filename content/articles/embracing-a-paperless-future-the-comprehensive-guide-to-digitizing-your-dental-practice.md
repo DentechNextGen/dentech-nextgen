@@ -1,7 +1,7 @@
 ---
 title: Embracing a Paperless Future - The Comprehensive Guide to Digitizing Your Dental Practice
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: Transitioning to a paperless dental office can seem like a daunting task filled with initial hurdles, but the long-term benefits and savings make it a compelling choice for modern practices. In this comprehensive guide, we delve into the essential steps and rewards of going paperless, highlighting the seamless integration and support offered by Dentech's innovative solutions.
 image: /images/embracing-a-paperless-future-the-comprehensive-guide-to-digitizing-your-dental-practice.webp
 alt: Embracing a Paperless Future - The Comprehensive Guide to Digitizing Your Dental Practice

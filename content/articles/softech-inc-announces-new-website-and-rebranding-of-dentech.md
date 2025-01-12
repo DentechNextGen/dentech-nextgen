@@ -1,7 +1,7 @@
 ---
 title: Softech, Inc. Announces New Website and Rebranding of Dentech
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: Softech, Inc., the developers of Dentech Practice Management Software, announced today the launch of their new website www.dentech.com as well as the rebranding of Dentech.
 image: /images/softech-inc-announces-new-website-and-rebranding-of-dentech.webp
 alt: Softech, Inc. Announces New Website and Rebranding of Dentech

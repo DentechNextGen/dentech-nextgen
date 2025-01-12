@@ -1,7 +1,7 @@
 ---
 title: Are You Using Interactive Forms?
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: Interactive forms can help your practice capture and organize patient information. Handwriting can often make answers illegible, sometimes questions get skipped and even inputting data into your system can lead to mistakes.
 image: /images/are-you-using-interactive-forms.webp
 alt: Are You Using Interactive Forms?

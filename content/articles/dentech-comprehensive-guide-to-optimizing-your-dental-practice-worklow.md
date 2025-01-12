@@ -1,7 +1,7 @@
 ---
 title: Dentech's Comprehensive Guide to Optimizing Your Dental Practice Workflow
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: In the ever-evolving realm of dentistry, efficient practice management stands as a cornerstone for success. The intersection of patient care and streamlined operations is where dental practitioners can truly shine. Dentech, with its vast experience spanning over four decades, introduces a comprehensive guide to mastering your dental practice workflow. This guide dives deep into an organized checklist system, detailing the myriad features of Dentech’s software. From daily to monthly tasks, we walk you through every step, ensuring your practice runs seamlessly.
 image: /images/dentech-comprehensive-guide-to-optimizing-your-dental-practice-worklow.webp
 alt: Dentech’s Comprehensive Guide to Optimizing Your Dental Practice Workflow

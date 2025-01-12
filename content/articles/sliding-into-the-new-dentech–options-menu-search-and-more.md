@@ -1,7 +1,7 @@
 ---
 title: Sliding Into The New Dentech – Options, Menu, Search, and More!
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: In building our next generation of software, we are focused on bringing continued innovation to the dental space, just like we always have.
 image: /images/sliding-into-the-new-dentech–options-menu-search-and-more.webp
 alt: Sliding Into The New Dentech – Options, Menu, Search, and More!

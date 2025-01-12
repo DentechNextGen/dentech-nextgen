@@ -1,7 +1,7 @@
 ---
 title: Upgrade to Dentech NextGen
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: You’ve likely heard of Dentech NextGen, the more powerful modernized version of Dentech. Our upgraded software is packed with features designed to improve your workflow, enhance patient care, and provide unparalleled ease of use. Oh, and to convince you to make the switch, we’re giving you your first month of Dentech NextGen completely for FREE!
 image: /images/simple-schedule.webp
 alt: Upgrade to Dentech NextGen

@@ -1,7 +1,7 @@
 ---
 title: VIDEO - Patented Restorative Dental Charting Software Features
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: Patented Restorative Dental Charting Software Features
 image: /images/video-patented-restorative-dental-charting-software-features.webp
 #videoUrl: https://www.youtube.com/embed/e86TfaQ4XMo

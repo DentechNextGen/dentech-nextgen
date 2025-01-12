@@ -1,7 +1,7 @@
 ---
 title: Refer Dentech NextGen & Earn One Month Off of NextGen – Start Saving Now!
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: At Dentech, we believe in the power of community and the transformative impact of sharing innovative solutions. Our referral program is designed to empower our users to introduce Dentech NextGen to other dental offices, helping them to elevate their practice with our dental management software. By participating, you're not just offering them a tool; you're opening the door to better efficiency, patient care, and practice management.
 image: /images/refer.webp
 alt: Refer Dentech NextGen & Earn One Month Off of NextGen – Start Saving Now!

@@ -1,7 +1,7 @@
 ---
 title: Enhancing Efficiency and Communication in Your Office – Part 2
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: In today’s fast-paced work environment, effective communication is more crucial than ever. A lack of open dialogue can lead to misunderstandings, decreased productivity, and a toxic work culture. This blog post aims to shed light on key elements that contribute to a healthy work environment, such as upward and downward communication structures and feedback loops. We’ll also delve into how Dentech’s Tickler feature and the Dentech Scheduler can facilitate these aspects, enhancing both collaboration and efficiency in your dental practice.
 image: /images/enhancing-efficiency-part-2.webp
 alt: Enhancing Efficiency and Communication in Your Office – Part 2

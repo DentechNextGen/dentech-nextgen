@@ -1,7 +1,7 @@
 ---
 title: The Paper Chart a.k.a. The Elephant In The Waiting Room
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: “But it is the way we have always done it! Is going paperless really worth it? What does it do for me? It’s too costly! We don’t have the time to train and implement!” - Jane Kaminski
 image: /images/the-paper-chart-aka-the-elephant-in-the-waiting-room.webp
 alt: The Paper Chart a.k.a. The Elephant In The Waiting Room

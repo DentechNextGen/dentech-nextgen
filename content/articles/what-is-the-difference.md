@@ -1,7 +1,7 @@
 ---
 title: “What’s the Difference?”
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: Comparing Digital Tools and Clinical Applications. When evaluating products make sure you’re not comparing apples to oranges. How does one begin to make educated decisions regarding digital solutions and clinical applications?
 image: /images/what-is-the-difference.webp
 alt: “What’s the Difference?”

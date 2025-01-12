@@ -1,7 +1,7 @@
 ---
 title: Maximizing Dental Care with Dentech NextGen’s Electronic Treatment Plans
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: As the year draws to a close, it’s essential to ensure that your Dentech system is ready for the transition into the new year. Here’s a detailed guide on the recommended procedures for the end of 2023.
 image: /images/maximizing-dental-care-with-dentech-nextgens-electronic-treatment-plans.webp
 alt: Maximizing Dental Care with Dentech NextGen’s Electronic Treatment Plans

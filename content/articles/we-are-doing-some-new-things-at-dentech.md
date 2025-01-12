@@ -1,7 +1,7 @@
 ---
 title: We’re doing some new things at Dentech
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: 2020 sure has thrown us all for some loops. I think all of us are stepping back and realizing we need to adapt to this new norm we are moving into; Personally, in our business, and our communities.
 image: /images/we-are-doing-some-new-things-at-dentech.webp
 alt: We’re doing some new things at Dentech

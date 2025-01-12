@@ -1,7 +1,7 @@
 ---
 title: Dentech’s NEW No-Fuss Appointment Scheduling
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: Busy schedules cannot accommodate complicated scheduling processes. Who needs the extra steps?
 image: /images/dentechs-new-no-fuss-appointment-scheduling.webp
 alt: Dentech’s NEW No-Fuss Appointment Scheduling

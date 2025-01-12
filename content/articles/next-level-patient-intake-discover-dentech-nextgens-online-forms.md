@@ -2,7 +2,7 @@
 title: Next-Level Patient Intake - Discover Dentech NextGen’s Online Forms
 
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: Responding to the needs of dental professionals and patients alike, we are thrilled to introduce Dentech’s Online Forms—a highly requested feature designed to dramatically improve your patient intake experience! Meticulously crafted to enhance the efficiency of your practice’s operations and the satisfaction of your patients, our new feature set simplifies the patient intake process and fortifies compliance with ease. From customizable patient information forms that gather detailed data securely to the streamlined collection of insurance details and HIPAA acknowledgments, our solutions are engineered to support your practice’s unique needs. In this blog, we will explore the powerful capabilities of Dentech’s Online Forms and how they are revolutionizing patient check-ins, data management, and overall practice workflow.
 image: /images/next-level-patient-intake-discover-dentech-nextgens-online-forms.webp
 alt: Next-Level Patient Intake - Discover Dentech NextGen’s Online Forms

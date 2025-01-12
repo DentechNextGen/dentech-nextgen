@@ -1,7 +1,7 @@
 ---
 title: End of Year Procedures - A Comprehensive Guide for 2023
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: As the year draws to a close, it’s essential to ensure that your Dentech system is ready for the transition into the new year. Here’s a detailed guide on the recommended procedures for the end of 2023.
 image: /images/end-of-year-procedures-a-comprehensive-guide-for-2023.webp
 alt: End of Year Procedures - A Comprehensive Guide for 2023

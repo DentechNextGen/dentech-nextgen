@@ -1,7 +1,7 @@
 ---
 title: Improving Your Patient Recall With 3 Easy Steps - Part 3
 author: Jane Kaminski
-authorImage: '/images/jane-kaminksi-author.webp'
+authorImage: '/images/jane-kaminski-author.jpg'
 desc: The biggest factor affecting patient recall is not scheduling, but patient anxiety towards treatments. In the final part of our three-part series, we’re going to take a look at how alleviating patient anxiety about their upcoming treatments can help reduce patient no-shows – and how Dentech’s products can help!
 image: /images/improving-your-patient-recall-with-3-easy-steps-part-3.webp
 alt: Improving Your Patient Recall With 3 Easy Steps - Part 3
