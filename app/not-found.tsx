@@ -138,10 +138,10 @@ export default async function NotFound() {
             {suggestedContent.length > 0 ? (
               <div>
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
-                  Let's find what you're looking for
+                  Let&apos;s find what you&apos;re looking for
                 </h2>
                 <p className="mt-4 text-lg text-gray-300">
-                  The page you requested wasn't found, but we have some suggestions that might help:
+                  The page you requested wasn&apos;t found, but we have some suggestions that might help:
                 </p>
                 <div className="mt-10 space-y-4">
                   {suggestedContent.map((content) => (
@@ -170,10 +170,10 @@ export default async function NotFound() {
             ) : (
               <div>
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
-                  Let's get you back on track
+                  Let&apos;s get you back on track
                 </h2>
                 <p className="mt-4 text-lg text-gray-300">
-                  While we couldn't find the exact page, here are some helpful resources:
+                  While we couldn&apos;t find the exact page, here are some helpful resources:
                 </p>
                 <div className="mt-10 space-y-4">
                   <Link 
