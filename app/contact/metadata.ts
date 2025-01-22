@@ -8,7 +8,7 @@ const metadata: Metadata = {
   openGraph: {
     title: 'Contact Us | Dentech',
     description: 'Get in touch with Dentech\'s team for sales inquiries, technical support, or general questions about our dental practice management software.',
-    url: 'https://dentech.com/contact'
+    url: 'https://dentech.com/support'
   },
   other: {
     'script:ld+json': JSON.stringify([
@@ -32,7 +32,7 @@ const metadata: Metadata = {
       },
       generateBreadcrumbSchema([
         { name: 'Home', item: 'https://dentech.com' },
-        { name: 'Contact', item: 'https://dentech.com/contact' },
+        { name: 'Contact', item: 'https://dentech.com/support' },
       ])
     ])
   }

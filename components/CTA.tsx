@@ -34,7 +34,7 @@ export default function CTA() {
               >
                 Schedule Demo
               </Link>
-              <Link href="/contact" className="text-sm font-semibold leading-6 text-white">
+              <Link href="/support" className="text-sm font-semibold leading-6 text-white">
                 Contact Us <span aria-hidden="true">→</span>
               </Link>
             </div>

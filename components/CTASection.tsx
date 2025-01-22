@@ -13,7 +13,7 @@ export default function CTASection({
   primaryButtonText = 'Schedule Demo',
   primaryButtonLink = '/schedule',
   secondaryButtonText = 'Contact Sales',
-  secondaryButtonLink = '/contact'
+  secondaryButtonLink = '/support'
 }: CTASectionProps) {
   return (
     <div className="bg-gray-50">

@@ -134,7 +134,7 @@ export default function Features() {
                 >
                   Schedule Demo
                 </a>
-                <a href="/contact" className="text-sm font-semibold leading-6 text-white">
+                <a href="/support" className="text-sm font-semibold leading-6 text-white">
                   Contact Sales <span aria-hidden="true">→</span>
                 </a>
               </div>

@@ -57,6 +57,8 @@
     { "source": "/system-requirements", "destination": "/docs/Dentech-System-Requirements-2024.pdf", "permanent": true },
     { "source": "/practice-management", "destination": "/features/practice-management", "permanent": true },
     { "source": "/document-management-solution", "destination": "/features/document-management", "permanent": true },
+    { "source": "/contact", "destination": "/support", "permanent": true },
+    { "source": "/refer", "destination": "https://calendly.com/jane-kaminski/dentech-nextgen-introductory-call-referral", "permanent": true },
     { "source": "/early-access-preview", "destination": "/schedule", "permanent": true }
   ]
 } 
