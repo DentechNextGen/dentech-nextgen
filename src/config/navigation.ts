@@ -93,10 +93,6 @@ export const navigationConfig = {
           href: '/blog',
         },
         {
-          title: 'Legal',
-          href: '/legal',
-        },
-        {
           title: 'Privacy',
           href: '/privacy',
         }

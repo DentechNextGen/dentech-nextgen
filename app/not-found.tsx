@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { HomeIcon } from '@heroicons/react/24/outline'
 import { getAllArticles } from '@/lib/articles'
-import { headers } from 'next/headers'
+import { useSearchParams } from 'next/navigation'
 
 // Helper function to extract keywords from URL
 function extractKeywords(url: string): string[] {
@@ -20,25 +20,8 @@ function extractKeywords(url: string): string[] {
     }, [])
 }
 
-async function getSuggestedContent() {
+async function getSuggestedContent(pathname: string = '') {
   try {
-    const headersList = await headers()
-    let path = ''
-    
-    const pathFromReferer = headersList.get('referer')?.replace(process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000', '') || ''
-    const pathFromUrl = headersList.get('x-url') || ''
-    const pathFromOriginalUrl = headersList.get('x-original-url') || ''
-    const pathFromInvoke = headersList.get('x-invoke-path') || ''
-    
-    path = pathFromInvoke || pathFromOriginalUrl || pathFromUrl || pathFromReferer || ''
-    
-    console.log('Headers debug:', {
-      referer: headersList.get('referer'),
-      url: headersList.get('x-url'),
-      originalUrl: headersList.get('x-original-url'),
-      invokePath: headersList.get('x-invoke-path')
-    })
-    
     // Get all articles and sitemap data
     const articles = await getAllArticles()
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://dentech.com'
@@ -65,7 +48,7 @@ async function getSuggestedContent() {
     ]
     
     // Extract search terms from the path
-    const searchTerms = path
+    const searchTerms = pathname
       .replace(/[/-]/g, ' ')
       .toLowerCase()
       .trim()
@@ -77,7 +60,7 @@ async function getSuggestedContent() {
       ? searchTerms 
       : ['dental', 'practice', 'management']
 
-    console.log('Raw Path:', path)
+    console.log('Raw Path:', pathname)
     console.log('Search terms:', termsToUse)
     
     // Search in site pages using URL-based matching
@@ -128,7 +111,8 @@ async function getSuggestedContent() {
 }
 
 export default async function NotFound() {
-  const suggestedContent = await getSuggestedContent()
+  const pathname = typeof window !== 'undefined' ? window.location.pathname : ''
+  const suggestedContent = await getSuggestedContent(pathname)
 
   return (
     <main className="flex-1">

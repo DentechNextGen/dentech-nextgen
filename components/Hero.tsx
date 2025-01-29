@@ -11,7 +11,7 @@ interface HeroProps {
 export default function Hero({
   content = 'Transform Your Dental Practice Management Software with Dentech',
   cta = 'Schedule Demo',
-  ctaLink = siteConfig.links.calendly,
+  ctaLink = '/schedule',
 }: HeroProps) {
   return (
     <div className="relative isolate overflow-hidden bg-gray-900">
