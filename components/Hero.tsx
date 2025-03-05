@@ -1,3 +1,5 @@
+"use client"
+
 import Link from 'next/link'
 import { siteConfig } from '@/src/config'
 import Image from 'next/image'
@@ -56,7 +58,7 @@ export default function Hero({
           }}
         />
       </div>
-      <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
+      <div className="mx-auto flex flex-col lg:flex-row items-center max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:py-40">
         <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8">
           <h1 className="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">
             {content}
@@ -80,15 +82,37 @@ export default function Hero({
           </div>
         </div>
         <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
-          <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
-            <Image
-              src="/images/background-hero.webp"
-              alt="Dentech Platform Interface"
-              width={2432}
-              height={1442}
-              priority
-              className="w-[76rem] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10"
-            />
+          <div className="w-[350px] sm:w-[600px] md:w-[700px] lg:w-[500px] xl:w-[600px]">
+            <div className="relative w-full h-0 pb-[56.25%]">
+              <div 
+                className="absolute top-0 left-0 w-full h-full rounded-xl shadow-xl ring-1 ring-white/10 bg-black/50 cursor-pointer group"
+                onClick={(e: React.MouseEvent<HTMLDivElement>) => {
+                  const clickedElement = e.currentTarget;
+                  const iframe = document.createElement('iframe');
+                  iframe.src = "https://www.youtube.com/embed/2Xgow_I0Eh0?si=mLlNKiHPi-2HQeHy&autoplay=1";
+                  iframe.className = "absolute top-0 left-0 w-full h-full rounded-xl";
+                  iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+                  iframe.allowFullscreen = true;
+                  
+                  if (clickedElement.parentNode) {
+                    clickedElement.parentNode.replaceChild(iframe, clickedElement);
+                  }
+                }}
+              >
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-white/20 transition-colors">
+                    <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                </div>
+                <img
+                  src="https://img.youtube.com/vi/2Xgow_I0Eh0/maxresdefault.jpg"
+                  alt="Video thumbnail" 
+                  className="w-full h-full object-cover rounded-xl"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
