@@ -85,7 +85,7 @@ export default function Hero({
           <div className="w-[350px] sm:w-[600px] md:w-[700px] lg:w-[500px] xl:w-[600px]">
             <div className="relative w-full h-0 pb-[56.25%]">
               <div 
-                className="absolute top-0 left-0 w-full h-full rounded-xl shadow-xl ring-1 ring-white/10 bg-black/50 cursor-pointer group"
+                className="absolute top-0 left-0 w-full h-full rounded-xl shadow-xl ring-1 ring-white/20 bg-black/50 cursor-pointer group"
                 onClick={(e: React.MouseEvent<HTMLDivElement>) => {
                   const clickedElement = e.currentTarget;
                   const iframe = document.createElement('iframe');
