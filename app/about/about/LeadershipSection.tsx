@@ -45,19 +45,19 @@ export const LeadershipSection = () => {
                             
                             <blockquote className="bg-primary-50 p-6 rounded-xl border-l-4 border-primary-500">
                                 <p className="italic text-gray-700">
-                                    "With over 40 years of service to our customers and the dental industry as a whole we are 
+                                    &quot;With over 40 years of service to our customers and the dental industry as a whole we are 
                                     excited for what lies ahead for us as a company, for our customers and the entire dental 
                                     industry. It is my goal to not only continue the legacy that my father has built, but to 
                                     also leverage modern day technology so that we can continue to provide world class solutions 
-                                    for our customers."
+                                    for our customers.&quot;
                                 </p>
                             </blockquote>
 
                             <p className="text-gray-600 leading-relaxed">
-                                "We will stay committed to servicing our customers and the dental industry with the care 
+                                &quot;We will stay committed to servicing our customers and the dental industry with the care 
                                 and concern that we are known for while staying on the cutting edge of technology. We look 
                                 forward to the next 40 years and we thank each of our customers who have supported us and 
-                                helped us build the company and products that we are today."
+                                helped us build the company and products that we are today.&quot;    
                             </p>
                         </div>
                     </div>
