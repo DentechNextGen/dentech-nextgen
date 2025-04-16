@@ -1,9 +1,9 @@
-'use client'
+"use client";
 
-import Banner from '../components/Banner'
-import EvolutionTimeline from './about/EvolutionTimeline'
-import OurPromise from './about/OurPromise'
-import AboutCards from './about/AboutCards'
+import Banner from "../components/Banner";
+import EvolutionTimeline from "./about/EvolutionTimeline";
+import OurPromise from "./about/OurPromise";
+import AboutCards from "./about/AboutCards";
 export default function About() {
   return (
     <main className="bg-white">
@@ -15,10 +15,11 @@ export default function About() {
 
       <AboutCards />
 
-
       <EvolutionTimeline />
 
-      <OurPromise />
+      <div className="px-4 md:px-0">
+        <OurPromise />
+      </div>
     </main>
-  )
-} 
+  );
+}

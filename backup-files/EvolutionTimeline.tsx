@@ -19,11 +19,11 @@ const TimelineEntry: React.FC<TimelineEntryProps> = ({
   const defaultText = `Over four decades ago, our founder Raymond F. Kaminski saw the growing need for innovation in dental practice management software. He was committed to making his vision a reality—a world in which computer technology and dentistry functioned seamlessly, improving the lives of doctors and patients alike.`;
 
   return (
-    <div className="flex flex-col md:flex-row my-8 md:my-12 w-full p-4 md:p-0">
+    <div className="flex flex-col md:flex-row my-8 md:my-12 w-full">
       {/* MOBILE VIEW - Screenshot section always first on mobile */}
       <div
         className={`w-full md:hidden ${
-          alignment === "left" ? "bg-slate-900" : "bg-brandGreen"
+          alignment === "left" ? "bg-slate-900" : "bg-green-700"
         } flex flex-col justify-center rounded-t-xl shadow-lg`}
       >
         <div className="flex flex-col items-center py-6 px-4">
@@ -60,7 +60,7 @@ const TimelineEntry: React.FC<TimelineEntryProps> = ({
 
       {/* DESKTOP VIEW - Left side */}
       {alignment === "left" && (
-        <div className="hidden my-12 md:flex md:w-1/2 bg-slate-900 flex-col justify-center rounded-r-xl shadow-lg">
+        <div className="hidden md:flex md:w-1/2 bg-slate-900 flex-col justify-center rounded-r-xl shadow-lg">
           <div className="flex flex-row items-center justify-evenly py-8">
             <h2 className="text-white text-7xl font-bold mr-6">{year}</h2>
             <div className="bg-white p-2 rounded max-w-xs">
@@ -100,7 +100,7 @@ const TimelineEntry: React.FC<TimelineEntryProps> = ({
 
       {/* DESKTOP VIEW - Right side */}
       {alignment === "right" && (
-        <div className="hidden md:flex md:w-1/2 bg-brandGreen flex-col justify-center rounded-l-3xl shadow-lg">
+        <div className="hidden md:flex md:w-1/2 bg-green-700 flex-col justify-center rounded-l-3xl shadow-lg">
           <div className="flex flex-row items-center justify-evenly py-8">
             <div className="bg-white p-2 rounded max-w-md mr-6">
               <div className="h-48 w-full flex items-center justify-center border">
@@ -134,46 +134,24 @@ const TimelineEntry: React.FC<TimelineEntryProps> = ({
 const EvolutionTimeline = () => {
   const timelineEntries = [
     {
-      year: "1977",
+      year: "1985",
       alignment: "left" as const,
-      headline: "The Beginning",
-      description:
-        "Dentech was founded by Raymond F. Kaminski, beginning development of the first DOCS system on IBM Sys. 34. This marked the birth of a dental technology pioneer with a vision to revolutionize dental practice management.",
+      headline: "Headline",
     },
     {
-      year: "1994",
+      year: "1992",
       alignment: "right" as const,
-      headline: "Digital Revolution",
-      description:
-        "Introduction of Dentech for Windows brought dental practices into the modern computing era, allowing offices to leverage graphical interfaces and improved workflows for better patient care and practice efficiency.",
+      headline: "Headline",
     },
     {
-      year: "2009",
+      year: "1999",
       alignment: "left" as const,
-      headline: "Voice Innovation",
-      description:
-        "Released DenChart Perio Dental Charting Software with VOICE THAT WORKS! technology, transforming how dentists record patient information through hands-free voice commands, dramatically improving chairside efficiency.",
+      headline: "Headline",
     },
     {
-      year: "2014",
+      year: "2002",
       alignment: "right" as const,
-      headline: "Cloud Transformation",
-      description:
-        "Launched Cloud-Based Dentech Communicator, bringing dental practices into the connected digital age with secure, accessible cloud technology for improved team communication and patient engagement.",
-    },
-    {
-      year: "2018",
-      alignment: "left" as const,
-      headline: "Brand Evolution",
-      description:
-        "Completed comprehensive rebranding to reflect Dentech's evolution into a full-spectrum dental technology provider, reinforcing our commitment to innovation while honoring our heritage as the industry's pioneer.",
-    },
-    {
-      year: "2021",
-      alignment: "right" as const,
-      headline: "Next Generation Platform",
-      description:
-        "Introduced our NEW Practice Management Solution for both Server and Cloud-Based Systems, designed to meet the evolving needs of modern dental practices with greater flexibility, security and performance.",
+      headline: "Headline",
     },
   ];
 
@@ -200,7 +178,6 @@ const EvolutionTimeline = () => {
             year={entry.year}
             alignment={entry.alignment}
             headline={entry.headline}
-            description={entry.description}
           />
         ))}
       </div>
