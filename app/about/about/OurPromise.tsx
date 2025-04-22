@@ -8,11 +8,7 @@ const OurPromise = () => {
         Our Promise
       </h2>
       <p className="text-center text-lg max-w-4xl mx-auto">
-        Over four decades ago, our founder Raymond F. Kaminski saw the growing
-        need for innovation in dental practice management software. He was
-        committed to making his vision a reality—a world in which computer
-        technology and dentistry functioned seamlessly, improving the lives of
-        doctors and patients alike.
+        At Dentech, we promise to continue our tradition of excellence and innovation. We are committed to providing cutting-edge solutions that simplify your practice management, enhance patient care, and increase operational efficiency. Our dedicated team stands behind every product we create, ensuring you receive the highest level of service and support. We don't just develop software – we build lasting partnerships with dental professionals to help their practices thrive.
       </p>
     </div>
   );
