@@ -185,7 +185,7 @@ const EvolutionTimeline = () => {
       headline: "Next Generation Platform",
       description:
         "Introduced our NEW Practice Management Solution for both Server and Cloud-Based Systems, designed to meet the evolving needs of modern dental practices with greater flexibility, enhanced features and performance.",
-      imageSrc: "/images/timeline/2022.jpg",
+      imageSrc: "/images/timeline/2022.png",
       imageCaption: "Dentech NextGen",
     },
   ];
