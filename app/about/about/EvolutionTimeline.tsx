@@ -77,9 +77,7 @@ const TimelineEntry: React.FC<TimelineEntryProps> = ({
                     />
                   </div>
                 ) : (
-                  <p className="text-slate-400 text-center">
-                    {imageCaption}
-                  </p>
+                  <p className="text-slate-400 text-center">{imageCaption}</p>
                 )}
               </div>
               <p className="text-center text-sm mt-3 text-black">
@@ -140,9 +138,9 @@ const EvolutionTimeline = () => {
       alignment: "left" as const,
       headline: "The Beginning",
       description:
-        "Dentech was founded by Raymond F. Kaminski, beginning development of the first DOCS system on IBM Sys. 34. This marked the birth of a dental technology pioneer with a vision to revolutionize dental practice management.",
-        imageSrc: "/images/timeline/1977.png",
-        imageCaption: "Dentech DOCS System on IBM Sys. 34",
+        "Dentech was founded by Raymond F. Kaminski, beginning development of the first DOCS system on IBM Sys. 34. This marked the birth of a dental technology pioneer with a vision to revolutionize dental practice management software.",
+      imageSrc: "/images/timeline/1977.png",
+      imageCaption: "Dentech DOCS System on IBM Sys. 34",
     },
     {
       year: "1994",
@@ -150,8 +148,8 @@ const EvolutionTimeline = () => {
       headline: "Digital Revolution",
       description:
         "Introduction of Dentech for Windows brought dental practices into the modern computing era, allowing offices to leverage graphical interfaces and improved workflows for better patient care and practice efficiency.",
-        imageSrc: "/images/timeline/1994.jpg",
-        imageCaption: "Dentech for Windows",
+      imageSrc: "/images/timeline/1994.jpg",
+      imageCaption: "Dentech for Windows",
     },
     {
       year: "2009",
@@ -159,8 +157,9 @@ const EvolutionTimeline = () => {
       headline: "Voice Innovation",
       description:
         "Released DenChart Perio Dental Charting Software with VOICE THAT WORKS! technology, transforming how dentists record patient information through hands-free voice commands, dramatically improving chairside efficiency.",
-        imageSrc: "/images/timeline/2009.jpg",
-        imageCaption: "DenChart Perio Dental Charting Software with VOICE THAT WORKS! technology",
+      imageSrc: "/images/timeline/2009.jpg",
+      imageCaption:
+        "DenChart Perio Dental Charting Software with VOICE THAT WORKS! technology",
     },
     {
       year: "2014",
@@ -168,8 +167,8 @@ const EvolutionTimeline = () => {
       headline: "Cloud Transformation",
       description:
         "Launched Cloud-Based Dentech Communicator, bringing dental practices into the connected digital age with secure, accessible cloud technology for improved team communication and patient engagement.",
-        imageSrc: "/images/timeline/2014.jpg",
-        imageCaption: "Dentech Communicator",
+      imageSrc: "/images/timeline/2014.jpg",
+      imageCaption: "Dentech Communicator",
     },
     {
       year: "2018",
@@ -177,8 +176,8 @@ const EvolutionTimeline = () => {
       headline: "Brand Evolution",
       description:
         "Completed comprehensive rebranding to reflect Dentech's evolution into a full-spectrum dental technology provider, reinforcing our commitment to innovation while honoring our heritage as the industry's pioneer.",
-        imageSrc: "/images/timeline/2018.png",
-        imageCaption: "Dentech Brand Evolution",
+      imageSrc: "/images/timeline/2018.png",
+      imageCaption: "Dentech Brand Evolution",
     },
     {
       year: "2022",
@@ -186,8 +185,8 @@ const EvolutionTimeline = () => {
       headline: "Next Generation Platform",
       description:
         "Introduced our NEW Practice Management Solution for both Server and Cloud-Based Systems, designed to meet the evolving needs of modern dental practices with greater flexibility, enhanced features and performance.",
-        imageSrc: "/images/timeline/2022.jpg",
-        imageCaption: "Dentech NextGen",
+      imageSrc: "/images/timeline/2022.jpg",
+      imageCaption: "Dentech NextGen",
     },
   ];
 

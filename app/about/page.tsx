@@ -10,7 +10,7 @@ export default function About() {
       {/* Hero Section */}
       <Banner
         title="About Dentech"
-        content="We are a team of passionate individuals dedicated to revolutionizing dental practice management. Our mission is to provide innovative solutions that empower dental practices to deliver exceptional patient care."
+        content="We are a team of passionate individuals dedicated to revolutionizing dental practice management software. Our mission is to provide innovative solutions that empower dental practices to deliver exceptional patient care."
       />
 
       <AboutCards />

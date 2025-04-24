@@ -8,7 +8,13 @@ const OurPromise = () => {
         Our Promise
       </h2>
       <p className="text-center text-lg max-w-4xl mx-auto">
-        At Dentech, we promise to continue our tradition of excellence and innovation. We are committed to providing cutting-edge solutions that simplify your practice management, enhance patient care, and increase operational efficiency. Our dedicated team stands behind every product we create, ensuring you receive the highest level of service and support. We don&apos;t just develop software – we build lasting partnerships with dental professionals to help their practices thrive.
+        At Dentech, we promise to continue our tradition of excellence and
+        innovation. We are committed to providing cutting-edge solutions that
+        simplify your practice management software, enhance patient care, and
+        increase operational efficiency. Our dedicated team stands behind every
+        product we create, ensuring you receive the highest level of service and
+        support. We don&apos;t just develop software – we build lasting
+        partnerships with dental professionals to help their practices thrive.
       </p>
     </div>
   );
