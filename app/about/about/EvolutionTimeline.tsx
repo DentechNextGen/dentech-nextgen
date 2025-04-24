@@ -47,9 +47,6 @@ const TimelineEntry: React.FC<TimelineEntryProps> = ({
                 </p>
               )}
             </div>
-            <p className="text-center text-sm mt-3 text-black">
-              {imageCaption}
-            </p>
           </div>
         </div>
       </div>
