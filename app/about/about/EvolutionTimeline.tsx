@@ -116,9 +116,6 @@ const TimelineEntry: React.FC<TimelineEntryProps> = ({
                   </p>
                 )}
               </div>
-              <p className="text-center text-sm mt-3 text-black">
-                Screenshot of Dentech in Designated Year
-              </p>
             </div>
             <h2 className="text-white text-7xl font-bold">{year}</h2>
           </div>
