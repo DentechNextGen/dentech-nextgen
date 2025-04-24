@@ -77,9 +77,6 @@ const TimelineEntry: React.FC<TimelineEntryProps> = ({
                   <p className="text-slate-400 text-center">{imageCaption}</p>
                 )}
               </div>
-              <p className="text-center text-sm mt-3 text-black">
-                {imageCaption}
-              </p>
             </div>
           </div>
         </div>
