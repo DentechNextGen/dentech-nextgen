@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface TimelineEntryProps {
   year: string;
@@ -8,6 +9,7 @@ interface TimelineEntryProps {
   headline?: string;
   description?: string;
   imageCaption?: string;
+  link?: string;
 }
 
 const TimelineEntry: React.FC<TimelineEntryProps> = ({
@@ -17,16 +19,17 @@ const TimelineEntry: React.FC<TimelineEntryProps> = ({
   headline = "Headline",
   description,
   imageCaption,
+  link,
 }) => {
   const defaultText = `Over four decades ago, our founder Raymond F. Kaminski saw the growing need for innovation in dental practice management software. He was committed to making his vision a reality—a world in which computer technology and dentistry functioned seamlessly, improving the lives of doctors and patients alike.`;
 
-  return (
-    <div className="flex flex-col md:flex-row my-8 md:my-12 w-full p-4 md:p-0">
+  const CardContent = () => (
+    <>
       {/* MOBILE VIEW - Screenshot section always first on mobile */}
       <div
         className={`w-full md:hidden ${
           alignment === "left" ? "bg-slate-900" : "bg-brandGreen"
-        } flex flex-col justify-center rounded-t-xl shadow-lg`}
+        } flex flex-col justify-center rounded-t-xl shadow-lg transition-transform duration-300 hover:scale-[1.02]`}
       >
         <div className="flex flex-col items-center py-6 px-4">
           <h2 className="text-white text-5xl font-bold mb-6">{year}</h2>
@@ -42,9 +45,7 @@ const TimelineEntry: React.FC<TimelineEntryProps> = ({
                   />
                 </div>
               ) : (
-                <p className="text-slate-400 text-center">
-                  Screenshot of Dentech in Designated Year
-                </p>
+                <p className="text-slate-400 text-center">{imageCaption}</p>
               )}
             </div>
           </div>
@@ -59,7 +60,7 @@ const TimelineEntry: React.FC<TimelineEntryProps> = ({
 
       {/* DESKTOP VIEW - Left side */}
       {alignment === "left" && (
-        <div className="hidden my-12 md:flex md:w-1/2 bg-slate-900 flex-col justify-center rounded-r-xl shadow-lg">
+        <div className="hidden my-12 md:flex md:w-1/2 bg-slate-900 flex-col justify-center rounded-r-xl shadow-lg transition-transform duration-300 hover:scale-[1.02]">
           <div className="flex flex-row items-center justify-evenly py-8">
             <h2 className="text-white text-7xl font-bold mr-6">{year}</h2>
             <div className="bg-white p-4 rounded max-w-xs">
@@ -94,7 +95,7 @@ const TimelineEntry: React.FC<TimelineEntryProps> = ({
 
       {/* DESKTOP VIEW - Right side */}
       {alignment === "right" && (
-        <div className="hidden md:flex md:w-1/2 bg-brandGreen flex-col justify-center rounded-l-3xl shadow-lg">
+        <div className="hidden md:flex md:w-1/2 bg-brandGreen flex-col justify-center rounded-l-3xl shadow-lg transition-transform duration-300 hover:scale-[1.02]">
           <div className="flex flex-row items-center justify-evenly py-8">
             <div className="bg-white p-4 rounded max-w-md mr-6">
               <div className="h-48 w-[280px] mx-auto flex items-center justify-center border border-gray-200 rounded-sm p-4">
@@ -108,15 +109,25 @@ const TimelineEntry: React.FC<TimelineEntryProps> = ({
                     />
                   </div>
                 ) : (
-                  <p className="text-slate-400 text-center">
-                    Screenshot of Dentech in Designated Year
-                  </p>
+                  <p className="text-slate-400 text-center">{imageCaption}</p>
                 )}
               </div>
             </div>
             <h2 className="text-white text-7xl font-bold">{year}</h2>
           </div>
         </div>
+      )}
+    </>
+  );
+
+  return (
+    <div className="flex flex-col md:flex-row my-8 md:my-12 w-full p-4 md:p-0">
+      {link ? (
+        <Link href={link} className="w-full flex flex-col md:flex-row cursor-pointer">
+          <CardContent />
+        </Link>
+      ) : (
+        <CardContent />
       )}
     </div>
   );
@@ -141,6 +152,7 @@ const EvolutionTimeline = () => {
         "Introduction of Dentech for Windows brought dental practices into the modern computing era, allowing offices to leverage graphical interfaces and improved workflows for better patient care and practice efficiency.",
       imageSrc: "/images/timeline/1994.jpg",
       imageCaption: "Dentech for Windows",
+      link: "/features/practice-management",
     },
     {
       year: "2009",
@@ -151,6 +163,7 @@ const EvolutionTimeline = () => {
       imageSrc: "/images/timeline/2009.jpg",
       imageCaption:
         "DenChart Perio Dental Charting Software with VOICE THAT WORKS! technology",
+      link: "/features/voice-activated-charting",
     },
     {
       year: "2014",
@@ -160,24 +173,37 @@ const EvolutionTimeline = () => {
         "Launched Cloud-Based Dentech Communicator, bringing dental practices into the connected digital age with secure, accessible cloud technology for improved team communication and patient engagement.",
       imageSrc: "/images/timeline/2014.jpg",
       imageCaption: "Dentech Communicator",
+      link: "/features/patient-communication",
     },
     {
-      year: "2018",
+      year: "2017",
       alignment: "left" as const,
       headline: "Brand Evolution",
       description:
         "Completed comprehensive rebranding to reflect Dentech's evolution into a full-spectrum dental technology provider, reinforcing our commitment to innovation while honoring our heritage as the industry's pioneer.",
       imageSrc: "/images/timeline/2018.png",
       imageCaption: "Dentech Brand Evolution",
+      link: "/about",
+    },
+    {
+      year: "2018",
+      alignment: "right" as const,
+      headline: "Document Management",
+      description:
+        "Released DenDox Document Management, a powerful solution that streamlines document handling, storage, and retrieval for dental practices, significantly reducing paper usage while improving access to critical patient information.",
+      imageSrc: "/images/timeline/dendox.webp",
+      imageCaption: "DenDox Document Management",
+      link: "/features/document-management",
     },
     {
       year: "2022",
-      alignment: "right" as const,
+      alignment: "left" as const,
       headline: "Next Generation Platform",
       description:
         "Introduced our NEW Practice Management Solution for both Server and Cloud-Based Systems, designed to meet the evolving needs of modern dental practices with greater flexibility, enhanced features and performance.",
-      imageSrc: "/images/timeline/2022.png",
+      imageSrc: "/images/timeline/2022.webp",
       imageCaption: "Dentech NextGen",
+      link: "/features",
     },
   ];
 
@@ -207,6 +233,7 @@ const EvolutionTimeline = () => {
             description={entry.description}
             imageSrc={entry.imageSrc}
             imageCaption={entry.imageCaption}
+            link={entry.link}
           />
         ))}
       </div>
