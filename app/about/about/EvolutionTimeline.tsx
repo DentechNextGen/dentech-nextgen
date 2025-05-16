@@ -123,7 +123,10 @@ const TimelineEntry: React.FC<TimelineEntryProps> = ({
   return (
     <div className="flex flex-col md:flex-row my-8 md:my-12 w-full p-4 md:p-0">
       {link ? (
-        <Link href={link} className="w-full flex flex-col md:flex-row cursor-pointer">
+        <Link
+          href={link}
+          className="w-full flex flex-col md:flex-row cursor-pointer"
+        >
           <CardContent />
         </Link>
       ) : (
@@ -150,7 +153,7 @@ const EvolutionTimeline = () => {
       headline: "Digital Revolution",
       description:
         "Introduction of Dentech for Windows brought dental practices into the modern computing era, allowing offices to leverage graphical interfaces and improved workflows for better patient care and practice efficiency.",
-      imageSrc: "/images/timeline/1994.jpg",
+      imageSrc: "/images/timeline/1994.png",
       imageCaption: "Dentech for Windows",
       link: "/features/practice-management",
     },
