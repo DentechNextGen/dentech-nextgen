@@ -19,7 +19,7 @@ const pdfResources = [
   {
     title: 'Tesia Dental Payer Listing – Extended Eligibility',
     description: 'For The Latest Dental Payer ID Number List.',
-    href: '/docs/Tesia-Dental-Payer-Listing-Condensed-v04.27.21.pdf',
+    href: '/docs/Tesia-Dental-Payer-Listing-v05.14.25.pdf',
     icon: ClipboardDocumentListIcon
   },
   {

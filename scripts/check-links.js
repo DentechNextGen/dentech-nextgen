@@ -20,6 +20,7 @@ const urls = [
   '/privacy',
   '/docs/End-of-Year-2022.pdf',
   '/docs/Tesia-Dental-Payer-Listing-Condensed-v04.27.21.pdf',
+  '/docs/Tesia-Dental-Payer-Listing-v05.14.25.pdf',
   '/docs/Business-Associate-Agreement-2021.pdf',
   '/docs/License-Transfer-Instructions-and-Important-Information.pdf',
   '/docs/Dentech-System-Requirements-2024.pdf'
