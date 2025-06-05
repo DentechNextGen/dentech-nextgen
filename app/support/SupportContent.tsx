@@ -170,7 +170,7 @@ const SupportContent = () => {
             <div className="text-center">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Support Form</h2>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Need assistance with Dentech NextGen or have any questions? Fill out this form and our dedicated 
+                Need assistance with Dentech or have any questions? Fill out this form and our dedicated 
                 support team will get back to you promptly to ensure your practice runs smoothly.
               </p>
             </div>
