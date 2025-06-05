@@ -1,9 +1,9 @@
 "use client";
 
 import Banner from "../components/Banner";
-import EvolutionTimeline from "./about/EvolutionTimeline";
-import OurPromise from "./about/OurPromise";
-import AboutCards from "./about/AboutCards";
+import EvolutionTimeline from "./components/EvolutionTimeline";
+import OurPromise from "./components/OurPromise";
+import AboutCards from "./components/AboutCards";
 export default function About() {
   return (
     <main className="bg-white">
