@@ -19,7 +19,9 @@ export default function Support() {
       />
       <SupportCards />
       <FormSection />
-      <NewCTA />
+      <div className="max-w-7xl mx-auto">
+        <NewCTA />
+      </div>
       <FAQSection />
 
       <AnimatePresence>

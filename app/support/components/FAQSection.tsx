@@ -135,7 +135,7 @@ const FAQSection = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Find answers to common questions about Dentech NextGen. Can't find what you're looking for? 
+            Find answers to common questions about Dentech. Can&apos;t find what you&apos;re looking for? 
             Our support team is here to help.
           </p>
         </motion.div>

@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const NewCTA = () => {
   return (
-    <div className="relative mx-4 sm:mx-8 my-16">
+    <div className="relative max-w-7xl mx-auto sm:mx-8 my-16">
       {/* Main container with rounded corners and gradient background */}
       <div className="relative overflow-hidden bg-[#f3f7f0] rounded-[32px] min-h-[300px]">
         {/* Simple radial circles background */}
