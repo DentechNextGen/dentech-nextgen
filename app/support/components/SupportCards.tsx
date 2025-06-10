@@ -24,7 +24,7 @@ const SupportCards = () => {
   const cards = [
     {
       title: 'Personal Support',
-      content: 'At Dentech, we believe in the power of human connection. Our dedicated support specialists are available 24/7 to provide personalized assistance and ensure you get the most out of our advanced software.',
+      content: 'At Dentech, we believe in the power of human connection. Our dedicated support specialists are available to provide personalized assistance and ensure you get the most out of our advanced software.',
       icon: HeartIcon
     },
     {
