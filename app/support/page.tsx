@@ -6,7 +6,7 @@ import FormSection from "./components/FormSection";
 import NewCTA from "./components/NewCTA";
 import FAQSection from "./components/FAQSection";
 import PopUp, { usePopUp } from "../components/PopUp";
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from "framer-motion";
 
 export default function Support() {
   const { isVisible, closePopUp } = usePopUp();
@@ -18,10 +18,10 @@ export default function Support() {
         content="At Dentech, our customer support is there for you. From hardware to software, and everything in between."
       />
       <SupportCards />
-      <FormSection />
       <div className="max-w-7xl mx-auto">
         <NewCTA />
       </div>
+      <FormSection />
       <FAQSection />
 
       <AnimatePresence>
@@ -37,4 +37,4 @@ export default function Support() {
       </AnimatePresence>
     </main>
   );
-} 
+}

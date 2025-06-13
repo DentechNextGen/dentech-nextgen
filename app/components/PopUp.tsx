@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
-import { XMarkIcon } from '@heroicons/react/24/outline';
-import { motion, AnimatePresence } from 'framer-motion';
-import Image from 'next/image';
+import { useState, useEffect } from "react";
+import { XMarkIcon } from "@heroicons/react/24/outline";
+import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 interface PopUpProps {
   title: string;
@@ -11,16 +11,22 @@ interface PopUpProps {
   onClose: () => void;
 }
 
-const PopUp: React.FC<PopUpProps> = ({ title, content, ctaText, ctaLink, onClose }) => {
+const PopUp: React.FC<PopUpProps> = ({
+  title,
+  content,
+  ctaText,
+  ctaLink,
+  onClose,
+}) => {
   // Handle escape key press
   useEffect(() => {
     const handleEscapeKey = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
+      if (event.key === "Escape") {
         onClose();
       }
     };
-    document.addEventListener('keydown', handleEscapeKey);
-    return () => document.removeEventListener('keydown', handleEscapeKey);
+    document.addEventListener("keydown", handleEscapeKey);
+    return () => document.removeEventListener("keydown", handleEscapeKey);
   }, [onClose]);
 
   return (
@@ -31,13 +37,13 @@ const PopUp: React.FC<PopUpProps> = ({ title, content, ctaText, ctaLink, onClose
       className="fixed inset-0 z-50 flex items-center justify-center px-4 sm:px-0"
     >
       {/* Backdrop */}
-      <div 
+      <div
         className="fixed inset-0 bg-black/60 backdrop-blur-md"
         onClick={onClose}
       />
 
       {/* Popup Content */}
-      <motion.div 
+      <motion.div
         className="relative bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-2xl max-w-lg w-full mx-auto overflow-hidden z-50"
         initial={{ y: 20 }}
         animate={{ y: 0 }}
@@ -74,9 +80,7 @@ const PopUp: React.FC<PopUpProps> = ({ title, content, ctaText, ctaLink, onClose
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
               {title}
             </h2>
-            <p className="text-gray-600 mb-8 text-lg">
-              {content}
-            </p>
+            <p className="text-gray-600 mb-8 text-lg">{content}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href={ctaLink}
@@ -103,8 +107,8 @@ export const usePopUp = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const lastShown = localStorage.getItem('popupLastShown');
-    const hasClosedPopup = localStorage.getItem('popupClosed');
+    const lastShown = localStorage.getItem("popupLastShown");
+    const hasClosedPopup = localStorage.getItem("popupClosed");
     const now = new Date().getTime();
 
     // Show popup if:
@@ -112,15 +116,19 @@ export const usePopUp = () => {
     // 2. Returning visitor who:
     //    - Hasn't seen it in the last 24 hours AND
     //    - Either never closed it OR closed it more than 7 days ago
-    if ((!lastShown && !hasClosedPopup) || 
-        ((!lastShown || now - parseInt(lastShown) > 24 * 60 * 60 * 1000) && // 24 hours
-         (!hasClosedPopup || now - parseInt(hasClosedPopup) > 7 * 24 * 60 * 60 * 1000))) { // 7 days
-      
+    if (
+      (!lastShown && !hasClosedPopup) ||
+      ((!lastShown || now - parseInt(lastShown) > 24 * 60 * 60 * 1000) && // 24 hours
+        (!hasClosedPopup ||
+          now - parseInt(hasClosedPopup) > 7 * 24 * 60 * 60 * 1000))
+    ) {
+      // 7 days
+
       // Wait 30 seconds before showing
       const timer = setTimeout(() => {
         setIsVisible(true);
-        localStorage.setItem('popupLastShown', now.toString());
-      }, 30000); // 30 seconds
+        localStorage.setItem("popupLastShown", now.toString());
+      }, 10000); // 10 seconds
 
       return () => clearTimeout(timer);
     }
@@ -128,10 +136,10 @@ export const usePopUp = () => {
 
   const closePopUp = () => {
     setIsVisible(false);
-    localStorage.setItem('popupClosed', new Date().getTime().toString());
+    localStorage.setItem("popupClosed", new Date().getTime().toString());
   };
 
   return { isVisible, closePopUp };
 };
 
-export default PopUp; 
+export default PopUp;

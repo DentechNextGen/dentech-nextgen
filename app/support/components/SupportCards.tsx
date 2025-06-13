@@ -1,4 +1,4 @@
-import { HeartIcon, BoltIcon } from '@heroicons/react/24/outline';
+import { HeartIcon, BoltIcon } from "@heroicons/react/24/outline";
 
 interface CardProps {
   title: string;
@@ -23,15 +23,17 @@ const Card: React.FC<CardProps> = ({ title, content, icon: Icon }) => {
 const SupportCards = () => {
   const cards = [
     {
-      title: 'Personal Support',
-      content: 'At Dentech, we believe in the power of human connection. Our dedicated support specialists are available to provide personalized assistance and ensure you get the most out of our advanced software.',
-      icon: HeartIcon
+      title: "Personal Support",
+      content:
+        "At Dentech, we believe in the power of human connection. Our dedicated support specialists are available to provide personalized assistance and ensure you get the most out of our advanced software.",
+      icon: HeartIcon,
     },
     {
-      title: 'Rapid Response',
-      content: 'We value your time and understand the importance of minimal disruption. Our support team prioritizes swift resolution of all inquiries, helping you maintain smooth and efficient practice operations.',
-      icon: BoltIcon
-    }
+      title: "Rapid Response",
+      content:
+        "We value your time and understand the importance of minimal disruption. Our support team prioritizes swift resolution of all inquiries, helping you maintain smooth and efficient practice operations.",
+      icon: BoltIcon,
+    },
   ];
 
   return (
@@ -39,7 +41,7 @@ const SupportCards = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {cards.map((card) => (
-            <Card 
+            <Card
               key={card.title}
               title={card.title}
               content={card.content}
@@ -52,4 +54,4 @@ const SupportCards = () => {
   );
 };
 
-export default SupportCards; 
+export default SupportCards;

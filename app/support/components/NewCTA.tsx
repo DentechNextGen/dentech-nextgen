@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 const NewCTA = () => {
   return (
@@ -23,14 +23,16 @@ const NewCTA = () => {
             {/* Left side - Text content */}
             <div className="max-w-xl">
               <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                Take your Practice to the Next Level!
+                Take your Practice to the next level!
               </h2>
               <p className="text-lg text-gray-700 mb-8">
-                Experience the future of dental practice management with Dentech NextGen. Our innovative platform streamlines your workflow, enhances patient care, and boosts your practice efficiency.
+                Experience the future of dental practice management with Dentech
+                NextGen. Our innovative platform streamlines your workflow,
+                enhances patient care, and boosts your practice efficiency.
               </p>
               <button
                 className="inline-flex items-center px-8 py-4 text-base font-semibold rounded-xl text-white bg-[#92c353] hover:bg-[#70a831] transition-colors duration-200"
-                onClick={() => window.location.href = '/schedule'}
+                onClick={() => (window.location.href = "/schedule")}
               >
                 Schedule Demo
               </button>
@@ -54,4 +56,4 @@ const NewCTA = () => {
   );
 };
 
-export default NewCTA; 
+export default NewCTA;
