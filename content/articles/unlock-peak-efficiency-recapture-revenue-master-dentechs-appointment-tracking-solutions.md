@@ -3,6 +3,7 @@ title: "Unlock Peak Efficiency & Recapture Revenue: Master Dentech's Appointment
 date: 2025-06-13
 author: "Dentech Team"
 excerpt: "Discover how Dentech's sophisticated appointment tracking tools can minimize missed appointments, optimize your schedule, and boost your practice's performance."
+image: "/blogs/images/failed-appointments/failed-reports.png"
 ---
 
 Missed appointments aren't just empty slots in your schedule; they're a drain on your revenue, a disruptor to your well-planned workflow, and a missed opportunity for patient care. Imagine a practice where these frustrations are minimized, your schedule is optimized, and your team is empowered. Dentech's sophisticated suite of tools for managing failed and canceled appointments can turn this vision into your daily reality. Let's explore how you can transform your appointment management and boost your practice's performance.
@@ -18,6 +19,8 @@ To leverage these powerful features, let's clarify our approach:
 ## The Failed Appointment Report
 
 The Failed Appointment Report is more than just a list; it's your strategic tool for gaining clarity on attendance and taking action as a business.
+
+![Failed Appointment Report Interface](/blogs/images/failed-appointments/failed-reports.png)
 
 ### Unlock Key Advantages & Features:
 
@@ -50,6 +53,8 @@ Imagine your system proactively managing canceled and failed appointments. Dente
 
 ### 1. ADA Procedure Codes:
 
+![ADA Procedure Codes Setup](/blogs/images/failed-appointments/ada-codes.png)
+
 1. Head to the ADA Procedure Codes Maintenance program.
 2. Establish a dedicated reporting category for Canceled and Failed appointments.
 3. Implement two key codes:
@@ -64,6 +69,8 @@ Want to keep statements clean? Simply uncheck the "Statement" field for these co
 
 ### 2. Optimize Your Appointment Scheduling / Office Standards:
 
+![Office Standards Configuration](/blogs/images/failed-appointments/office-standards.png)
+
 1. Access Office Standards via the Maintenance menu in Appointment Scheduling.
 2. Fine-tune your automation:
    - **Create Cancellation Record**: Activate this, and Dentech will automatically tally patient cancellations. This valuable data appears on the daily log, patient treatment record, and account ledger, offering insights into patient behavior.
@@ -76,6 +83,8 @@ Want to keep statements clean? Simply uncheck the "Statement" field for these co
 With setup complete, experience the ease:
 
 ### Canceled Appointment Tracking:
+
+![Canceling an Appointment](/blogs/images/failed-appointments/cancel-appt.png)
 
 1. Simply open the appointment to be canceled in Appointment Scheduling.
 2. A quick double-click brings up the appointment options.
@@ -92,6 +101,8 @@ With setup complete, experience the ease:
 
 ### Quickly Check Canceled/Failed Counts for Any Patient:
 
+![Patient Cancellation Records](/blogs/images/failed-appointments/patient-cancellation.png)
+
 1. In the Appointment Scheduling program.
 2. Enter the patient number (or use the handy search).
 3. Instantly see the patient's history of failed and canceled appointments on the right-hand side – perfect for informed conversations.
@@ -107,6 +118,8 @@ With setup complete, experience the ease:
 Dentech also helps you refine how you document appointment changes:
 
 ### Streamline with Cancel/Schedule Codes:
+
+![Cancel Codes Configuration](/blogs/images/failed-appointments/cancel-codes.png)
 
 1. Create custom shorthand codes (up to 3 characters) for your most common appointment or cancellation notes.
 2. Find this under Appointment Scheduling > Maintenance > Cancel/Schedule Codes.
