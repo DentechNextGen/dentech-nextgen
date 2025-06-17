@@ -34,7 +34,7 @@ const PopUp: React.FC<PopUpProps> = ({
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.9 }}
-      className="fixed inset-0 z-50 flex items-center justify-center px-4 sm:px-0"
+      className="fixed inset-0 z-50 flex items-center justify-center px-4 sm:px-8"
     >
       {/* Backdrop */}
       <div
@@ -44,56 +44,70 @@ const PopUp: React.FC<PopUpProps> = ({
 
       {/* Popup Content */}
       <motion.div
-        className="relative bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-2xl max-w-lg w-full mx-auto overflow-hidden z-50"
+        className="relative w-full max-w-7xl mx-auto z-50"
         initial={{ y: 20 }}
         animate={{ y: 0 }}
       >
-        {/* Background decoration */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -right-1/4 -top-1/4 w-1/2 h-1/2 bg-gradient-radial from-[#92c353]/20 via-[#92c353]/10 to-transparent rounded-full" />
-          <div className="absolute -left-1/4 -bottom-1/4 w-1/2 h-1/2 bg-gradient-radial from-[#70a831]/20 via-[#70a831]/10 to-transparent rounded-full" />
-        </div>
-
-        {/* Close button */}
-        <button
-          onClick={onClose}
-          className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 bg-white/80 rounded-full p-1 backdrop-blur-sm transition-colors duration-200 hover:bg-white/95 z-10"
-        >
-          <XMarkIcon className="h-6 w-6" />
-        </button>
-
-        <div className="relative p-8 sm:p-10">
-          {/* Logo or icon could go here */}
-          <div className="mb-6 flex justify-center">
-            <div className="bg-[#92c353]/10 rounded-full p-4">
-              <Image
-                src="/images/logos/logo-2.png"
-                alt="Dentech Icon"
-                width={48}
-                height={48}
-                className="w-12 h-12 object-contain"
-              />
-            </div>
+        {/* Main container with rounded corners and gradient background */}
+        <div className="relative overflow-hidden bg-[#f3f7f0] rounded-[32px] min-h-[300px]">
+          {/* Simple radial circles background */}
+          <div className="absolute inset-0 overflow-hidden">
+            {/* Largest, lightest circle */}
+            <div className="absolute -top-[40%] -right-[40%] w-[140%] aspect-square rounded-full bg-gradient-radial from-[#e8f2e2] via-[#e8f2e2]/30 to-transparent" />
+            {/* Large circle */}
+            <div className="absolute -top-[30%] -right-[30%] w-[120%] aspect-square rounded-full bg-gradient-radial from-[#c5e0b4] via-[#c5e0b4]/40 to-transparent" />
+            {/* Medium circle */}
+            <div className="absolute -top-[20%] -right-[20%] w-[100%] aspect-square rounded-full bg-gradient-radial from-[#92c353] via-[#92c353]/30 to-transparent" />
+            {/* Small circle */}
+            <div className="absolute -top-[10%] -right-[10%] w-[80%] aspect-square rounded-full bg-gradient-radial from-[#70a831] via-[#70a831]/20 to-transparent" />
           </div>
 
-          <div className="text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              {title}
-            </h2>
-            <p className="text-gray-600 mb-8 text-lg">{content}</p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href={ctaLink}
-                className="inline-flex justify-center items-center px-8 py-4 text-base font-semibold rounded-xl text-white bg-[#92c353] hover:bg-[#70a831] transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl hover:shadow-[#92c353]/20"
-              >
-                {ctaText}
-              </a>
-              <button
-                onClick={onClose}
-                className="inline-flex justify-center items-center px-8 py-4 text-base font-semibold rounded-xl text-gray-600 bg-white hover:bg-gray-50 border border-gray-200 hover:border-gray-300 transform hover:scale-105 transition-all duration-200"
-              >
-                Maybe Later
-              </button>
+          {/* Close button */}
+          <button
+            onClick={onClose}
+            className="absolute top-4 right-4 text-gray-600 hover:text-gray-800 bg-white/80 rounded-full p-2 backdrop-blur-sm transition-colors duration-200 hover:bg-white/95 z-10"
+          >
+            <XMarkIcon className="h-6 w-6" />
+          </button>
+
+          {/* Content */}
+          <div className="relative px-6 sm:px-8 py-16 sm:py-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Left side - Text content */}
+              <div className="max-w-xl">
+                <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                  {title}
+                </h2>
+                <p className="text-lg text-gray-700 mb-8">
+                  {content}
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <a
+                    href={ctaLink}
+                    className="inline-flex justify-center items-center px-8 py-4 text-base font-semibold rounded-xl text-white bg-[#92c353] hover:bg-[#70a831] transition-colors duration-200"
+                  >
+                    {ctaText}
+                  </a>
+                  <button
+                    onClick={onClose}
+                    className="inline-flex justify-center items-center px-8 py-4 text-base font-semibold rounded-xl text-gray-600 bg-white hover:bg-gray-50 border border-gray-200 hover:border-gray-300 transition-all duration-200"
+                  >
+                    Maybe Later
+                  </button>
+                </div>
+              </div>
+
+              {/* Right side - Image */}
+              <div className="relative mt-16 h-80 lg:mt-8">
+                <Image
+                  src="/images/background-hero.webp"
+                  alt="Dentech Platform Interface"
+                  width={1824}
+                  height={1080}
+                  className="absolute left-0 top-0 w-[57rem] max-w-none rounded-xl bg-white/5 ring-1 ring-white/10"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>

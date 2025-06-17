@@ -18,10 +18,10 @@ export default function Support() {
         content="At Dentech, our customer support is there for you. From hardware to software, and everything in between."
       />
       <SupportCards />
+      <FormSection />
       <div className="max-w-7xl mx-auto">
         <NewCTA />
       </div>
-      <FormSection />
       <FAQSection />
 
       <AnimatePresence>
