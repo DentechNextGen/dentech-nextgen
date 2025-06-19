@@ -11,7 +11,7 @@ const SplashtopEmbed: React.FC<SplashtopEmbedProps> = ({
 }) => {
   return (
     <iframe
-      src={`https://help123.app/sos/packages/embed-button/7224ATXKK7RP?platform=${platform}&color=${color}`}
+      src={`https://help123.app/sos/packages/embed-button/WLP3RPKYAKHW?platform=${platform}&color=${color}`}
       style={{
         height: "40px",
         width: "160px",
