@@ -34,6 +34,7 @@ export default function RemoteSupportPage() {
       {/* Download Section */}
       <div className="bg-white py-12 sm:py-12">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
+
           <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
             {/* Windows Section */}
             <div className="bg-white rounded-2xl shadow-lg p-8">
@@ -71,7 +72,20 @@ export default function RemoteSupportPage() {
               <SplashtopEmbed platform="mac" color="green" />
             </div>
           </div>
+          
 
+          {/* Disclaimer */}
+          <div className="mt-12 max-w-3xl mx-auto">
+            <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">Important Notice</h3>
+              <p className="text-gray-700 mb-4">
+                By downloading and running this program, you grant remote access to your system to a Dentech representative for remote diagnostics, troubleshooting, and/or repair. Dentech is not responsible for any loss of data.
+              </p>
+              <p className="text-gray-700 font-medium">
+                Security Note: When you no longer need support, be sure to quit the program. This ensures your computer cannot be remotely accessed anymore until you run the program and explicitly grant permission again.
+              </p>
+            </div>
+          </div>
           {/* Instructions */}
           <div className="mt-16 max-w-3xl mx-auto">
             <h3 className="text-2xl font-semibold mb-6">How It Works</h3>
@@ -91,6 +105,10 @@ export default function RemoteSupportPage() {
               <li className="flex gap-x-3">
                 <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-lime-600 text-white">4</span>
                 <span>Our technician will connect to your computer and assist you with your issue</span>
+              </li>
+              <li className="flex gap-x-3">
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-lime-600 text-white">5</span>
+                <span>When support is complete, quit the program to prevent any further remote access</span>
               </li>
             </ol>
           </div>
