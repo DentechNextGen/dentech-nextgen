@@ -1,31 +1,37 @@
-'use client'
+"use client";
 
-import { Fragment, useState } from 'react'
-import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { navigationConfig } from '@/src/config/navigation'
-import { siteConfig } from '@/src/config'
-import Link from 'next/link'
-import Image from 'next/image'
+import { Fragment, useState } from "react";
+import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { navigationConfig } from "@/src/config/navigation";
+import { siteConfig } from "@/src/config";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Navigation() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header>
       {/* Top Bar */}
       <div className="bg-gray-950">
         <div className="mx-auto flex h-8 max-w-7xl items-center justify-end gap-x-3 px-4 sm:gap-x-6 sm:px-6 lg:px-8">
-          <a href="tel:8002334998" className="text-xs sm:text-sm font-semibold leading-6 text-white hover:text-gray-300">
+          <a
+            href="tel:8002334998"
+            className="text-xs sm:text-sm font-semibold leading-6 text-white hover:text-gray-300"
+          >
             (800)-233-4998
           </a>
-          <Link href="/go-to-assist" className="text-xs sm:text-sm font-semibold leading-6 text-white hover:text-gray-300">
-            Go To Assist
+          <Link
+            href="/remote-support"
+            className="text-xs sm:text-sm font-semibold leading-6 text-white hover:text-gray-300"
+          >
+            Remote Support
           </Link>
-          <a 
-            href="https://customer.billergenie.com/ee929b7258f2" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href="https://customer.billergenie.com/ee929b7258f2"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-xs sm:text-sm font-semibold leading-6 text-white hover:text-gray-300"
           >
             e-Payments
@@ -88,11 +94,20 @@ export default function Navigation() {
         </div>
 
         {/* Mobile menu */}
-        <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+        <Dialog
+          as="div"
+          className="lg:hidden"
+          open={mobileMenuOpen}
+          onClose={setMobileMenuOpen}
+        >
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <Link href="/" className="-m-1.5 p-1.5" onClick={() => setMobileMenuOpen(false)}>
+              <Link
+                href="/"
+                className="-m-1.5 p-1.5"
+                onClick={() => setMobileMenuOpen(false)}
+              >
                 <Image
                   src="/icons/logo.svg"
                   alt={siteConfig.name}
@@ -140,5 +155,5 @@ export default function Navigation() {
         </Dialog>
       </nav>
     </header>
-  )
-} 
+  );
+}

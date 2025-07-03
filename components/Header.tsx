@@ -1,32 +1,38 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { navigationConfig } from '@/src/config/navigation'
-import { siteConfig } from '@/src/config'
-import Link from 'next/link'
-import Image from 'next/image'
-import { MagnifyingGlassIcon } from '@heroicons/react/24/outline'
+import { useState } from "react";
+import { navigationConfig } from "@/src/config/navigation";
+import { siteConfig } from "@/src/config";
+import Link from "next/link";
+import Image from "next/image";
+import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
 export default function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
       {/* Top Bar */}
       <div className="bg-gray-950">
         <div className="mx-auto flex h-8 max-w-7xl items-center justify-end px-4">
-          <a href="tel:8002334998" className="text-sm text-white hover:text-gray-300">
+          <a
+            href="tel:8002334998"
+            className="text-sm text-white hover:text-gray-300"
+          >
             (800)-233-4998
           </a>
           <span className="mx-3 text-white">|</span>
-          <Link href="/go-to-assist" className="text-sm text-white hover:text-gray-300">
-            Go To Assist
+          <Link
+            href="/remote-support"
+            className="text-sm text-white hover:text-gray-300"
+          >
+            Remote Support
           </Link>
           <span className="mx-3 text-white">|</span>
-          <a 
-            href="https://customer.billergenie.com/ee929b7258f2" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href="https://customer.billergenie.com/ee929b7258f2"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm text-white hover:text-gray-300"
           >
             e-Payments
@@ -56,8 +62,18 @@ export default function Header() {
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               <span className="sr-only">Menu</span>
-              <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
               </svg>
             </button>
 
@@ -135,5 +151,5 @@ export default function Header() {
         </div>
       </nav>
     </header>
-  )
-} 
+  );
+}
