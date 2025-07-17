@@ -7,6 +7,7 @@ import { siteConfig } from "@/src/config";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GoogleTagManager from "@/components/GoogleTagManager";
+import InstantlyPixel from "@/app/_analytics/InstantlyPixel";
 
 const inter = Inter({ subsets: ["latin"] });
 const delaGothicOne = Dela_Gothic_One({ subsets: ["latin"], weight: "400" });
@@ -51,6 +52,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <InstantlyPixel />
+      </head>
       <GoogleTagManager />
       <body
         className={`${inter.className} min-h-screen flex flex-col bg-white antialiased`}
