@@ -1,36 +1,46 @@
-import { Metadata } from 'next'
-import { ScheduleContent } from './ScheduleContent'
+import { Metadata } from "next";
+import { ScheduleContent } from "./ScheduleContent";
+import Banner from "../components/Banner";
+import CalendlyPopUp from "../components/CalendlyPopUp";
 
 export const metadata: Metadata = {
-  title: 'Schedule a Demo - Dentech',
-  description: 'Book an introductory call with Jane Kaminski to learn more about how Dentech can help your dental practice.',
-}
+  title: "Schedule a Demo - Dentech",
+  description:
+    "Book an introductory call to learn more about how Dentech can help your dental practice.",
+};
 
 export default function Schedule() {
   return (
     <main className="bg-white">
-      {/* Hero Section */}
-      <div className="relative bg-gray-900 py-24 sm:py-32">
-        <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl lg:max-w-5xl">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Schedule a Demo
-            </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              Book an introductory call with Jane Kaminski to learn more about how Dentech can help your dental practice.
-            </p>
-          </div>
-        </div>
-      </div>
+      {/* Banner Section with CalendlyPopUp */}
+      <Banner
+        title="Schedule a Demo"
+        content="Book an introductory call with Jane Kaminski to learn more about how Dentech can help your dental practice streamline operations, improve patient care, and boost efficiency."
+      />
+      <CalendlyPopUp
+        text="Quick Schedule"
+        color="#84cc16"
+        textColor="#ffffff"
+        branding={false}
+      />
 
       {/* Calendar Section */}
-      <div className="bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl lg:max-w-5xl">
+      <div className="bg-gray-50 py-8 sm:py-12">
+        <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Choose Your Preferred Time
+              </h2>
+              <p className="text-lg text-gray-600">
+                Select a convenient time slot for your personalized Dentech
+                demonstration
+              </p>
+            </div>
             <ScheduleContent />
           </div>
         </div>
       </div>
     </main>
-  )
-} 
+  );
+}
