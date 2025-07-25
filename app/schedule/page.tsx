@@ -15,7 +15,7 @@ export default function Schedule() {
       {/* Banner Section with CalendlyPopUp */}
       <Banner
         title="Schedule a Demo"
-        content="Book an introductory call with Jane Kaminski to learn more about how Dentech can help your dental practice streamline operations, improve patient care, and boost efficiency."
+        content="Book an introductory call to learn more about how Dentech can help your dental practice streamline operations, improve patient care, and boost efficiency."
       />
       <CalendlyPopUp
         text="Quick Schedule"
