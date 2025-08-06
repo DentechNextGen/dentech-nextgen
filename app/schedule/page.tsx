@@ -13,7 +13,7 @@ export default function Schedule() {
     <main className="bg-white">
       {/* Banner Section */}
       <Banner
-        title="Schedule a Demo"
+        title="Schedule A Demo"
         content="Book an introductory call to learn more about how Dentech can help your dental practice streamline operations, improve patient care, and boost efficiency."
       />
 
