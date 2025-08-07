@@ -56,7 +56,7 @@ export default function ArticleCard({ article, horizontal = false }: ArticleCard
               alt={article.author}
               width={40}
               height={40}
-              className="h-10 w-10 rounded-full bg-gray-50"
+              className="h-10 w-10 rounded-full bg-gray-50 object-cover"
             />
             <div className="text-sm leading-6">
               <p className="font-semibold text-gray-900">
