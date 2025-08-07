@@ -1,7 +1,7 @@
 ---
 title: "Unlock Peak Efficiency & Recapture Revenue: Master Dentech's Appointment Tracking Solutions"
 author: "Dentech Team"
-authorImage: '/images/dentech-team-author.jpg'
+authorImage: '/images/logos/logo-2.png'
 desc: "Discover how Dentech's sophisticated appointment tracking tools can minimize missed appointments, optimize your schedule, and boost your practice's performance."
 image: /blogs/images/failed-appointments/patient-cancellation.png
 alt: "Dentech Appointment Tracking Solutions - Patient Cancellation Management"
