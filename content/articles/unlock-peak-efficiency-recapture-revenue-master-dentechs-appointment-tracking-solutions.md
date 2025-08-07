@@ -1,9 +1,9 @@
 ---
 title: "Unlock Peak Efficiency & Recapture Revenue: Master Dentech's Appointment Tracking Solutions"
-date: 2025-01-27
+date: 2025-08-07
 author: "Dentech Team"
 excerpt: "Discover how Dentech's sophisticated appointment tracking tools can minimize missed appointments, optimize your schedule, and boost your practice's performance."
-image: "/blogs/images/failed-appointments/failed-reports.png"
+image: "/blogs/images/failed-appointments/patient-cancellation.png"
 tags: ["appointment-tracking", "practice-management", "efficiency", "revenue-optimization"]
 ---
 
