@@ -7,6 +7,7 @@ import { siteConfig } from "@/src/config";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GoogleTagManager from "@/components/GoogleTagManager";
+import LogRocket from "@/app/components/LogRocket";
 import InstantlyPixel from "@/app/_analytics/InstantlyPixel";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -56,6 +57,7 @@ export default function RootLayout({
         <InstantlyPixel />
       </head>
       <GoogleTagManager />
+      <LogRocket />
       <body
         className={`${inter.className} min-h-screen flex flex-col bg-white antialiased`}
       >
