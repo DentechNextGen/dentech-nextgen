@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import Banner from '@/app/components/Banner'
 
 export default function Features() {
   const features = [
@@ -63,21 +64,10 @@ export default function Features() {
 
   return (
     <main className="bg-white">
-      {/* Hero Section */}
-      <div className="relative bg-gray-900 py-24 sm:py-32">
-        <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl lg:max-w-5xl">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Features
-            </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              Discover our comprehensive suite of solutions designed to transform your dental practice. 
-              From practice management to hardware solutions, we provide everything you need to run a modern, 
-              efficient practice.
-            </p>
-          </div>
-        </div>
-      </div>
+      <Banner 
+        title="Features"
+        content="Discover our comprehensive suite of solutions designed to transform your dental practice. From practice management to hardware solutions, we provide everything you need to run a modern, efficient practice."
+      />
 
       {/* Features Grid */}
       <div className="bg-white py-24 sm:py-32">
