@@ -85,7 +85,7 @@ With setup complete, experience the ease:
 
 ### Quickly Check Canceled/Failed Counts for Any Patient:
 
-![Patient Cancellation Records](/blogs/images/failed-appointments/patient-cancellation.png)
+![Patient Cancellation Records](/blogs/images/failed-appointments/cancel-counts.png)
 
 1. In the Appointment Scheduling program.
 2. Bring up the patient to view their appointment details on the appointment slideout.
