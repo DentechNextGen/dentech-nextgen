@@ -1,7 +1,7 @@
 ---
 title: "Unlock Peak Efficiency & Recapture Revenue: Master Dentech's Appointment Tracking Solutions"
 author: "Dentech Team"
-authorImage: '/images/logos/logo-2.png'
+authorImage: "/images/logos/logo-2.png"
 desc: "Discover how Dentech's sophisticated appointment tracking tools can minimize missed appointments, optimize your schedule, and boost your practice's performance."
 image: /blogs/images/failed-appointments/patient-cancellation.png
 alt: "Dentech Appointment Tracking Solutions - Patient Cancellation Management"
@@ -75,6 +75,14 @@ With setup complete, experience the ease:
 2. Select Cancel Appointment.
 3. Confirm with a Yes and select the cancellation reason.
 4. Instantly, Dentech adds a "CANCL" charge in Charge Entry. You maintain full control – this can be removed before posting if needed.
+
+### Easy Reschedule Tracking:
+
+![Dentech Appointment Tracking Solutions](/blogs/images/failed-appointments/patient-cancellation.png)
+
+Dentech takes the guesswork out of patient reschedules. When an appointment is changed, our system automatically logs the reason for the original cancellation and whether a new appointment was successfully booked.
+
+This essential information is available at your fingertips. By simply opening the patient slide-out, your team can instantly see a complete history of cancellations and reschedules—empowering them to manage patient relationships with full context and ease.
 
 ### Failed Appointment Tracking:
 
