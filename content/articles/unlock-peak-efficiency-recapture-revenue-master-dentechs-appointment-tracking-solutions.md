@@ -1,12 +1,12 @@
 ---
 title: "Unlock Peak Efficiency & Recapture Revenue: Master Dentech's Appointment Tracking Solutions"
 author: "Dentech Team"
-authorImage: '/images/logos/logo-2.png'
+authorImage: "/images/logos/logo-2.png"
 desc: "Discover how Dentech's sophisticated appointment tracking tools can minimize missed appointments, optimize your schedule, and boost your practice's performance."
 image: /blogs/images/failed-appointments/patient-cancellation.png
 alt: "Dentech Appointment Tracking Solutions - Patient Cancellation Management"
-createdAt: 08/07/2025
-updatedAt: 08/07/2025
+createdAt: 08/29/2025
+updatedAt: 08/29/2025
 tags:
   - Appointment Tracking
 keywords:
@@ -18,7 +18,11 @@ keywords:
   - Patient No-Show Management
   - Dental Practice Optimization
   - Appointment Scheduling Software
+  - Dentech NextGen
 ---
+
+### Interested in upgrading from Dentech Legacy to Dentech NextGen?
+### [Schedule a Demo Now](/schedule)
 
 Missed appointments aren't just empty slots in your schedule; they're a drain on your revenue, a disruptor to your well-planned workflow, and a missed opportunity for patient care. Imagine a practice where these frustrations are minimized, your schedule is optimized, and your team is empowered. Dentech's sophisticated suite of tools for managing failed and canceled appointments can turn this vision into your daily reality. Let's explore how you can transform your appointment management and boost your practice's performance.
 
@@ -26,7 +30,7 @@ Failed and canceled appointments are a significant financial burden on dental pr
 
 ## Understanding Failed Versus Cancelled Appointments
 
-To leverage these powerful features, let's clarify our approach:
+To leverage these powerful features within Dentech NextGen, let's clarify our approach:
 
 - **Failed Appointment**: Dentech intelligently identifies a "failed" appointment when a patient is on the books but no procedures are logged for that day – proactively flagging potential no-shows.
 
@@ -34,7 +38,7 @@ To leverage these powerful features, let's clarify our approach:
 
 ## Setting Up Automatic Tracking Of Failed And Cancelled Appointments
 
-Imagine your system proactively and automatically managing canceled and failed appointments. Dentech makes it possible!
+Imagine your system proactively and automatically managing canceled and failed appointments. Dentech NextGen makes it possible!
 
 ### 1. ADA Procedure Codes:
 
@@ -58,7 +62,7 @@ Want to keep statements clean? Simply uncheck the "Statement" field for these co
 
 1. Access Office Standards via the Maintenance menu in Appointment Scheduling.
 2. Fine-tune your automation:
-   - **Create Cancellation Record**: Activate this, and Dentech will automatically tally patient cancellations. This valuable data appears on the daily log, patient treatment record, and account ledger, offering insights into patient behavior.
+   - **Create Cancellation Record**: Activate this, and Dentech NextGen will automatically tally patient cancellations. This valuable data appears on the daily log, patient treatment record, and account ledger, offering insights into patient behavior.
    - **Create Failed Appt Record**: Similarly, enable this to automatically track failed appointments, with counts visible in the same key areas.
    - **Months to Show Count**: Define how long you want to accumulate these totals, aligning with your practice's data retention policies (always check your Office Configuration).
 3. Click Save and feel the power of automation!
@@ -76,6 +80,14 @@ With setup complete, experience the ease:
 3. Confirm with a Yes and select the cancellation reason.
 4. Instantly, Dentech adds a "CANCL" charge in Charge Entry. You maintain full control – this can be removed before posting if needed.
 
+### Easy Reschedule Tracking:
+
+![Dentech Appointment Tracking Solutions](/blogs/images/failed-appointments/patient-cancellation.png)
+
+Dentech NextGen takes the guesswork out of patient reschedules. When an appointment is changed, our system automatically logs the reason for the original cancellation and whether a new appointment was successfully booked.
+
+This essential information is available at your fingertips. By simply opening the patient slide-out, your team can instantly see a complete history of cancellations and reschedules—empowering them to manage patient relationships with full context and ease.
+
 ### Failed Appointment Tracking:
 
 1. Run your Failed Appointment Report.
@@ -85,7 +97,7 @@ With setup complete, experience the ease:
 
 ### Quickly Check Canceled/Failed Counts for Any Patient:
 
-![Patient Cancellation Records](/blogs/images/failed-appointments/patient-cancellation.png)
+![Patient Cancellation Records](/blogs/images/failed-appointments/cancel-counts.png)
 
 1. In the Appointment Scheduling program.
 2. Bring up the patient to view their appointment details on the appointment slideout.
@@ -124,4 +136,7 @@ The report delivers crucial data for each failed appointment: Patient Name, Pati
 
 ## The Dentech Advantage: Transform Your Appointment Management
 
-Stop letting missed appointments undermine your practice's success. By harnessing Dentech's Failed Appointment Report and its intelligent automated tracking, you can significantly improve schedule integrity, slash revenue loss, and ensure more accurate patient records. Empower your team with these intuitive tools and watch your office workflow become smoother, more predictable, and ultimately, more profitable. Take control of your schedule today and pave the way for greater practice growth!
+Stop letting missed appointments undermine your practice's success. By harnessing Dentech NextGen's Failed Appointment Report and its intelligent automated tracking, you can significantly improve schedule integrity, slash revenue loss, and ensure more accurate patient records. Empower your team with these intuitive tools and watch your office workflow become smoother, more predictable, and ultimately, more profitable. Take control of your schedule today and pave the way for greater practice growth!
+
+### Interested in upgrading from Dentech Legacy to Dentech NextGen?
+### [Schedule a Demo Now](/schedule)
