@@ -5,8 +5,8 @@ authorImage: "/images/logos/logo-2.png"
 desc: "Discover how Dentech's sophisticated appointment tracking tools can minimize missed appointments, optimize your schedule, and boost your practice's performance."
 image: /blogs/images/failed-appointments/patient-cancellation.png
 alt: "Dentech Appointment Tracking Solutions - Patient Cancellation Management"
-createdAt: 08/29/2025
-updatedAt: 08/29/2025
+createdAt: 10/01/2025
+updatedAt: 10/03/2025
 tags:
   - Appointment Tracking
 keywords:
@@ -22,6 +22,7 @@ keywords:
 ---
 
 ### Interested in upgrading from Dentech Legacy to Dentech NextGen?
+
 ### [Schedule a Demo Now](/schedule)
 
 Missed appointments aren't just empty slots in your schedule; they're a drain on your revenue, a disruptor to your well-planned workflow, and a missed opportunity for patient care. Imagine a practice where these frustrations are minimized, your schedule is optimized, and your team is empowered. Dentech's sophisticated suite of tools for managing failed and canceled appointments can turn this vision into your daily reality. Let's explore how you can transform your appointment management and boost your practice's performance.
@@ -139,4 +140,5 @@ The report delivers crucial data for each failed appointment: Patient Name, Pati
 Stop letting missed appointments undermine your practice's success. By harnessing Dentech NextGen's Failed Appointment Report and its intelligent automated tracking, you can significantly improve schedule integrity, slash revenue loss, and ensure more accurate patient records. Empower your team with these intuitive tools and watch your office workflow become smoother, more predictable, and ultimately, more profitable. Take control of your schedule today and pave the way for greater practice growth!
 
 ### Interested in upgrading from Dentech Legacy to Dentech NextGen?
+
 ### [Schedule a Demo Now](/schedule)
