@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import ReactMarkdown from 'react-markdown'
 import Image from 'next/image'
 import { getAllArticles } from '@/lib/articles'
+import YouTubeVideo from '@/components/YouTubeVideo'
 
 export async function generateStaticParams() {
   const articles = await getAllArticles()
@@ -78,6 +79,12 @@ export default async function BlogPost({ params }: { params: { slug: string } })
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl lg:max-w-4xl">
+            {/* Video Section - Only for specific article */}
+            {slug === 'unlock-peak-efficiency-recapture-revenue-master-dentechs-appointment-tracking-solutions' && (
+              <div className="mb-12">
+                <YouTubeVideo videoId="EDonohVXacQ" className="w-full" />
+              </div>
+            )}
             <div className="prose prose-lg prose-slate max-w-none prose-headings:font-display prose-headings:font-bold prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:text-lg prose-a:text-primary-600 hover:prose-a:text-primary-500 prose-img:rounded-xl">
               <ReactMarkdown>{article.content}</ReactMarkdown>
             </div>

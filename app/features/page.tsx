@@ -43,8 +43,8 @@ export default function Features() {
       href: '/features/patient-communication'
     },
     {
-      title: 'Eservices',
-      description: 'Digital solutions for modern dental practices, from online scheduling to digital forms. Our eservices platform brings together all the digital tools you need, including online payments and electronic claims processing.',
+      title: 'Revenue Cycle Management',
+      description: 'Digital solutions for modern dental practices, from online scheduling to digital forms. Our revenue cycle management platform brings together all the digital tools you need, including online payments, electronic claims processing, and seamless claim attachments.',
       image: 'services/eservices.webp',
       href: '/features/eservices'
     },
