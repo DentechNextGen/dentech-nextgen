@@ -28,6 +28,11 @@ export default async function BlogPost({ params }: { params: { slug: string } })
     year: 'numeric',
   })
 
+  // Extract video ID from videoUrl if present
+  const videoId = article.videoUrl 
+    ? article.videoUrl.split('/').pop()?.split('?')[0] 
+    : null
+
   return (
     <main className="bg-white">
       {/* Hero Section */}
@@ -79,10 +84,10 @@ export default async function BlogPost({ params }: { params: { slug: string } })
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl lg:max-w-4xl">
-            {/* Video Section - Only for specific article */}
-            {slug === 'unlock-peak-efficiency-recapture-revenue-master-dentechs-appointment-tracking-solutions' && (
+            {/* Video Section - Conditional based on videoUrl */}
+            {videoId && (
               <div className="mb-12">
-                <YouTubeVideo videoId="EDonohVXacQ" className="w-full" />
+                <YouTubeVideo videoId={videoId} className="w-full" />
               </div>
             )}
             <div className="prose prose-lg prose-slate max-w-none prose-headings:font-display prose-headings:font-bold prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:text-lg prose-a:text-primary-600 hover:prose-a:text-primary-500 prose-img:rounded-xl">

@@ -11,6 +11,7 @@ export interface Article {
   content: string
   excerpt: string
   image?: string
+  videoUrl?: string
   tags?: string[]
   author?: string
   authorImage?: string
@@ -40,6 +41,7 @@ export async function getAllArticles(): Promise<Article[]> {
       content,
       excerpt: data.excerpt || data.desc || content.slice(0, 200) + '...',
       image: data.image,
+      videoUrl: data.videoUrl,
       tags: data.tags || [],
       author: data.author,
       authorImage: data.authorImage

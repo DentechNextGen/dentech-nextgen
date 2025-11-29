@@ -4,6 +4,7 @@ author: "Dentech Team"
 authorImage: "/images/logos/logo-2.png"
 desc: "Discover how Dentech's sophisticated appointment tracking tools can minimize missed appointments, optimize your schedule, and boost your practice's performance."
 image: /blogs/images/failed-appointments/patient-cancellation.png
+videoUrl: https://www.youtube.com/embed/EDonohVXacQ
 alt: "Dentech Appointment Tracking Solutions - Patient Cancellation Management"
 createdAt: 10/01/2025
 updatedAt: 10/03/2025
