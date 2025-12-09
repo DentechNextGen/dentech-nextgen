@@ -23,7 +23,7 @@ const NewCTA = () => {
             {/* Left side - Text content */}
             <div className="max-w-xl">
               <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                Take your Practice to the next level!
+                Take Your Practice to the Next Level!
               </h2>
               <p className="text-lg text-gray-700 mb-8">
                 Experience the future of dental practice management with Dentech
