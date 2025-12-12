@@ -28,7 +28,7 @@ export default function NEAIntegrationVideo() {
       <div className="bg-gray-50 py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
-            <YouTubeVideo videoId="" className="w-full" />
+            <YouTubeVideo videoId="V3pcqmKBU3U" className="w-full" />
           </div>
         </div>
       </div>

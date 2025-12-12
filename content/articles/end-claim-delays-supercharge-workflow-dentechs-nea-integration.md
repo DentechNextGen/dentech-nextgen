@@ -4,7 +4,7 @@ author: "Dentech Team"
 authorImage: "/images/logos/logo-2.png"
 desc: "Discover how Dentech's powerful NEA Integration, powered by FastAttach, can eliminate claim submission bottlenecks and accelerate your revenue cycle."
 image: /blogs/images/nea-integration/claim-attachments.png
-videoUrl: https://www.youtube.com/embed/PLACEHOLDER_VIDEO_ID
+videoUrl: https://www.youtube.com/embed/V3pcqmKBU3U
 alt: "Dentech NEA Integration - Electronic Claim Attachments"
 createdAt: 12/10/2025
 updatedAt: 12/10/2025

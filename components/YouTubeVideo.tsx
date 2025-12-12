@@ -27,18 +27,18 @@ export default function YouTubeVideo({ videoId, className = "" }: YouTubeVideoPr
             }
           }}
         >
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-white/20 transition-colors">
-              <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </div>
-          </div>
           <img
             src={thumbnailUrl}
             alt="Video thumbnail" 
             className="w-full h-full object-cover rounded-xl"
           />
+          <div className="absolute inset-0 flex items-center justify-center z-10">
+            <div className="w-24 h-24 bg-black/60 rounded-full flex items-center justify-center group-hover:bg-black/80 transition-all backdrop-blur-sm shadow-2xl">
+              <svg className="w-12 h-12 text-white -ml-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
     </div>
